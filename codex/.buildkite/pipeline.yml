@@ -1,0 +1,60 @@
+---
+$schema: "https://raw.githubusercontent.com/buildkite/pipeline-schema/main/schema.json"
+agents:
+  queue: default
+env:
+  PROJECT_KEY: sonar-reliability-and-security:codex
+  PROJECT_NAME: Codex
+
+steps:
+  - label: ":female-detective: Running gitleaks scan.."
+    commands:
+      - echo '~~~ Pulling gitleaks image'
+      # These need to be $$ instead of $ since they're evaluated at runtime.
+      - docker pull "$$GITLEAKS_DOCKER_IMAGE"
+      - echo '+++ Executing gitleaks'
+      - docker run "$$GITLEAKS_DOCKER_IMAGE" version
+      - docker run -v '.:/path' "$$GITLEAKS_DOCKER_IMAGE" detect --source="/path" --verbose --redact
+    env:
+      GITLEAKS_DOCKER_IMAGE: "ghcr.io/gitleaks/gitleaks:latest"
+    plugins:
+      - Hivebrite/git-flags#v0.0.1:
+          clone: "--depth 50"
+
+  - label: ":wiz: Scan with wiz-cli"
+    command: echo 'Scanning leventehunyadi/md2conf:0.3.3 container image with wiz-cli'
+    plugins:
+      - MYOB-Technology/wiz:
+          image-address: leventehunyadi/md2conf:0.3.3
+          scan-type: "docker"
+
+  - label: ":lint-roller: Linting"
+    commands:
+      - docker run --rm -v ".:/codex" -w "/codex" jdkato/vale --config ".vale/.vale.ini" content
+
+  - block: "Publish draft?"
+    if: build.branch != pipeline.default_branch
+
+  - label: ":confluence: Sync to Confluence [Draft]"
+    if: build.branch != pipeline.default_branch
+    env:
+      ASSUME_IAM_ROLE: "arn:aws:iam::796887859977:role/delivery-platform/ci-runner-role"
+    commands:
+      - ./.buildkite/scripts/publish-to-confluence.sh --use-draft-space
+    retry:
+      manual:
+        permit_on_passed: true
+
+  - wait
+
+  - label: ":confluence: Sync Markdown to Confluence"
+    if: build.branch == pipeline.default_branch
+    env:
+      ASSUME_IAM_ROLE: "arn:aws:iam::796887859977:role/delivery-platform/ci-runner-role"
+    commands:
+      - echo '+++ Executing build and push'
+      - ./.buildkite/scripts/publish-to-confluence.sh
+
+notify:
+  - slack: "#codex-lt"
+    if: build.state == "failed" && build.branch == "main"

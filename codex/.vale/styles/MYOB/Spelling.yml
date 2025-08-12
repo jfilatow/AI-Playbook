@@ -1,0 +1,12 @@
+---
+extends: spelling
+message: "Did you really mean '%s'?"
+level: error
+dicpath: dics
+dictionaries:
+  - en_AU
+ignore:
+  - MYOB/domain-words.txt
+  - MYOB/human-names.txt
+  - MYOB/myob-words.txt
+  - MYOB/technology-words.txt
