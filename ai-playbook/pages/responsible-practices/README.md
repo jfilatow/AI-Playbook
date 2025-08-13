@@ -9,3 +9,4 @@ Use AI tools ethically and sustainably when using AI in the SDLC.
 3. [Security](security.md) - How to use AI tools securely
 
 ## [Next -> Ethics](ethics.md) 
+- [Data Privacy & Security](data-privacy-security.md)

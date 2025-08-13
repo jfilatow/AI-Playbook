@@ -16,3 +16,7 @@ This section outlines a streamlined workflow for integrating AI into the softwar
 5. [Documentation](documentation.md) - Update all relevant documentation to reflect changes, ensuring clarity and alignment with project goals. Use documentation to give feedback to the AI tools for future iterations
 
 ## [Next -> Development](development.md)
+
+- [Continuous Improvement](continuous-improvement.md)
+
+- [AI-powered Features](ai-powered-features.md)

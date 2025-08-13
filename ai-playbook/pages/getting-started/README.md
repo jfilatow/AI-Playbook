@@ -15,3 +15,11 @@ For information on the appropriate privacy settings for your chosen AI tool, see
 4. [Project Setup](project-setup.md) - Set up your project with the right files, tools, and conventions
 
 ## [Next -> Workflow](workflow.md)
+
+- [AI Training Programs](ai-training-programs.md)
+
+- [Stakeholder Engagement](stakeholder-engagement.md)
+
+- [AI-first Mindset](ai-first-mindset.md)
+
+- [Self-Service Capabilities](self-service-capabilities.md)

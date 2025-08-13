@@ -23,3 +23,4 @@ How to contribute to this playbook and help improve it for the MYOB community.
 3. Use the **Prompt Library** to get better results from your AI tools
 
 The **Contributing** guide shows you how to share your own prompts, rules, and improvements with the wider MYOB SDLC community. 
+- [Case Studies](case-studies.md)
