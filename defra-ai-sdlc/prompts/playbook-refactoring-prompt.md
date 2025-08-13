@@ -1,1 +1,0 @@
-Review @README.md and files in @/pages. Follow cursor rules to make targeted improvements while preserving original intent.
