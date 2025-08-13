@@ -1,6 +1,6 @@
 # MYOB AI SDLC Playbook
 
-This playbook unifies MYOB Codex guidance with an adapted AI SDLC playbook into a single, MYOB-specific resource.
+This playbook is the single source of truth for MYOB developers. It combines SDLC guidance and technical standards in one place, with consistent structure and links.
 
 ## Table of Contents
 1. [Welcome](README.md)
@@ -29,23 +29,24 @@ This playbook unifies MYOB Codex guidance with an adapted AI SDLC playbook into 
     5. [Documentation](pages/feature-development/documentation.md)
     6. [Continuous Improvement](pages/feature-development/continuous-improvement.md)
     7. [AI-powered Features](pages/feature-development/ai-powered-features.md)
-6. [Appendix](pages/appendix/README.md)
+6. [APIs & Integration](pages/apis/README.md)
+    1. [API Design](pages/apis/api-design/README.md)
+    2. [API Observability](pages/apis/api-observability/README.md)
+    3. [API Security](pages/apis/api-security/README.md)
+    4. [API Discoverability](pages/apis/api-discoverability/README.md)
+    5. [API Testing](pages/apis/api-testing.md)
+    6. [API Documentation](pages/apis/documentation.md)
+7. [Delivery](pages/delivery/README.md)
+8. [Operations](pages/operations/README.md)
+9. [Governance](pages/governance/README.md)
+10. [Data](pages/data/README.md)
+11. [Cloud](pages/cloud/README.md)
+12. [Engineering Standards](pages/standards/README.md)
+13. [Appendix](pages/appendix/README.md)
     1. [Prompt Library](pages/appendix/prompt-library/README.md)
     2. [Rules for AI](pages/appendix/rules-for-ai/README.md)
-    3. [MYOB-approved AI tools](pages/appendix/MYOB-approved-tools.md)
+    3. [MYOB‑approved AI tools](pages/appendix/MYOB-approved-tools.md)
     4. [Tools Guidance](pages/appendix/tools-guidance.md)
     5. [Case Studies](pages/appendix/case-studies.md)
     6. [Contributing](pages/appendix/CONTRIBUTING.md)
-7. [References](REFERENCES.md)
-
-## Standards ## How this integrates with MYOB Codex Practices Overview
-This playbook contains all MYOB standards and practices. See [REFERENCES](REFERENCES.md) for internal links.
-
-## Standards ## Codex Sections (migrated) Practices
-8. [Delivery](pages/delivery/README.md)
-9. [APIs & Integration](pages/apis/README.md)
-10. [Operations](pages/operations/README.md)
-11. [Governance](pages/governance/README.md)
-12. [Data](pages/data/README.md)
-13. [Cloud](pages/cloud/README.md)
-14. [Engineering Standards](pages/standards/README.md)
+14. [References](REFERENCES.md)
