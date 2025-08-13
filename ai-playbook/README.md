@@ -40,3 +40,12 @@ This playbook unifies MYOB Codex guidance with an adapted AI SDLC playbook into 
 
 ## How this integrates with MYOB Codex
 This playbook references detailed standards and practices in . See [REFERENCES](REFERENCES.md) for direct links.
+
+## Codex Sections (migrated)
+8. [Delivery](pages/delivery/README.md)
+9. [APIs & Integration](pages/apis/README.md)
+10. [Operations](pages/operations/README.md)
+11. [Governance](pages/governance/README.md)
+12. [Data](pages/data/README.md)
+13. [Cloud](pages/cloud/README.md)
+14. [Engineering Standards](pages/standards/README.md)
