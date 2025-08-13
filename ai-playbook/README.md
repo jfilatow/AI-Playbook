@@ -1,15 +1,42 @@
 # MYOB AI SDLC Playbook
 
-This playbook provides MYOB Codex guidance into an adapted AI SDLC playbook into a single, MYOB-specific resource.
+This playbook unifies MYOB Codex guidance with an adapted AI SDLC playbook into a single, MYOB-specific resource.
 
-## Structure
-- Getting Started: ai-playbook/pages/getting-started/
-- Generating Requirements: ai-playbook/pages/generating-requirements/
-- Feature Development: ai-playbook/pages/feature-development/
-- Responsible Practices: ai-playbook/pages/responsible-practices/
-- Appendix (Prompt Library, Rules for AI): ai-playbook/pages/appendix/
-- Assets: ai-playbook/assets/
-- Deep-dive MYOB Codex references: ai-playbook/REFERENCES.md
+## Table of Contents
+1. [Welcome](README.md)
+2. [Responsible Practices](pages/responsible-practices/README.md)
+    1. [Ethics](pages/responsible-practices/ethics.md)
+    2. [Sustainability](pages/responsible-practices/sustainability.md)
+    3. [Security](pages/responsible-practices/security.md)
+    4. [Data Privacy & Security](pages/responsible-practices/data-privacy-security.md)
+3. [Getting Started](pages/getting-started/README.md)
+    1. [Workflow](pages/getting-started/workflow.md)
+    2. [The Four Pillars](pages/getting-started/the-four-pillars.md)
+    3. [Mindset](pages/getting-started/ai-working-mindset.md)
+    4. [Project Setup](pages/getting-started/project-setup.md)
+    5. [AI Training Programs](pages/getting-started/ai-training-programs.md)
+    6. [Stakeholder Engagement](pages/getting-started/stakeholder-engagement.md)
+    7. [AI-first Mindset](pages/getting-started/ai-first-mindset.md)
+    8. [Self-Service Capabilities](pages/getting-started/self-service-capabilities.md)
+4. [Generating Requirements](pages/generating-requirements/README.md)
+    1. [Product Requirements](pages/generating-requirements/product-requirements.md)
+    2. [Technical Requirements](pages/generating-requirements/technical-requirements.md)
+5. [Feature Development](pages/feature-development/README.md)
+    1. [Development](pages/feature-development/development.md)
+    2. [Test Driven Development](pages/feature-development/test-driven-development.md)
+    3. [Testing](pages/feature-development/testing.md)
+    4. [Refactoring](pages/feature-development/refactoring.md)
+    5. [Documentation](pages/feature-development/documentation.md)
+    6. [Continuous Improvement](pages/feature-development/continuous-improvement.md)
+    7. [AI-powered Features](pages/feature-development/ai-powered-features.md)
+6. [Appendix](pages/appendix/README.md)
+    1. [Prompt Library](pages/appendix/prompt-library/README.md)
+    2. [Rules for AI](pages/appendix/rules-for-ai/README.md)
+    3. [MYOB-approved AI tools](pages/appendix/MYOB-approved-tools.md)
+    4. [Tools Guidance](pages/appendix/tools-guidance.md)
+    5. [Case Studies](pages/appendix/case-studies.md)
+    6. [Contributing](pages/appendix/CONTRIBUTING.md)
+7. [References](REFERENCES.md)
 
 ## How this integrates with MYOB Codex
-This playbook references detailed standards and practices in . See REFERENCES for direct links.
+This playbook references detailed standards and practices in . See [REFERENCES](REFERENCES.md) for direct links.
