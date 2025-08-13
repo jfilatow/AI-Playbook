@@ -1,6 +1,6 @@
 # Security
 
-This guidance helps you use AI tools securely in government software development.
+This guidance helps you use AI tools securely in software development.
 
 ## Key security risks when using AI
 
@@ -32,11 +32,12 @@ AI-generated code can import packages which have known vulnerabilities or which 
 
 ### How to protect your development environment
 
-Local AI tools like Cursor can expose you to risk in certain circumstances.
+Local AI tools like Cursoroe GitHub Copilot can expose you to risk in certain circumstances.
 
 **Do:**
 - Prevent local user credentials and auth tokens from being exposed to the AI tool (for example with a `.cursorignore` file)
 - Only install AI tool plugins maintained by trusted organisations
+- Only install MCPs maintained by trusted organisations or publishers
 
 **Don't:**
 - Use any untrusted data when writing prompts or user stories that end up in prompts

@@ -1,20 +1,19 @@
 # Sustainability
 
-Balance environmental impact with public value when choosing AI tools for government services.
+Balance environmental impact with customer value when choosing AI tools for building products and services.
 
 ## Why sustainability matters
 
-AI speeds up conservation work and makes public services more accessible. But these benefits must not damage the environment.
+AI speeds up work and makes our product and services more accessible. But these benefits must not damage the environment.
 
-The UK Government expects you to assess environmental impact before making AI decisions and choose less energy-intensive options when possible.
+The MYOB expects you to undestand environmental impact before making AI decisions and choose less energy-intensive options when possible.
 
-## Government requirements
+## MYOB requirements
 
-### UK Government AI Playbook
+### MYOB AI Playbook
 
 Build "safe, secure and robust AI solutions" that remain sustainable throughout their life cycle. AI training and deployment use significant energy and resources.
 
-For more information, see [Artificial Intelligence Playbook for the UK Government](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html "https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html")
 ### Sustainable-by-Design principles
 
 Principle 5: "Take a greener approach to AI and software tools" requires you to:
@@ -23,7 +22,6 @@ Principle 5: "Take a greener approach to AI and software tools" requires you to:
 2. **Use AI only when necessary** - Apply AI tools only when they are the best option and measure their energy use
 3. **Adopt green practices** - Use shared tools, low-carbon data centres, and remove unused software
 
-For more information, see [Greener Service Principles](https://greenerservices.github.io/principles/5-take-a-greener-approach-to-AI-and-software-tools/#)
 
 ## How to make sustainable choices
 

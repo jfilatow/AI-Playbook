@@ -33,7 +33,7 @@ AI tools may process information in ways that create privacy risks.
 
 **Do:**
 - Check what data AI tools collect and how they use it
-- Follow GDPR requirements when you use AI tools
+- Follow best practice data handling requirements when you use AI tools
 - Use privacy-protecting alternatives for personal data
 - Turn on privacy settings in all tools
 
@@ -71,11 +71,11 @@ AI tools use computing resources. Consider environmental costs and use AI tools 
 - Use AI to enhance your skills and critical thinking rather than replace them
 
 ### Public trust
-Be transparent about AI assistance in public-facing services. Consider how AI use affects citizen confidence in government digital services.
+Be transparent about AI assistance in public-facing services. Consider how AI use affects customer confidence in MYOB products and services.
 
 ## Resources
 
-- [Understanding artificial intelligence ethics and safety](https://www.gov.uk/guidance/understanding-artificial-intelligence-ethics-and-safety)
-- [ICO guidance on AI and data protection](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/)
+- [Understanding artificial intelligence ethics](https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-principles)
+- [Australia's Artificial Intelligence Ethics Principles](https://architecture.digital.gov.au/strategy/australias-artificial-intelligence-ethics-principles)
 
 ## [Next -> Sustainability](sustainability.md) 

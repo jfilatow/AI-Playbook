@@ -1,6 +1,6 @@
 # Workflow
 
-The diagram below shows the main steps in this playbook. We've deliberately simplified it. This development workflow follows recognised best practices already used throughout government, with help from AI tools and techniques.
+The diagram below shows the main steps in this playbook. We've deliberately simplified it. This development workflow follows recognised best practices already used throughout MYOB, with help from AI tools and techniques.
 
 ![](attachments/development-workflow-diagram.png)
 
@@ -15,7 +15,7 @@ The diagram below shows the main steps in this playbook. We've deliberately simp
 - **Take requirements and prompt to generate tests** - Generate tests from the same product requirements in the Coding Assistant. This makes sure the business logic defined in the requirements are tested independently from the code generation
 - **Prompt to refactor as necessary** - You can also prompt additional refactoring of the code at this point
 - **Prompt to create or update documentation** - Keep documentation up to date by prompting the Coding Assistant to update documentation based on the changes you've made
-- **Create MR for developer code review** - Generate a Merge Request (MR) in git following traditional development practices. Review each line of code for quality and brevity, making sure that the code to be deployed is production-ready
-- **Merge and deploy** - Once you merge the MR into the main branch, use automated pipeline processes to deploy the code, as per your normal deployment processes
+- **Create PR for developer code review** - Generate a Pull Request (PR) in git following traditional development practices. Review each line of code for quality and brevity, making sure that the code to be deployed is production-ready
+- **Merge and deploy** - Once you merge the PR into the main branch, use automated pipeline processes to deploy the code, as per your normal deployment processes
 
 ## [Next -> The Four Pillars](the-four-pillars.md)

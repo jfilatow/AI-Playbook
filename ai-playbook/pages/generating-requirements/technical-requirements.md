@@ -26,7 +26,7 @@ When your situation requires system interaction design, Use [prompt-sequence-dia
 
 When your situation requires API's, generate clear API documentation using [prompt-api-requirements](../appendix/prompt-library/product/prompt-api-requirements.md) in an AI Assistant. Refine through iterative conversation.
 
-## Create Architectural Decision Records Using AI
+## Create Architectural Decision Records (ADRs) Using AI
 
 Use [prompt-architecture-decision-record](../appendix/prompt-library/product/prompt-architecture-decision-record.md) in an AI Assistant to document key technical choices and their rationale. Refine through iterative conversation.
 

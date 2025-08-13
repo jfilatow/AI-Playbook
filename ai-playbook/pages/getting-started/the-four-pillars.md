@@ -34,7 +34,7 @@ To generate consistent code, four elements must come together as shown in this d
 
 ### 4. Capable Code Generation Model
 
-**Purpose:** Use the most capable LLM model for the task you are running to get good quality results. Not all tasks need advanced models, so select the most cost-effective model that can achieve the outcome you want.
+**Purpose:** Use the most capable LLM model for the task you are running to get good quality results. Not all tasks need advanced thinking models, so select the most cost-effective model that can achieve the outcome you want. Consider thingking models for planning tasks and general models for lower level tasks. 
 
 **Where to create:** The AI IDE tools typically let you select which model to use when prompting the LLM.
 

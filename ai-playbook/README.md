@@ -1,6 +1,6 @@
 # MYOB AI SDLC Playbook
 
-This playbook unifies MYOB Codex guidance with an adapted AI SDLC playbook into a single, MYOB-specific resource.
+This playbook provides MYOB Codex guidance into an adapted AI SDLC playbook into a single, MYOB-specific resource.
 
 ## Structure
 - Getting Started: ai-playbook/pages/getting-started/
