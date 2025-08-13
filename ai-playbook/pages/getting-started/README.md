@@ -6,7 +6,7 @@ This section explains the core concepts of working with AI tools.
 
 **Important:** Enable privacy settings to protect government data. Privacy settings stop your code and data being stored on AI providers' servers. They also prevent your data being used to train AI models.
 
-For information on the appropriate privacy settings for your chosen AI tool, see the [MYOB Tools Guidance](https://MYOB.github.io/ai-sdlc-tool-guidance/)
+For information on the appropriate privacy settings for your chosen AI tool, see the [MYOB Tools Guidance](./tools-guidance.md)
 
 ## What you'll learn
 1. [Workflow](workflow.md) - How the AI development workflow works

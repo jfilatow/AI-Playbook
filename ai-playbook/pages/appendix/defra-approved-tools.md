@@ -1,6 +1,6 @@
-# Allowed Tools for MYOB Pilot
+# MYOB-approved AI tools
 
-Use only AI tools from the [MYOB Tools Guidance](https://MYOB.github.io/ai-sdlc-tool-guidance/){:target="_blank"}. This guidance lists vetted tools for the MYOB AI pilot.
+Use only AI tools from the [MYOB Tools Guidance](./tools-guidance.md){:target="_blank"}. This guidance lists vetted tools for the MYOB AI pilot.
 
 ## Why we have allowed tools
 
