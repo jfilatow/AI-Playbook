@@ -38,10 +38,10 @@ This playbook unifies MYOB Codex guidance with an adapted AI SDLC playbook into 
     6. [Contributing](pages/appendix/CONTRIBUTING.md)
 7. [References](REFERENCES.md)
 
-## How this integrates with MYOB Codex
-This playbook references detailed standards and practices in . See [REFERENCES](REFERENCES.md) for direct links.
+## Standards ## How this integrates with MYOB Codex Practices Overview
+This playbook contains all MYOB standards and practices. See [REFERENCES](REFERENCES.md) for internal links.
 
-## Codex Sections (migrated)
+## Standards ## Codex Sections (migrated) Practices
 8. [Delivery](pages/delivery/README.md)
 9. [APIs & Integration](pages/apis/README.md)
 10. [Operations](pages/operations/README.md)

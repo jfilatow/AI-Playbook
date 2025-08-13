@@ -52,3 +52,7 @@ For definitions of commonly used terms, please refer to the [Glossary](../glossa
 ## Further info or feedback
 
 Please email us at <codex@myob.com> or contact us on slack: [#sig-tech-codex](https://myob.slack.com/archives/C02N8ADPGUX)
+
+## Canonical links
+- Test Driven Development: ../feature-development/test-driven-development.md
+- Refactoring: ../feature-development/refactoring.md

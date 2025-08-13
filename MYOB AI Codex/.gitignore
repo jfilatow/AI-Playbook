@@ -1,5 +1,0 @@
-app/book
-app/src/security/test_standards
-# for markdown -> Confluence experiments
-.token 
-.DS_Store
