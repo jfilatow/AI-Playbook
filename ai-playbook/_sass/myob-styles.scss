@@ -1,0 +1,117 @@
+// MYOB colour variables (adapted)
+:root {
+  // MYOB brand
+  --myob-purple: #7F3F98;
+  --myob-dark-purple: #5c2d70;
+  --myob-light-purple: #b185c7;
+  --myob-black: #0b0c0c;
+  --myob-grey-900: #505a5f;
+  --myob-grey-500: #b1b4b6;
+  --myob-grey-100: #f3f2f1;
+  --myob-white: #ffffff;
+}
+
+// Theme variables
+:root[data-theme=light] {
+  --bg-color: var(--myob-white);
+  --text-color: var(--myob-black);
+  --link-color: var(--myob-purple);
+  --link-hover-color: var(--myob-dark-purple);
+  --nav-bg: var(--myob-white);
+  --border-color: var(--myob-grey-500);
+  --header-color: var(--myob-purple);
+}
+
+:root[data-theme=dark] {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --link-color: var(--myob-light-purple);
+  --link-hover-color: var(--myob-purple);
+  --nav-bg: #2d2d2d;
+  --border-color: #404040;
+  --header-color: var(--myob-light-purple);
+  --code-bg-color: var(--myob-grey-100);
+}
+
+// Global overrides
+body { color: var(--text-color); background-color: var(--bg-color); margin: 0; padding: 0; overflow-x: hidden; font-size: 0.95rem; display: flex; justify-content: center; width: 100%; }
+
+h1, h2, h3, h4, h5, h6 { color: var(--header-color); margin-bottom: 1rem; }
+
+a:link, a:visited { color: var(--link-color); }
+a:hover, a:focus { color: var(--link-hover-color); }
+a:active { color: var(--text-color); }
+
+.theme-toggle { position: absolute; top: 10px; right: 10px; z-index: 1000; cursor: pointer; display: inline-block; margin: 1rem 0; }
+.theme-toggle-switch { display: inline-block; background: var(--myob-grey-100); border-radius: 16px; width: 58px; height: 32px; position: relative; vertical-align: middle; transition: background 0.25s; }
+.theme-toggle-switch:before { content: ; display: block; background: linear-gradient(to bottom, var(--myob-white) 0%, var(--myob-grey-100) 100%); border-radius: 50%; box-shadow: 0 0 0 1px rgba(0,0,0,0.25); width: 24px; height: 24px; position: absolute; top: 4px; left: 4px; transition: left 0.25s; z-index: 2; }
+.theme-toggle-switch .toggle-icon { position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; }
+.theme-toggle-switch .toggle-icon.light { left: 6px; color: var(--myob-white); }
+.theme-toggle-switch .toggle-icon.dark { right: 6px; color: var(--myob-white); }
+.theme-toggle:hover .theme-toggle-switch:before { background: linear-gradient(to bottom, var(--myob-white) 0%, var(--myob-white) 100%); box-shadow: 0 0 0 1px rgba(0,0,0,0.5); }
+.theme-toggle-checkbox:checked + .theme-toggle-switch { background: var(--myob-purple); }
+.theme-toggle-checkbox { position: absolute; visibility: hidden; }
+
+.wrapper { display: flex; flex-direction: row; min-height: 100vh; background-color: var(--bg-color); width: 100%; max-width: 1400px; overflow-x: hidden; margin: 0 auto; padding-left: 2rem; padding-right: 2rem; }
+.navigation { width: 270px; min-width: 200px; max-width: 30vw; padding: 2rem 1.5rem 2rem 0.5rem; background: var(--nav-bg); border-right: 1px solid var(--border-color); overflow-x: auto; }
+.navigation .logo-container { margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color); }
+.navigation .logo-container img { max-width: 180px; height: auto; display: block; }
+
+.content { flex: 1; padding-top: 2rem; padding-left: 3rem; padding-right: 3rem; overflow-y: auto; overflow-x: auto; background-color: var(--bg-color); width: 100%; max-width: 100%; box-sizing: border-box; word-wrap: break-word; word-break: break-word; margin: 0 auto; }
+
+section { float: none; }
+.site-nav { margin-top: 20px; margin-bottom: 2rem; padding-bottom: 4rem; }
+.site-nav h2 { color: var(--header-color); font-size: 16px; margin-bottom: 1rem; }
+.site-nav ul { list-style: none; padding-left: 0; margin-left: 0; }
+.site-nav ul ul { padding-left: 20px; margin-bottom: 0; }
+.site-nav li { margin-bottom: 5px; }
+.site-nav li li { margin-bottom: 3px; font-size: 13px; }
+.site-nav a { color: var(--link-color); text-decoration: none; }
+.site-nav a:hover { color: var(--link-hover-color); text-decoration: underline; }
+
+header { margin-bottom: 2rem; position: relative; }
+header h1 { margin-top: 0; margin-bottom: 1rem; font-size: 1.4rem; }
+header h1 a { color: inherit; text-decoration: none; }
+header h1 a:hover { color: var(--link-hover-color); text-decoration: underline; }
+header p { margin: 0; font-size: 0.85rem; }
+
+footer { position: relative; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-color); font-size: 0.8rem; color: var(--text-color); }
+.govuk-footer__meta { max-width: 100%; overflow-x: hidden; border-top: 4px solid var(--myob-grey-900); }
+
+@media print, screen and (max-width: 960px) {
+  .wrapper { flex-direction: column; width: 100%; overflow-x: hidden; margin: 0 auto; max-width: 960px; padding-left: 1.5rem; padding-right: 1.5rem; }
+  .navigation { width: auto; max-width: 100%; min-width: 0; border-right: none; border-bottom: 1px solid var(--border-color); overflow-x: auto; margin: 0 auto; }
+  .content { padding: 1rem; max-width: 100%; width: 100%; overflow-x: auto; margin: 0 auto; }
+}
+
+@media print, screen and (max-width: 480px) {
+  body { justify-content: flex-start; }
+  .wrapper { max-width: 100%; padding-left: 1rem; padding-right: 1rem; }
+  .navigation, .content { padding: 0.5rem; width: 100%; margin: 0 auto; }
+  .content { padding-left: 0.5rem; padding-right: 0.5rem; overflow-x: hidden; }
+  h1 { font-size: 1.2rem; }
+  h2 { font-size: 1.1rem; }
+  h3 { font-size: 1rem; }
+  .site-nav li { margin-bottom: 3px; }
+  .site-nav li li { margin-bottom: 2px; }
+}
+
+hr { border-color: var(--border-color); }
+.logo-container img.logo-light { display: block; }
+.logo-container img.logo-dark { display: none; }
+[data-theme=dark] .logo-container img.logo-light { display: none; }
+[data-theme=dark] .logo-container img.logo-dark { display: block; }
+
+code { padding: 0; background-color: transparent; color: var(--text-color); font-family: monospace; white-space: pre-wrap; word-wrap: break-word; }
+[data-theme=dark] pre code { color: var(--myob-black); }
+
+h2 code { padding: 0; background-color: transparent; color: var(--header-color); font-family: monospace; }
+
+// Footer styles (kept minimal)
+.govuk-footer { background-color: var(--myob-grey-100); padding: 20px 0; font-family: Arial, sans-serif; font-size: 16px; line-height: 1.5; }
+.govuk-width-container { max-width: 960px; margin: 0 auto; padding: 0 15px; }
+.govuk-footer__meta { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; border-top: 1px solid var(--myob-grey-500); padding-top: 15px; margin-top: 15px; padding-bottom: 15px; }
+.govuk-footer__meta-item { flex: 1; min-width: 250px; }
+.govuk-footer__meta-item--grow { flex-grow: 2; }
+.govuk-footer__link { color: var(--link-color); text-decoration: none; }
+.govuk-footer__link:hover { color: var(--link-hover-color); text-decoration: underline; }
