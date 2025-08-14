@@ -4,7 +4,8 @@
 - Use secret management; never commit keys; prefer env-based injection
 - Observe and alert on misuse; sanitize logs
 
-Codex references:
-- Classification: ../../MYOB%20AI%20Codex/content/security/information-classification.md
-- Security overview: ../../MYOB%20AI%20Codex/content/security/README.md
-- Logging standards: ../../MYOB%20AI%20Codex/content/production-operations/logging.md
+
+
+- Classification: ../standards/security.md
+- Security overview: ../responsible-practices/security.md
+- Logging standards: ../operations/logging.md

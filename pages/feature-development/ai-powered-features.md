@@ -5,4 +5,4 @@
 - Human-in-the-loop where outcomes impact finances or compliance
 - Observe post-release; roll back or disable on regressions
 
-See Codex APIs & Security: ../../MYOB%20AI%20Codex/content/apis-and-integration/README.md and ../../MYOB%20AI%20Codex/content/security/README.md
+See Codex APIs & Security: ../apis/README.md and ../responsible-practices/security.md

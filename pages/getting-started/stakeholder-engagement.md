@@ -5,4 +5,4 @@
 - Track decisions in ADRs; share updates widely
 - Provide opt-outs and escalation paths
 
-See Codex governance: ../../MYOB%20AI%20Codex/content/process-and-governance/README.md
+See Codex governance: ../governance/README.md

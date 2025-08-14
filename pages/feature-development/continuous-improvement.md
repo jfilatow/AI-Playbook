@@ -6,4 +6,4 @@ Create feedback loops on AI-assisted work:
 - Metrics: p50/p95 cycle time deltas, defect escape rate, security findings
 - Action: update prompts, patterns, and tools based on data
 
-See Codex: ../../MYOB%20AI%20Codex/content/production-operations/system-health.md and ../../MYOB%20AI%20Codex/content/production-operations/logging.md
+See Codex: ../operations/system-health.md and ../operations/logging.md
