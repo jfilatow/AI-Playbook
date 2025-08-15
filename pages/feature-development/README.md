@@ -9,11 +9,12 @@ This section outlines a streamlined workflow for integrating AI into the softwar
 - Configure proper privacy settings. This keeps your sensitive information safe when working with AI tools. For information on approved AI tools and their configuration, see the [MYOB-approved AI tools](../appendix/MYOB-approved-tools.md)
 
 ## Core Development Workflow
-1. [Development](development.md) - Develop the solution iteratively, using AI for implementation
-2. [Test Driven Development](test-driven-development.md) - TDD using AI tools
-3. [Testing](testing.md) - Unit testing and journey testing
-4. [Refactoring](refactoring.md) - Refactor once feature complete
-5. [Documentation](documentation.md) - Update all relevant documentation to reflect changes, ensuring clarity and alignment with project goals. Use documentation to give feedback to the AI tools for future iterations
+1. [Context Engineering and Spec Driven Development](context-engineering-spec-driven-development.md) - Systematic information curation and specification-driven approach for AI-assisted development
+2. [Development](development.md) - Develop the solution iteratively, using AI for implementation
+3. [Test Driven Development](test-driven-development.md) - TDD using AI tools
+4. [Testing](testing.md) - Unit testing and journey testing
+5. [Refactoring](refactoring.md) - Refactor once feature complete
+6. [Documentation](documentation.md) - Update all relevant documentation to reflect changes, ensuring clarity and alignment with project goals. Use documentation to give feedback to the AI tools for future iterations
 
 ## AI Development Frameworks and Orchestration
 

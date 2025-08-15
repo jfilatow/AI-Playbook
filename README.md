@@ -41,6 +41,7 @@ The MYOB AI SDLC Playbook provides comprehensive guidance for integrating artifi
 ### 5. [Feature Development](pages/feature-development/README.md)
 **Building features with AI assistance** - End-to-end feature development processes using AI tools for coding, testing, and documentation.
 
+- **[Context Engineering and Spec Driven Development](pages/feature-development/context-engineering-spec-driven-development.md)** - Systematic information curation and specification-driven approach inspired by Andrej Karpathy's work
 - **[Development](pages/feature-development/development.md)** - AI-assisted coding practices, code generation techniques, and quality assurance
 - **[Test Driven Development](pages/feature-development/test-driven-development.md)** - TDD methodologies enhanced with AI test generation and validation
 - **[Testing](pages/feature-development/testing.md)** - Comprehensive testing strategies using AI for test creation and execution
