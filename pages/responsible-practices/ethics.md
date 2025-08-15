@@ -37,7 +37,7 @@ AI tools may process information in ways that create privacy risks.
 - Use privacy-protecting alternatives for personal data
 - Turn on privacy settings in all tools
 
-For information on the appropriate privacy settings for your chosen AI tool, see the [MYOB Tools Guidance](./tools-guidance.md)
+For information on approved AI tools and their privacy settings, see the [MYOB-approved AI tools](../appendix/MYOB-approved-tools.md)
 
 **Don't:**
 - Put sensitive or classified data into public AI tools

@@ -70,7 +70,6 @@ pages/appendix/MYOB-approved-tools.md
 pages/appendix/prompt-library
 pages/appendix/README.md
 pages/appendix/rules-for-ai
-pages/appendix/tools-guidance.md
 pages/assets
 pages/assets/API-Design
 pages/assets/API-Security

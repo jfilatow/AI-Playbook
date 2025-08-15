@@ -12,7 +12,7 @@ Install a coding assistant from the [Allowed Tools for MYOB Pilot](../appendix/M
 
 **Important:** You must enable privacy settings to protect MYOB customer data and IP. Privacy settings stop your code and data being stored on AI providers' servers. They also prevent your data being used to train AI models.
 
-For information on the appropriate privacy settings for your chosen AI tool, see the [MYOB Tools Guidance](./tools-guidance.md)
+For information on approved AI tools and their privacy settings, see the [MYOB-approved AI tools](../appendix/MYOB-approved-tools.md)
 
 ### 3. Add AI rules files
 

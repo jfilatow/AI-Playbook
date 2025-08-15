@@ -10,9 +10,9 @@
 
 ## Overview
 
-Use only AI tools that have been approved through MYOB's evaluation process. For detailed guidance on approved tools and their usage, refer to the [MYOB Tools Guidance](./tools-guidance.md).
+Use only AI tools that have been approved through MYOB's evaluation process. For detailed guidance on approved tools and their usage.
 
-This page provides the definitive list of AI tools that have been vetted and approved for use within MYOB's development environment.
+This page provides the definitive list of AI Engineering tools that have been vetted and approved for use within MYOB's development environment.
 
 ## Currently Approved AI Tools
 
@@ -34,21 +34,13 @@ This page provides the definitive list of AI tools that have been vetted and app
 
 ### Documentation and Content Creation
 
-#### ChatGPT (Enterprise)
+#### ChatGPT (Teams)
 - **Status**: Approved for specific use cases
 - **Description**: AI assistant for documentation, requirements gathering, and general productivity
 - **Use Cases**: Documentation writing, requirement analysis, meeting summaries
 - **Access**: Through approved enterprise accounts only
 - **Restrictions**: No proprietary code or sensitive data in prompts
 
-### Code Analysis and Security
-
-#### CodeQL (GitHub Advanced Security)
-- **Status**: Approved and recommended
-- **Description**: Semantic code analysis engine for finding security vulnerabilities
-- **Use Cases**: Security scanning, vulnerability detection, code quality analysis
-- **Access**: Integrated with GitHub Enterprise
-- **Integration**: Part of CI/CD pipeline security checks
 
 ## Why We Have Approved Tools
 
@@ -139,7 +131,6 @@ Your request will undergo review and approval from:
 - **Procurement Team**: License management and vendor relations
 
 ### Documentation and Training
-- **Tool-Specific Guidance**: [MYOB Tools Guidance](./tools-guidance.md)
 - **Security Practices**: [Security Guidelines](../responsible-practices/security.md)
 - **Data Privacy**: [Data Privacy & Security](../responsible-practices/data-privacy-security.md)
 
@@ -152,10 +143,3 @@ Your request will undergo review and approval from:
 - **Security Incidents**: Contact Security team immediately via Slack or IT service desk
 - **Compliance Issues**: Reach out to Cyber GRC team
 - **Tool Outages**: Report through standard IT support channels
-
----
-
-**Last Updated**: Generated on demand  
-**Review Cycle**: Quarterly review of approved tools list  
-**Owner**: Digital Enablement Team  
-**Approver**: Cyber GRC Team
