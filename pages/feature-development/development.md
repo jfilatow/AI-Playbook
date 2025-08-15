@@ -58,3 +58,7 @@ Create a new git branch for your feature.
 **Match scope to complexity**: Give the AI more specific tasks as codebases grow.
 
 ## [Next -> Test Driven Development](test-driven-development.md)
+
+---
+
+**Previous:** [← Feature Development](README.md) | **Next:** [Test Driven Development →](test-driven-development.md)

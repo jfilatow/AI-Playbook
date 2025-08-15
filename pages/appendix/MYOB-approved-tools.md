@@ -89,7 +89,7 @@ Using approved tools ensures:
 To request approval for an AI tool not currently on the approved list, follow the MYOB Software Request process:
 
 ### Pre-Request Checklist
-1. **Check Existing Options**: Search the Company Portal (Windows), Kandji Self-Service (macOS), or consult with the Digital Enablement team
+1. **Check Existing Options**: Search the Company Portal (via Glean), Kandji Self-Service (macOS), or consult with the Digital Enablement team
 2. **Review Policies**: Ensure compliance with MYOB's Procurement Policy and Information Security Policies
 3. **Business Justification**: Prepare a clear business case explaining why existing tools are insufficient
 
@@ -143,3 +143,7 @@ Your request will undergo review and approval from:
 - **Security Incidents**: Contact Security team immediately via Slack or IT service desk
 - **Compliance Issues**: Reach out to Cyber GRC team
 - **Tool Outages**: Report through standard IT support channels
+
+---
+
+**Previous:** [← Rules For Ai](rules-for-ai/README.md) | **Next:** [Case Studies →](case-studies.md)

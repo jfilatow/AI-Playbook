@@ -6,3 +6,7 @@
 - Observe post-release; roll back or disable on regressions
 
 See Codex APIs & Security: ../apis/README.md and ../responsible-practices/security.md
+
+---
+
+**Previous:** [← Continuous Improvement](continuous-improvement.md) | **Next:** [Apis →](../apis/README.md)

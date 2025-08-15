@@ -171,3 +171,7 @@ The framing introduced here helps guide how domains expose and consume capabilit
 
 
 [daisy]:https://myobconfluence.atlassian.net/wiki/spaces/DAA/pages/10374250530
+
+---
+
+**Previous:** [← Ai Powered Features](../feature-development/ai-powered-features.md) | **Next:** [Api Design →](api-design/README.md)

@@ -5,3 +5,7 @@
 - Shared libraries of prompts, patterns, and components
 
 Start with safety and customer value; expand based on measured impact.
+
+---
+
+**Previous:** [← Stakeholder Engagement](stakeholder-engagement.md) | **Next:** [Self Service Capabilities →](self-service-capabilities.md)

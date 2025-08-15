@@ -57,3 +57,7 @@ When your situation requires user stories, use [prompt-user-story-creation](../a
 When your situation requires formal documentation, for example a new epic, use AI Assistants to generate Product Requirements Documents (PRDs) containing requirements, features and user stories together using [prompt-combined-requirements-features-stories](../appendix/prompt-library/product/prompt-combined-requirements-features-stories.md). Refine through iterative conversation.
 
 ## [Next: Technical requirements](technical-requirements.md)
+
+---
+
+**Previous:** [← Generating Requirements](README.md) | **Next:** [Technical Requirements →](technical-requirements.md)

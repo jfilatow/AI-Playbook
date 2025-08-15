@@ -52,3 +52,7 @@ The following links provide further guidance on API design:
 ## Further info or feedback
 
 Please email us at <codex@myob.com> or contact us on slack: [#sig-tech-codex](https://myob.slack.com/archives/C02N8ADPGUX)
+
+---
+
+**Previous:** [← Apis](../README.md) | **Next:** [Api Observability →](../api-observability/README.md)

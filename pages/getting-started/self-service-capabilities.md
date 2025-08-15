@@ -5,3 +5,7 @@
 - Guardrails: privacy, rate limits, abuse monitoring, A/B testing
 
 Measure deflection rate and CSAT.
+
+---
+
+**Previous:** [← Ai First Mindset](ai-first-mindset.md) | **Next:** [Generating Requirements →](../generating-requirements/README.md)

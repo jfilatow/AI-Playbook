@@ -101,3 +101,7 @@ These factors have been expanded upon in the chapters below.
 ## Further info or feedback
 
 Please email us at <codex@myob.com> or contact us on Slack: [#sig-tech-codex](https://myob.slack.com/archives/C02N8ADPGUX)
+
+---
+
+**Previous:** [← Api Observability](../api-observability/README.md) | **Next:** [Api Discoverability →](../api-discoverability/README.md)

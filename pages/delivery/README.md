@@ -56,3 +56,7 @@ Please email us at <codex@myob.com> or contact us on slack: [#sig-tech-codex](ht
 ## Canonical links
 - Test Driven Development: ../feature-development/test-driven-development.md
 - Refactoring: ../feature-development/refactoring.md
+
+---
+
+**Previous:** [← Documentation](../apis/documentation.md) | **Next:** [Operations →](../operations/README.md)

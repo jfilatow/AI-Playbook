@@ -80,4 +80,4 @@ Be transparent about AI assistance in public-facing services. Consider how AI us
 
 ---
 
-**Previous:** [← Responsible Practices](README.md) | **Next:** [Sustainability →](sustainability.md) 
+**Previous:** [← Responsible Practices](README.md) | **Next:** [Sustainability →](sustainability.md)

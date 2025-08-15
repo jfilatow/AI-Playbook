@@ -46,3 +46,7 @@ Principle 5: "Take a greener approach to AI and software tools" requires you to:
 ---
 
 **Previous:** [← Ethics](ethics.md) | **Next:** [Security →](security.md)
+
+---
+
+**Previous:** [← Ethics](ethics.md) | **Next:** [Security →](security.md)

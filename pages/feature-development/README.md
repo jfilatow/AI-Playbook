@@ -20,3 +20,7 @@ This section outlines a streamlined workflow for integrating AI into the softwar
 - [Continuous Improvement](continuous-improvement.md)
 
 - [AI-powered Features](ai-powered-features.md)
+
+---
+
+**Previous:** [← Technical Requirements](../generating-requirements/technical-requirements.md) | **Next:** [Development →](development.md)

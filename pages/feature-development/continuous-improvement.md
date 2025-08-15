@@ -7,3 +7,7 @@ Create feedback loops on AI-assisted work:
 - Action: update prompts, patterns, and tools based on data
 
 See Codex: ../operations/system-health.md and ../operations/logging.md
+
+---
+
+**Previous:** [← Documentation](documentation.md) | **Next:** [Ai Powered Features →](ai-powered-features.md)

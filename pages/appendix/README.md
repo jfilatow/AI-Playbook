@@ -24,3 +24,7 @@ How to contribute to this playbook and help improve it for the MYOB community.
 
 The **Contributing** guide shows you how to share your own prompts, rules, and improvements with the wider MYOB SDLC community. 
 - [Case Studies](case-studies.md)
+
+---
+
+**Previous:** [← Standards](../standards/README.md) | **Next:** [Prompt Library →](prompt-library/README.md)

@@ -12,3 +12,7 @@ Some examples of rules for the programming languages and standards used within M
 
 ### Python
 - [Python Cursor Rules Files - Backend](python/python-cursorrules-backend.md)
+
+---
+
+**Previous:** [← Prompt Library](../prompt-library/README.md) | **Next:** [Myob Approved Tools →](../MYOB-approved-tools.md)

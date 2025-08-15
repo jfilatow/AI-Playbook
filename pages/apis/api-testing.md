@@ -119,3 +119,7 @@ The following links provide further guidance on API testing:
 ## Further info or feedback
 
 Please email us at <codex@myob.com> or contact us on Slack: [#sig-tech-codex](https://myob.slack.com/archives/C02N8ADPGUX)
+
+---
+
+**Previous:** [← Api Discoverability](api-discoverability/README.md) | **Next:** [Documentation →](documentation.md)

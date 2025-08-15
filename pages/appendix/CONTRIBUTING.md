@@ -79,4 +79,8 @@ If you have questions about contributing or need help:
 1. Check existing issues to see if someone has already answered your question
 2. Create a new issue with the "question" label if you need more help
 
-Thank you for helping make the MYOB AI SDLC Playbook better for everyone! 
+Thank you for helping make the MYOB AI SDLC Playbook better for everyone!
+
+---
+
+**Previous:** [← Case Studies](case-studies.md)

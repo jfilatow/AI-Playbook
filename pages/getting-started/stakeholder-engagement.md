@@ -6,3 +6,7 @@
 - Provide opt-outs and escalation paths
 
 See Codex governance: ../governance/README.md
+
+---
+
+**Previous:** [← Ai Training Programs](ai-training-programs.md) | **Next:** [Ai First Mindset →](ai-first-mindset.md)

@@ -128,3 +128,7 @@ Whenever users are having issues connecting to APIs, one common question is, "Is
 ## Further info or feedback
 
 Please email us at <codex@myob.com> or contact us on slack: [#sig-tech-codex](https://myob.slack.com/archives/C02N8ADPGUX)
+
+---
+
+**Previous:** [← Api Testing](api-testing.md) | **Next:** [Delivery →](../delivery/README.md)

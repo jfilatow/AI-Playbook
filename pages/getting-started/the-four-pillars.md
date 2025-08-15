@@ -61,3 +61,7 @@ Read and understand the detailed [Prompting Guidance](../appendix/prompt-library
 ---
 
 **Previous:** [← Workflow](workflow.md) | **Next:** [Mindset →](ai-working-mindset.md)
+
+---
+
+**Previous:** [← Workflow](workflow.md) | **Next:** [Ai Working Mindset →](ai-working-mindset.md)

@@ -35,3 +35,7 @@ This library provides a selection of prompts used by authors. These examples ser
 
 ### Learning
 - [Add Code Knowledge and Teaching](learning/prompt-add-coding-knowledge-teaching.md)
+
+---
+
+**Previous:** [← Appendix](../README.md) | **Next:** [Rules For Ai →](../rules-for-ai/README.md)

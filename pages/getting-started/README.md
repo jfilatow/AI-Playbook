@@ -38,4 +38,4 @@ Follow this sequence to build your AI development skills:
 
 ---
 
-**Previous:** [← Data Privacy & Security](../responsible-practices/data-privacy-security.md) | **Next:** [Workflow →](workflow.md)
+**Previous:** [← Data Privacy Security](../responsible-practices/data-privacy-security.md) | **Next:** [Workflow →](workflow.md)

@@ -57,4 +57,6 @@ Ready to begin? Start with the [Responsible Practices](pages/responsible-practic
 
 ---
 
+---
+
 **Next:** [Responsible Practices →](pages/responsible-practices/README.md)

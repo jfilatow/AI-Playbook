@@ -41,3 +41,7 @@ For this chapter, the key topics covered are:
 
 ## Further info or feedback
 Please email us at codex@myob.com or contact us on slack: [#sig-tech-codex](https://myob.slack.com/archives/C02N8ADPGUX)
+
+---
+
+**Previous:** [← Operations](../operations/README.md) | **Next:** [Data →](../data/README.md)

@@ -17,3 +17,7 @@ We use data to make better decisions, improve operations, and create new opportu
      * [Types of Data products](./identifying-data-products.md#types-of-data-products)
 3. The next section presents a framework for [designing data products](./designing-data-product.md).
      * [Designing a data product](./designing-data-product.md)
+
+---
+
+**Previous:** [← Governance](../governance/README.md) | **Next:** [Cloud →](../cloud/README.md)

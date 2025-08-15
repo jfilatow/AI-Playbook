@@ -19,3 +19,7 @@ We split requirements into two main categories, both of which are necessary for 
 **[Technical Requirements](technical-requirements.md)** - Technical artefacts including data models, APIs and architecture diagrams that define how the system should work
 
 ## [Next: product requirements](product-requirements.md)
+
+---
+
+**Previous:** [← Self Service Capabilities](../getting-started/self-service-capabilities.md) | **Next:** [Product Requirements →](product-requirements.md)

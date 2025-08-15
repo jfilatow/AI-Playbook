@@ -7,3 +7,7 @@ Build AI capability via structured enablement:
 - Learning paths: beginner → practitioner → advanced
 
 Measure outcomes: adoption, quality, speed, security. See ../feature-development/continuous-improvement.md
+
+---
+
+**Previous:** [← Project Setup](project-setup.md) | **Next:** [Stakeholder Engagement →](stakeholder-engagement.md)

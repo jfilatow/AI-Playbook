@@ -29,3 +29,7 @@ Use GitHub (opens in new tab) to manage all your project artifacts centrally. Yo
 You don't want to use GitHub access, you can use another approach that suits your team.
 
 ## [Next -> Generating Requirements](../generating-requirements/)
+
+---
+
+**Previous:** [← Ai Working Mindset](ai-working-mindset.md) | **Next:** [Ai Training Programs →](ai-training-programs.md)
