@@ -48,3 +48,13 @@ This playbook is the single source of truth for MYOB developers. It combines SDL
     3. [MYOB‑approved AI tools](pages/appendix/MYOB-approved-tools.md)
     4. [Case Studies](pages/appendix/case-studies.md)
     5. [Contributing](pages/appendix/CONTRIBUTING.md)
+
+---
+
+## Getting Started
+
+Ready to begin? Start with the [Responsible Practices](pages/responsible-practices/README.md) to understand the ethical and security foundations, then move on to [Getting Started](pages/getting-started/README.md) for practical implementation.
+
+---
+
+**Next:** [Responsible Practices →](pages/responsible-practices/README.md)

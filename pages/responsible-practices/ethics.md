@@ -78,4 +78,6 @@ Be transparent about AI assistance in public-facing services. Consider how AI us
 - [Understanding artificial intelligence ethics](https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-principles)
 - [Australia's Artificial Intelligence Ethics Principles](https://architecture.digital.gov.au/strategy/australias-artificial-intelligence-ethics-principles)
 
-## [Next -> Sustainability](sustainability.md) 
+---
+
+**Previous:** [← Responsible Practices](README.md) | **Next:** [Sustainability →](sustainability.md) 

@@ -37,4 +37,12 @@ Principle 5: "Take a greener approach to AI and software tools" requires you to:
 - Document sustainability decisions to help other teams make similar choices
 - Share trained models across government departments to avoid duplicate work
 
-## [Next -> Security](security.md)
+## Resources
+
+- [Green Software Foundation](https://greensoftware.foundation/) - Industry standards for sustainable software
+- [AI and Climate Change](https://www.nature.com/articles/s41558-022-01377-7) - Research on AI's environmental impact
+- [Carbon Footprint of Machine Learning](https://arxiv.org/abs/1906.02243) - Academic research on ML energy consumption
+
+---
+
+**Previous:** [← Ethics](ethics.md) | **Next:** [Security →](security.md)
