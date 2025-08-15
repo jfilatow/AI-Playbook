@@ -142,35 +142,127 @@ specification = {
 Cursor rules and GitHub Copilot instructions represent practical implementations of context engineering, providing AI tools with the contextual information needed to generate appropriate code.
 
 **Cursor Rules Example:**
+```markdown
+---
+description: MYOB TypeScript Standards
+globs: "**/*.{ts,tsx}"
+alwaysApply: true
+---
+
+# MYOB TypeScript Development Standards
+
+## Coding Style
+- Use strict TypeScript with explicit types
+- Prefer composition over inheritance  
+- Use descriptive variable and function names
+
+## Architecture
+- Clean architecture with dependency injection
+- Microservices with event-driven communication
+- Separate business logic from infrastructure concerns
+
+## Testing
+- Jest for unit tests, Playwright for E2E
+- Test coverage minimum 80% for business logic
+- Use test doubles for external dependencies
+
+## Error Handling
+- Use Result pattern for error handling
+- Never throw exceptions in business logic
+- Always handle async operations with proper error catching
+
+## Examples
+
+### Good TypeScript Code
 ```typescript
-// .cursorrules - Context engineering for AI development
-{
-  "rules": [
-    {
-      "description": "MYOB TypeScript Standards",
-      "context": {
-        "coding_style": "Use strict TypeScript with explicit types",
-        "architecture": "Clean architecture with dependency injection",
-        "testing": "Jest for unit tests, Playwright for E2E",
-        "error_handling": "Use Result pattern for error handling"
-      },
-      "patterns": [
-        "Always use async/await over Promises.then()",
-        "Prefer composition over inheritance",
-        "Use descriptive variable and function names"
-      ]
-    },
-    {
-      "description": "MYOB Security Context",
-      "context": {
-        "data_classification": "Handle customer financial data as confidential",
-        "authentication": "Use JWT tokens with 1-hour expiry",
-        "authorization": "Implement role-based access control",
-        "logging": "Log all authentication attempts and data access"
-      }
+// Good: Explicit types and descriptive names
+async function processCustomerTransaction(
+  customerId: string, 
+  transaction: TransactionData
+): Promise<Result<ProcessedTransaction, TransactionError>> {
+  try {
+    const customer = await customerService.findById(customerId);
+    if (!customer) {
+      return Result.error(new CustomerNotFoundError(customerId));
     }
-  ]
+    
+    const processed = await transactionProcessor.process(transaction);
+    return Result.success(processed);
+  } catch (error) {
+    return Result.error(new TransactionProcessingError(error.message));
+  }
 }
+```
+
+### Bad TypeScript Code
+```typescript
+// Bad: Any types, unclear names, throwing exceptions
+async function process(id: any, data: any): Promise<any> {
+  const c = await getCustomer(id); // What is 'c'?
+  if (!c) throw new Error("Not found"); // Don't throw in business logic
+  return processData(data); // No error handling
+}
+```
+```
+
+```markdown
+---
+description: MYOB Security Context
+globs: "**/*.{ts,tsx,js,jsx}"
+alwaysApply: true
+---
+
+# MYOB Security Guidelines
+
+## Data Classification
+- Handle customer financial data as **confidential**
+- Never log sensitive data (passwords, tokens, financial amounts)
+- Use encryption for data at rest and in transit
+
+## Authentication & Authorization
+- Use JWT tokens with 1-hour expiry
+- Implement role-based access control (RBAC)
+- Require MFA for administrative functions
+
+## Security Practices
+- Log all authentication attempts and data access
+- Validate all inputs using schema validation
+- Use parameterized queries to prevent SQL injection
+- Implement rate limiting on all public APIs
+
+## Examples
+
+### Secure API Endpoint
+```typescript
+@Post('/transactions')
+@UseGuards(JwtAuthGuard, RoleGuard)
+@Roles('user', 'admin')
+async createTransaction(
+  @Body() dto: CreateTransactionDto,
+  @CurrentUser() user: AuthenticatedUser
+): Promise<TransactionResponse> {
+  // Validate input
+  const validation = await this.validator.validate(dto);
+  if (!validation.isValid) {
+    throw new BadRequestException(validation.errors);
+  }
+  
+  // Check authorization
+  if (!this.authService.canAccessAccount(user, dto.accountId)) {
+    throw new ForbiddenException();
+  }
+  
+  // Log the action (without sensitive data)
+  this.auditLogger.log({
+    action: 'CREATE_TRANSACTION',
+    userId: user.id,
+    accountId: dto.accountId,
+    timestamp: new Date()
+  });
+  
+  return this.transactionService.create(dto, user);
+}
+```
 ```
 
 **GitHub Copilot Instructions:**
@@ -656,63 +748,208 @@ class ContextProvider {
 ### Cursor Rules Enhancement
 
 **Advanced Cursor Rules with Context Engineering**
-```json
-{
-  "version": "2.0",
-  "context_engineering": {
-    "enabled": true,
-    "layers": [
-      {
-        "name": "myob_global",
-        "priority": 1,
-        "context": {
-          "company": "MYOB",
-          "domain": "Financial software for SMBs",
-          "coding_standards": "TypeScript strict mode",
-          "architecture": "Microservices with event sourcing"
-        }
-      },
-      {
-        "name": "project_specific",
-        "priority": 2,
-        "context": {
-          "project_name": "Customer Onboarding v2",
-          "tech_stack": ["React", "Node.js", "PostgreSQL"],
-          "security_requirements": "GDPR compliant",
-          "performance_targets": "< 200ms API response"
-        }
-      }
-    ],
-    "dynamic_context": {
-      "file_analysis": true,
-      "import_analysis": true,
-      "dependency_context": true,
-      "git_context": true
-    }
-  },
-  "rules": [
-    {
-      "trigger": "new_component",
-      "context_requirements": [
-        "component_purpose",
-        "props_interface",
-        "styling_approach",
-        "testing_strategy"
-      ],
-      "template": "Create React component following MYOB design system"
-    },
-    {
-      "trigger": "api_endpoint",
-      "context_requirements": [
-        "business_logic",
-        "data_validation",
-        "error_handling",
-        "security_checks"
-      ],
-      "template": "Create secure API endpoint with comprehensive validation"
-    }
-  ]
+```markdown
+---
+description: MYOB React Component Standards
+globs: "**/*.{tsx,jsx}"
+alwaysApply: true
+---
+
+# MYOB React Component Development
+
+## Context Information
+- **Company**: MYOB - Financial software for SMBs
+- **Project**: Customer Onboarding v2
+- **Tech Stack**: React, TypeScript, Node.js, PostgreSQL
+- **Security**: GDPR compliant, secure by default
+- **Performance**: < 200ms API response times
+
+## Component Creation Guidelines
+
+When creating new React components, always include:
+
+1. **Component Purpose**: Clear description of what the component does
+2. **Props Interface**: TypeScript interface defining all props
+3. **Styling Approach**: Use MYOB design system components
+4. **Testing Strategy**: Unit tests with React Testing Library
+
+## Example Component Structure
+
+```tsx
+// CustomerOnboardingForm.tsx
+import React from 'react';
+import { Button, Input, Card } from '@myob/design-system';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { CustomerSchema, type Customer } from '../types/Customer';
+
+interface CustomerOnboardingFormProps {
+  onSubmit: (customer: Customer) => Promise<void>;
+  isLoading?: boolean;
+  initialData?: Partial<Customer>;
 }
+
+export const CustomerOnboardingForm: React.FC<CustomerOnboardingFormProps> = ({
+  onSubmit,
+  isLoading = false,
+  initialData
+}) => {
+  const { register, handleSubmit, formState: { errors } } = useForm<Customer>({
+    resolver: zodResolver(CustomerSchema),
+    defaultValues: initialData
+  });
+
+  return (
+    <Card>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <Input
+          {...register('businessName')}
+          label="Business Name"
+          error={errors.businessName?.message}
+          required
+        />
+        <Button type="submit" loading={isLoading}>
+          Create Customer
+        </Button>
+      </form>
+    </Card>
+  );
+};
+```
+
+## Testing Template
+
+```tsx
+// CustomerOnboardingForm.test.tsx
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { CustomerOnboardingForm } from './CustomerOnboardingForm';
+
+describe('CustomerOnboardingForm', () => {
+  it('should submit valid customer data', async () => {
+    const mockSubmit = jest.fn();
+    render(<CustomerOnboardingForm onSubmit={mockSubmit} />);
+    
+    fireEvent.change(screen.getByLabelText('Business Name'), {
+      target: { value: 'Test Business' }
+    });
+    
+    fireEvent.click(screen.getByRole('button', { name: 'Create Customer' }));
+    
+    await waitFor(() => {
+      expect(mockSubmit).toHaveBeenCalledWith({
+        businessName: 'Test Business'
+      });
+    });
+  });
+});
+```
+```
+
+```markdown
+---
+description: MYOB API Endpoint Standards
+globs: "**/*.{ts,js}"
+alwaysApply: true
+---
+
+# MYOB API Endpoint Development
+
+## Context Information
+- **Architecture**: Microservices with event sourcing
+- **Security**: JWT authentication, RBAC authorization
+- **Validation**: Zod schemas for request/response validation
+- **Error Handling**: Structured error responses
+- **Logging**: Comprehensive audit logging
+
+## API Endpoint Creation Guidelines
+
+When creating new API endpoints, always include:
+
+1. **Business Logic**: Clear separation of concerns
+2. **Data Validation**: Input/output validation with schemas
+3. **Error Handling**: Proper HTTP status codes and error messages
+4. **Security Checks**: Authentication and authorization
+
+## Example API Endpoint
+
+```typescript
+// customers.controller.ts
+import { Controller, Post, Body, UseGuards, HttpStatus } from '@nestjs/common';
+import { JwtAuthGuard, RoleGuard } from '../auth/guards';
+import { Roles } from '../auth/decorators';
+import { CreateCustomerDto, CustomerResponseDto } from './dto';
+import { CustomersService } from './customers.service';
+import { AuditLogger } from '../logging/audit-logger';
+
+@Controller('api/v1/customers')
+@UseGuards(JwtAuthGuard, RoleGuard)
+export class CustomersController {
+  constructor(
+    private readonly customersService: CustomersService,
+    private readonly auditLogger: AuditLogger
+  ) {}
+
+  @Post()
+  @Roles('admin', 'sales')
+  async createCustomer(
+    @Body() createCustomerDto: CreateCustomerDto,
+    @CurrentUser() user: AuthenticatedUser
+  ): Promise<CustomerResponseDto> {
+    try {
+      // Business logic
+      const customer = await this.customersService.create(createCustomerDto);
+      
+      // Audit logging
+      this.auditLogger.log({
+        action: 'CUSTOMER_CREATED',
+        userId: user.id,
+        customerId: customer.id,
+        timestamp: new Date()
+      });
+      
+      return {
+        success: true,
+        data: customer,
+        message: 'Customer created successfully'
+      };
+    } catch (error) {
+      // Error handling
+      if (error instanceof ValidationError) {
+        throw new BadRequestException(error.message);
+      }
+      
+      if (error instanceof DuplicateCustomerError) {
+        throw new ConflictException('Customer already exists');
+      }
+      
+      throw new InternalServerErrorException('Failed to create customer');
+    }
+  }
+}
+```
+
+## Validation Schema Example
+
+```typescript
+// dto/create-customer.dto.ts
+import { z } from 'zod';
+import { createZodDto } from 'nestjs-zod';
+
+const CreateCustomerSchema = z.object({
+  businessName: z.string().min(1).max(100),
+  abn: z.string().regex(/^\d{11}$/),
+  email: z.string().email(),
+  phone: z.string().optional(),
+  address: z.object({
+    street: z.string(),
+    city: z.string(),
+    state: z.string(),
+    postcode: z.string().regex(/^\d{4}$/)
+  })
+});
+
+export class CreateCustomerDto extends createZodDto(CreateCustomerSchema) {}
+```
 ```
 
 ## Measuring Context Engineering Effectiveness
