@@ -1,0 +1,248 @@
+---
+globs: *.md
+description: "Markdown formatting and structure consistency rules"
+---
+
+# Markdown Formatting Standards
+
+## Page Structure Requirements
+All markdown pages MUST follow this structure:
+
+### 1. Page Title (H1)
+```markdown
+# Page Title
+```
+- Only ONE H1 per page
+- Use sentence case with proper capitalization
+- Be descriptive and specific to the content
+
+### 2. Introduction Paragraph
+- Brief overview of page purpose
+- 1-2 sentences explaining what users will learn
+- No heading for this section
+
+### 3. Table of Contents (for longer pages)
+```markdown
+## Table of Contents
+- [Section Name](#section-name)
+- [Another Section](#another-section)
+- [Implementation](#implementation)
+```
+- Use for pages with 4+ major sections
+- All links must work (lowercase, hyphens for spaces)
+- Match actual heading structure
+
+### 4. Content Sections (H2-H4)
+```markdown
+## Major Section (H2)
+### Subsection (H3)
+#### Detail Section (H4)
+```
+- Use hierarchical heading structure
+- H2 for major sections
+- H3 for subsections
+- H4 for detailed breakdowns
+- Avoid H5/H6 (restructure content instead)
+
+### 5. Navigation Footer
+```markdown
+---
+
+**Previous:** [← Previous Page](previous-page.md) | **Next:** [Next Page →](next-page.md)
+```
+- ALWAYS end with navigation footer
+- Use horizontal rule separator
+- Maintain consistent format
+
+## Code Block Standards
+
+### TypeScript/JavaScript Examples
+```typescript
+// Always include comments explaining the code
+interface ExampleInterface {
+  property: string; // Describe important properties
+  method(): Promise<Result>; // Document return types
+}
+
+// Good: Clear, commented examples
+class ExampleClass implements ExampleInterface {
+  property: string;
+  
+  async method(): Promise<Result> {
+    // Implementation details
+    return result;
+  }
+}
+```
+
+### Configuration Examples
+```yaml
+# Always explain configuration purpose
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: example-config # Descriptive names
+data:
+  key: value # Explain what this configures
+```
+
+### Command Line Examples
+```bash
+# Explain what the command does
+npm install package-name
+
+# Show expected output when helpful
+git status
+# On branch main
+# Your branch is up to date with 'origin/main'
+```
+
+## Link Formatting
+
+### Internal Links
+```markdown
+[Link Text](../relative/path/file.md)
+```
+- Use descriptive link text
+- Always use relative paths
+- Verify links work
+
+### External Links
+```markdown
+[External Resource](https://example.com)
+```
+- Include site name in link text when helpful
+- Use HTTPS when available
+
+### Cross-References
+```markdown
+For detailed implementation, see [Security Standards](../standards/security.md).
+
+Refer to the [MYOB Approved Tools](../appendix/MYOB-approved-tools.md) for recommended solutions.
+```
+
+## List Formatting
+
+### Unordered Lists
+```markdown
+- First item with proper capitalization
+- Second item
+  - Nested items with 2-space indentation
+  - Another nested item
+- Back to top level
+```
+
+### Ordered Lists
+```markdown
+1. **Step Title**: Description of what to do
+2. **Next Step**: Clear actionable instructions
+3. **Final Step**: Expected outcome
+```
+
+### Checklists
+```markdown
+### Implementation Checklist
+- [ ] Task not completed
+- [x] Task completed
+- [ ] Another pending task
+```
+
+## Emphasis and Formatting
+
+### Bold Text
+```markdown
+**Important concepts** and **key terms**
+```
+- Use for emphasis and key concepts
+- Not for entire sentences
+
+### Italic Text  
+```markdown
+*Variable names* and *emphasis*
+```
+- Use sparingly for variables or light emphasis
+
+### Code Inline
+```markdown
+Use `code formatting` for filenames, variables, and short code snippets.
+```
+
+### Blockquotes
+```markdown
+> **Important Note**: Critical information that users must read
+> 
+> Use blockquotes for warnings, important notes, or quotes
+```
+
+## MYOB-Specific Formatting
+
+### Financial Examples
+```markdown
+## Cash Flow Example
+- Revenue: $125,000.00 (always show 2 decimal places)
+- Expenses: $98,750.00
+- Net Flow: $26,250.00
+```
+
+### Security Considerations
+```markdown
+## Security Requirements
+- [ ] Data classification verified
+- [ ] Access controls implemented  
+- [ ] Audit logging enabled
+- [ ] Encryption in transit and at rest
+```
+
+### Code Review Guidelines
+```markdown
+### MYOB Code Standards
+```typescript
+// Good: MYOB naming conventions
+class FinancialCalculator {
+  private readonly taxRate: Decimal; // Use Decimal for money
+  
+  calculateTax(amount: Decimal): Decimal {
+    return amount.multiply(this.taxRate);
+  }
+}
+```
+
+## Common Formatting Issues to Avoid
+
+### ❌ Bad Examples
+```markdown
+# multiple h1 headings
+# on same page
+
+No table of contents on long pages
+
+[bad link](./wrong-path)
+
+Previous: [link](page.md) Next: [link](page.md)
+```
+
+### ✅ Good Examples  
+```markdown
+# Single H1 Title
+
+## Table of Contents for longer content
+
+[Proper Link](../correct/relative/path.md)
+
+**Previous:** [← Link](page.md) | **Next:** [Link →](page.md)
+```
+
+## Validation Checklist
+Before committing markdown changes:
+
+- [ ] Only one H1 per page
+- [ ] Logical heading hierarchy (H1→H2→H3→H4)
+- [ ] Table of contents matches headings (if present)  
+- [ ] All internal links use relative paths
+- [ ] All links are tested and working
+- [ ] Code blocks have proper language syntax highlighting
+- [ ] Navigation footer is present and correct
+- [ ] Lists use consistent formatting
+- [ ] MYOB-specific examples use proper financial formatting
+- [ ] Security checklists are complete
+- [ ] No trailing whitespace or extra blank lines

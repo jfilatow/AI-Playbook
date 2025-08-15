@@ -1,0 +1,361 @@
+---
+alwaysApply: true  
+description: "MYOB development standards and coding practices for AI SDLC"
+---
+
+# MYOB Development Standards Integration
+
+## Relationship to MYOB Technology Codex
+This repository serves as the AI-specific extension of the [MYOB Technology Codex](mdc:.cursorrules). All development practices must align with the broader MYOB engineering standards while providing AI-specific guidance.
+
+## Core Development Principles
+
+### 1. Work in Small Batches
+```markdown
+# Implementation in this repository:
+- Keep PR changes < 400 lines for documentation updates
+- Deploy documentation changes frequently (weekly)
+- Break large framework additions into incremental updates
+```
+
+### 2. Security-First Development
+Integration with [Low Bar Security Requirements](mdc:pages/standards/security.md):
+
+#### Secret Management
+```typescript
+// Always use environment variables for sensitive data
+interface MYOBAIConfig {
+  readonly gleanApiToken: string;    // From GLEAN_API_TOKEN env var
+  readonly githubPat: string;        // From GITHUB_PERSONAL_ACCESS_TOKEN
+  readonly openaiApiKey: string;     // From OPENAI_API_KEY
+}
+
+// Never commit secrets
+const config: MYOBAIConfig = {
+  gleanApiToken: process.env.GLEAN_API_TOKEN!,
+  githubPat: process.env.GITHUB_PERSONAL_ACCESS_TOKEN!,
+  openaiApiKey: process.env.OPENAI_API_KEY!
+};
+```
+
+#### Information Classification
+```typescript
+// Apply MYOB information classification to AI training data
+enum DataClassification {
+  RESTRICTED = "restricted",    // Customer financial data, PII
+  CONFIDENTIAL = "confidential", // Internal business logic, algorithms
+  INTERNAL = "internal",        // Development practices, non-sensitive configs
+  PUBLIC = "public"             // Documentation, open source code
+}
+
+interface ClassifiedData {
+  content: unknown;
+  classification: DataClassification;
+  handling: DataHandlingRules;
+}
+```
+
+### 3. Observability and Monitoring
+Following [OP-2022-OBS standards](mdc:.cursorrules):
+
+#### Logging Standards
+```typescript
+// Structured logging for AI operations
+interface AIOperationLog {
+  timestamp: string;           // ISO 8601 format
+  correlationId: string;       // Trace AI operations across services
+  service: string;             // "ai-expense-categorization"
+  operation: string;           // "categorize_expense"
+  userId?: string;             // Hash for privacy
+  confidence?: number;         // AI confidence score
+  duration: number;            // Operation duration in ms
+  status: 'success' | 'failure' | 'partial';
+  metadata: Record<string, unknown>;
+}
+
+// Example logging implementation
+class AILogger {
+  logOperation(operation: AIOperationLog): void {
+    // Log to structured JSON format
+    console.log(JSON.stringify({
+      ...operation,
+      '@timestamp': new Date().toISOString(),
+      environment: process.env.NODE_ENV || 'development'
+    }));
+  }
+}
+```
+
+#### Metrics Collection
+```typescript
+// AI-specific metrics following MYOB patterns
+interface AIMetrics {
+  predictionAccuracy: number;     // Model accuracy over time
+  responseTime: {
+    p50: number;
+    p95: number; 
+    p99: number;
+  };
+  userSatisfaction: number;       // User feedback scores
+  modelDrift: number;             // Statistical drift detection
+  errorRate: number;              // Percentage of failed predictions
+}
+```
+
+### 4. Quality Strategy Integration
+Extending [MYOB quality practices](mdc:pages/feature-development/continuous-improvement.md):
+
+#### Testing Strategy
+```typescript
+// AI-specific test patterns
+describe('ExpenseCategorization', () => {
+  describe('accuracy requirements', () => {
+    it('should achieve >90% accuracy on test dataset', async () => {
+      const model = await loadModel('expense-categorization-v1.2');
+      const testData = await loadTestDataset();
+      
+      const predictions = await model.predictBatch(testData.inputs);
+      const accuracy = calculateAccuracy(predictions, testData.labels);
+      
+      expect(accuracy).toBeGreaterThan(0.90);
+    });
+    
+    it('should handle edge cases gracefully', async () => {
+      const edgeCases = await loadEdgeCases();
+      
+      for (const edgeCase of edgeCases) {
+        const result = await model.predict(edgeCase.input);
+        
+        // Should either provide confident prediction or request human input
+        expect(result.confidence > 0.8 || result.requiresHumanReview).toBe(true);
+      }
+    });
+  });
+});
+```
+
+## MYOB-Specific AI Considerations
+
+### Financial Domain Requirements
+```typescript
+// Use Decimal for financial calculations to avoid floating-point errors
+import { Decimal } from 'decimal.js';
+
+interface FinancialPrediction {
+  amount: Decimal;              // Never use number for money
+  currency: string;             // ISO 4217 currency codes
+  confidence: number;           // 0-1 confidence score
+  auditTrail: AuditEntry[];     // Complete decision audit trail
+}
+
+class FinancialAI {
+  predictCashFlow(historicalData: TransactionData[]): FinancialPrediction {
+    // All financial calculations must use Decimal arithmetic
+    const totalIncome = historicalData
+      .filter(t => t.type === 'income')
+      .reduce((sum, t) => sum.plus(new Decimal(t.amount)), new Decimal(0));
+      
+    return {
+      amount: totalIncome.dividedBy(12), // Monthly average
+      currency: 'AUD',
+      confidence: this.calculateConfidence(historicalData),
+      auditTrail: this.generateAuditTrail('cash_flow_prediction')
+    };
+  }
+}
+```
+
+### Compliance and Audit Requirements
+```typescript
+// Audit trail for all AI decisions
+interface AIDecisionAudit {
+  id: string;                   // Unique decision ID
+  timestamp: Date;              // When decision was made
+  modelId: string;              // Model version used
+  inputHash: string;            // Hash of input data (not actual data)
+  outputHash: string;           // Hash of output (not actual output)
+  confidence: number;           // Model confidence
+  humanOverride?: {
+    originalDecision: string;
+    overrideReason: string;
+    overriddenBy: string;
+    overriddenAt: Date;
+  };
+  regulatoryContext?: string;   // Applicable regulations (GST, tax, etc.)
+}
+```
+
+### Data Privacy and Security
+```typescript
+// Privacy-preserving AI processing
+class PrivateAIProcessor {
+  async processCustomerData(data: CustomerData): Promise<ProcessingResult> {
+    // 1. Classify data according to MYOB standards
+    const classification = this.classifyData(data);
+    
+    // 2. Apply appropriate privacy measures
+    if (classification === DataClassification.RESTRICTED) {
+      // Use differential privacy or federated learning
+      return await this.processWithDifferentialPrivacy(data);
+    }
+    
+    // 3. Anonymize before processing
+    const anonymized = await this.anonymizeData(data);
+    
+    // 4. Process with anonymized data only
+    return await this.processAnonymized(anonymized);
+  }
+  
+  private classifyData(data: CustomerData): DataClassification {
+    // Implement MYOB data classification logic
+    if (data.containsPII || data.containsFinancialDetails) {
+      return DataClassification.RESTRICTED;
+    }
+    
+    if (data.containsBusinessLogic) {
+      return DataClassification.CONFIDENTIAL;
+    }
+    
+    return DataClassification.INTERNAL;
+  }
+}
+```
+
+## Code Review Standards for AI Features
+
+### AI-Specific Review Criteria
+```markdown
+## AI Code Review Checklist
+
+### Model Performance
+- [ ] Model accuracy meets requirements (>90% for production)
+- [ ] Performance benchmarks are documented
+- [ ] Edge cases are handled appropriately
+- [ ] Fallback mechanisms are implemented
+
+### Security and Privacy
+- [ ] No sensitive data in training logs
+- [ ] Input validation prevents prompt injection
+- [ ] Output sanitization removes sensitive information
+- [ ] Data classification is properly applied
+
+### MYOB Integration  
+- [ ] Financial calculations use Decimal arithmetic
+- [ ] Audit trails are complete and compliant
+- [ ] Integration with MYOB auth/authorization
+- [ ] Follows MYOB API design patterns
+
+### Observability
+- [ ] Structured logging is implemented
+- [ ] Key metrics are tracked
+- [ ] Error scenarios are properly logged
+- [ ] Performance monitoring is configured
+```
+
+## Documentation Standards
+
+### AI Feature Documentation
+All AI features must include:
+
+```markdown
+## [Feature Name] Documentation
+
+### Purpose and Scope
+Brief description of what the AI feature does and its business value.
+
+### Model Information
+- **Model Type**: (e.g., Random Forest, Neural Network, LLM)
+- **Training Data**: Description of data used (without exposing sensitive info)
+- **Performance Metrics**: Accuracy, precision, recall, F1 score
+- **Last Updated**: Model version and training date
+
+### API Documentation
+- **Input Schema**: TypeScript interfaces for inputs
+- **Output Schema**: TypeScript interfaces for outputs  
+- **Error Handling**: Possible error conditions and responses
+- **Rate Limits**: Any usage limitations
+
+### Security Considerations
+- **Data Classification**: What type of data the feature processes
+- **Privacy Measures**: How privacy is protected
+- **Audit Requirements**: What is logged and why
+
+### MYOB Integration
+- **Business Context**: How this fits into MYOB workflows
+- **Compliance Notes**: Relevant regulatory considerations
+- **User Experience**: How users interact with the feature
+```
+
+## Continuous Improvement Process
+
+### Model Lifecycle Management
+```typescript
+interface ModelLifecycle {
+  development: {
+    dataCollection: Date;
+    training: Date;
+    validation: Date;
+    testing: Date;
+  };
+  deployment: {
+    staging: Date;
+    production: Date;
+    monitoring: Date;
+  };
+  maintenance: {
+    lastRetraining: Date;
+    nextScheduledRetraining: Date;
+    performanceReview: Date;
+  };
+}
+
+class ModelVersionManager {
+  async deployNewVersion(model: AIModel, version: string): Promise<DeploymentResult> {
+    // 1. Validate against MYOB quality gates
+    const validation = await this.validateModel(model);
+    if (!validation.passed) {
+      throw new Error(`Model validation failed: ${validation.errors.join(', ')}`);
+    }
+    
+    // 2. Deploy with canary release (5% traffic initially)
+    await this.canaryDeploy(model, version, { trafficPercent: 5 });
+    
+    // 3. Monitor key metrics
+    const monitoring = await this.setupMonitoring(model, version);
+    
+    // 4. Gradual rollout based on success criteria
+    return await this.gradualRollout(model, version, monitoring);
+  }
+}
+```
+
+### Feedback Integration
+```typescript
+// Collect user feedback for continuous improvement
+interface UserFeedback {
+  sessionId: string;
+  feature: string;
+  rating: 1 | 2 | 3 | 4 | 5;
+  feedback: string;
+  improvements: string[];
+  timestamp: Date;
+}
+
+class FeedbackProcessor {
+  async processFeedback(feedback: UserFeedback): Promise<void> {
+    // 1. Store feedback securely
+    await this.storeFeedback(feedback);
+    
+    // 2. Analyze for patterns
+    const patterns = await this.analyzeFeedbackPatterns(feedback.feature);
+    
+    // 3. Generate improvement recommendations  
+    const recommendations = await this.generateRecommendations(patterns);
+    
+    // 4. Create backlog items for high-impact improvements
+    await this.createBacklogItems(recommendations);
+  }
+}
+```
+
+This integration ensures all AI development follows MYOB's proven engineering practices while addressing the unique challenges of AI systems.

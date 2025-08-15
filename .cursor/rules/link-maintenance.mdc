@@ -1,0 +1,135 @@
+---
+alwaysApply: true
+description: "Link maintenance and validation rules for internal references"
+---
+
+# Link Maintenance and Validation Rules
+
+## Internal Link Standards
+All internal links within the repository MUST follow these patterns:
+
+### Relative Path Format
+- Use relative paths starting with `../` or `./`
+- Never use absolute paths or hardcoded URLs for internal content
+- Format: `[Link Text](../path/to/file.md)`
+
+### Cross-Reference Tracking
+When editing any file, check for these common link patterns:
+
+#### Security References
+- `../standards/security.md` - Referenced from multiple responsible-practices pages
+- `../responsible-practices/security.md` - Referenced from feature development pages
+
+#### API Documentation Links  
+- `../apis/README.md` - Main API overview
+- `../apis/api-security/README.md` - API security guidelines
+- `../apis/api-security/authentication.md` - Authentication patterns
+
+#### Operations Links
+- `../operations/logging.md` - Logging standards (referenced in security, standards)
+- `../operations/monitoring.md` - Monitoring practices
+
+#### Tool and Resource Links
+- `../appendix/MYOB-approved-tools.md` - Approved tools guide
+- `../appendix/glossary.md` - Terminology definitions
+- `../getting-started/mcp-servers-setup.md` - MCP setup guide
+
+## Navigation Footer Links
+Every page MUST end with navigation footer in this exact format:
+
+```markdown
+---
+
+**Previous:** [← Previous Page Title](previous-page.md) | **Next:** [Next Page Title →](next-page.md)
+```
+
+### Navigation Chain Maintenance
+When adding/removing/moving pages, update navigation chains:
+
+#### Getting Started Chain
+1. [README.md](mdc:pages/getting-started/README.md)
+2. [project-setup.md](mdc:pages/getting-started/project-setup.md) 
+3. [mcp-servers-setup.md](mdc:pages/getting-started/mcp-servers-setup.md)
+4. [ai-training-programs.md](mdc:pages/getting-started/ai-training-programs.md)
+
+#### Standards Chain  
+1. [README.md](mdc:pages/standards/README.md)
+2. [engineering-standards.md](mdc:pages/standards/engineering-standards.md)
+3. [security.md](mdc:pages/standards/security.md)
+
+#### Feature Development Chain
+1. [README.md](mdc:pages/feature-development/README.md)
+2. [ai-powered-features.md](mdc:pages/feature-development/ai-powered-features.md)
+3. [context-engineering-spec-driven-development.md](mdc:pages/feature-development/context-engineering-spec-driven-development.md)
+4. [ai-development-frameworks.md](mdc:pages/feature-development/ai-development-frameworks.md)
+5. [ai-agent-orchestration.md](mdc:pages/feature-development/ai-agent-orchestration.md)
+6. [continuous-improvement.md](mdc:pages/feature-development/continuous-improvement.md)
+7. [refactoring.md](mdc:pages/feature-development/refactoring.md)
+
+## Link Validation Checklist
+Before committing changes:
+
+### Check Main README Links
+- [ ] All table of contents links work correctly
+- [ ] Section descriptions match actual page content
+- [ ] No broken internal references
+
+### Check Cross-References
+- [ ] Security standard references are current
+- [ ] API documentation links are valid
+- [ ] Tool references point to correct pages
+- [ ] Operation guide links work
+
+### Check Navigation
+- [ ] All pages have proper navigation footers
+- [ ] Previous/Next relationships form valid chains
+- [ ] No orphaned pages without navigation
+
+### Check Asset References
+- [ ] Image references use correct paths
+- [ ] CSS imports are valid
+- [ ] No broken asset links
+
+## Automated Link Checking
+Use these patterns to find potential issues:
+
+### Find Markdown Links
+```bash
+# Find all markdown links
+grep -r "\[.*\](.*\.md)" pages/
+```
+
+### Find Relative Path Issues
+```bash
+# Find potential path issues
+grep -r "\.\./\.\." pages/
+```
+
+### Find Hardcoded References
+```bash
+# Find absolute URLs that should be relative
+grep -r "https://github.com/MYOB-Technology/MYOB-AI-Codex" pages/
+```
+
+## Common Link Update Scenarios
+
+### When Adding New Page
+1. Add to appropriate README section navigation chain
+2. Update previous page's "Next" link to new page
+3. Update new page's "Previous" link to previous page
+4. Update next page's "Previous" link to new page
+5. Add cross-references from related pages
+6. Update main [README.md](mdc:README.md) table of contents
+
+### When Renaming/Moving Page
+1. Search and replace ALL references to old filename
+2. Update navigation chains
+3. Update main [README.md](mdc:README.md) table of contents
+4. Check for references in assets or configuration files
+
+### When Removing Page
+1. Remove from navigation chain
+2. Update previous page's "Next" link to skip removed page
+3. Update next page's "Previous" link to skip removed page  
+4. Remove cross-references from other pages
+5. Update main [README.md](mdc:README.md) table of contents

@@ -1,0 +1,118 @@
+---
+alwaysApply: true
+description: "Repository structure map and relationship tracker for MYOB AI Codex"
+---
+
+# MYOB AI Codex Repository Structure Map
+
+## Repository Overview
+This is the **MYOB AI Software Development Lifecycle (SDLC) Playbook**, a comprehensive guide for AI-enabled development at MYOB. The repository is structured as a flattened documentation hierarchy with consistent navigation and cross-references.
+
+## Root Files
+- [README.md](mdc:README.md) - **PRIMARY ENTRY POINT** - Complete table of contents and overview
+- [REPO_STRUCTURE.md](mdc:REPO_STRUCTURE.md) - Repository structure snapshot
+- [.cursorrules](mdc:.cursorrules) - Cursor IDE rules for MYOB development standards
+
+## Core Directory Structure
+
+### `/pages/` - Main Documentation
+All documentation content is organized in logical groupings:
+
+#### Getting Started (`/pages/getting-started/`)
+- [README.md](mdc:pages/getting-started/README.md) - Introduction and setup overview
+- [project-setup.md](mdc:pages/getting-started/project-setup.md) - Project setup and MCP servers
+- [mcp-servers-setup.md](mdc:pages/getting-started/mcp-servers-setup.md) - MCP server configuration
+- [ai-training-programs.md](mdc:pages/getting-started/ai-training-programs.md) - Learning resources
+
+#### Standards (`/pages/standards/`)  
+- [README.md](mdc:pages/standards/README.md) - MYOB engineering standards overview
+- [security.md](mdc:pages/standards/security.md) - Security requirements and practices
+- [engineering-standards.md](mdc:pages/standards/engineering-standards.md) - Core engineering practices
+
+#### Responsible Practices (`/pages/responsible-practices/`)
+- [README.md](mdc:pages/responsible-practices/README.md) - Responsible AI overview
+- [security.md](mdc:pages/responsible-practices/security.md) - AI security practices
+- [data-privacy-security.md](mdc:pages/responsible-practices/data-privacy-security.md) - Data privacy guide
+- [ethics.md](mdc:pages/responsible-practices/ethics.md) - AI ethics framework
+- [sustainability.md](mdc:pages/responsible-practices/sustainability.md) - Sustainable AI practices
+
+#### Feature Development (`/pages/feature-development/`)
+- [README.md](mdc:pages/feature-development/README.md) - Feature development overview
+- [ai-powered-features.md](mdc:pages/feature-development/ai-powered-features.md) - AI feature design guide
+- [ai-agent-orchestration.md](mdc:pages/feature-development/ai-agent-orchestration.md) - Agent orchestration frameworks
+- [ai-development-frameworks.md](mdc:pages/feature-development/ai-development-frameworks.md) - AI framework guide
+- [context-engineering-spec-driven-development.md](mdc:pages/feature-development/context-engineering-spec-driven-development.md) - Context engineering guide
+- [continuous-improvement.md](mdc:pages/feature-development/continuous-improvement.md) - Continuous improvement practices
+- [refactoring.md](mdc:pages/feature-development/refactoring.md) - AI-assisted refactoring guide
+
+#### APIs & Integration (`/pages/apis/`)
+- [README.md](mdc:pages/apis/README.md) - API overview
+- [api-security/](mdc:pages/apis/api-security/) - API security guidelines directory
+
+#### Operations (`/pages/operations/`)
+- [README.md](mdc:pages/operations/README.md) - Operations overview
+- [logging.md](mdc:pages/operations/logging.md) - Logging standards
+- [monitoring.md](mdc:pages/operations/monitoring.md) - Monitoring practices
+
+#### Appendix (`/pages/appendix/`)
+- [README.md](mdc:pages/appendix/README.md) - Appendix overview
+- [MYOB-approved-tools.md](mdc:pages/appendix/MYOB-approved-tools.md) - Approved AI tools guide
+- [glossary.md](mdc:pages/appendix/glossary.md) - Terminology definitions
+
+### `/assets/` - Static Resources
+- `/images/` - Documentation images and diagrams
+- `/css/` - Custom styling for GitHub Pages
+- `/_sass/` - SCSS stylesheets with MYOB branding
+
+## Critical Relationships and Link Dependencies
+
+### Navigation Dependencies
+**Every page MUST have consistent navigation footer:**
+```markdown
+**Previous:** [← Previous Page Title](relative-path) | **Next:** [Next Page Title →](relative-path)
+```
+
+### Cross-Reference Patterns
+1. **Standards References**: Pages reference `../standards/security.md` and `../standards/engineering-standards.md`
+2. **API Security**: Multiple pages link to `../apis/api-security/README.md`
+3. **Operations Integration**: Pages reference `../operations/logging.md` and `../operations/monitoring.md`
+4. **Tool References**: Multiple pages link to `../appendix/MYOB-approved-tools.md`
+5. **Glossary Links**: Technical terms should link to `../appendix/glossary.md`
+
+### Main README Table of Contents Dependencies
+The [README.md](mdc:README.md) contains a comprehensive table of contents that MUST be updated when:
+- New pages are added
+- Page titles change
+- Page descriptions change
+- Section organization changes
+
+### Asset Dependencies
+- **Banner Image**: [assets/images/myob-banner.png](mdc:assets/images/myob-banner.png) referenced in main README
+- **CSS Files**: [assets/css/style.scss](mdc:assets/css/style.scss) imports [_sass/myob-styles.scss](mdc:_sass/myob-styles.scss)
+
+## Link Maintenance Rules
+
+### When Adding New Pages:
+1. Add entry to main [README.md](mdc:README.md) table of contents
+2. Update navigation footers of adjacent pages
+3. Add appropriate cross-references from related pages
+4. Update [REPO_STRUCTURE.md](mdc:REPO_STRUCTURE.md) if needed
+
+### When Moving/Renaming Files:
+1. Update ALL references in other markdown files
+2. Update main [README.md](mdc:README.md) table of contents
+3. Update navigation footers
+4. Search for any hardcoded paths in assets or configurations
+
+### When Changing Page Titles:
+1. Update main [README.md](mdc:README.md) table of contents
+2. Update all cross-references that use the old title
+3. Update navigation footers that reference the page
+
+## Content Consistency Requirements
+- All pages use consistent formatting with H1 titles
+- All pages have proper table of contents for longer content
+- All pages end with navigation footers
+- All code examples use proper syntax highlighting
+- All internal links use relative paths
+- All external links include proper descriptions

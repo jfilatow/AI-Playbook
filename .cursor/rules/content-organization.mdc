@@ -1,0 +1,306 @@
+---
+description: "Content organization and consistency standards for different page types"
+globs: pages/**/*.md
+---
+
+# Content Organization Standards
+
+## Page Type Classifications
+
+### 1. Overview/README Pages (`README.md`)
+**Purpose**: Introduce sections and provide navigation to subsections
+
+#### Required Structure:
+```markdown
+# Section Name
+
+Brief introduction paragraph explaining the section's purpose.
+
+## Topics Covered
+- [Topic 1](topic1.md) - Brief description
+- [Topic 2](topic2.md) - Brief description  
+- [Topic 3](topic3.md) - Brief description
+
+## Key Concepts
+Brief overview of main concepts covered in this section.
+
+---
+
+**Previous:** [← Previous Section](../section/README.md) | **Next:** [First Topic →](topic1.md)
+```
+
+#### Examples:
+- [pages/getting-started/README.md](mdc:pages/getting-started/README.md)
+- [pages/standards/README.md](mdc:pages/standards/README.md)
+- [pages/feature-development/README.md](mdc:pages/feature-development/README.md)
+
+### 2. Guide/Tutorial Pages
+**Purpose**: Provide step-by-step instructions or comprehensive guidance
+
+#### Required Structure:
+```markdown
+# Guide Title
+
+Introduction explaining what users will accomplish.
+
+## Prerequisites
+- Required knowledge or setup
+- Tools needed
+- Access requirements
+
+## Step-by-Step Process
+### Step 1: Initial Setup
+Detailed instructions with code examples.
+
+### Step 2: Implementation
+More detailed instructions.
+
+### Step 3: Validation
+How to verify success.
+
+## Troubleshooting
+Common issues and solutions.
+
+## Next Steps
+What to do after completing this guide.
+
+---
+
+**Previous:** [← Previous Guide](previous.md) | **Next:** [Next Guide →](next.md)
+```
+
+#### Examples:
+- [pages/getting-started/project-setup.md](mdc:pages/getting-started/project-setup.md)
+- [pages/getting-started/mcp-servers-setup.md](mdc:pages/getting-started/mcp-servers-setup.md)
+
+### 3. Reference/Standards Pages  
+**Purpose**: Define standards, requirements, and best practices
+
+#### Required Structure:
+```markdown
+# Standard/Reference Title
+
+Overview of the standard's purpose and scope.
+
+## Requirements
+### [STANDARD] Level Requirements
+- Mandatory requirement 1
+- Mandatory requirement 2
+
+### [DEFAULT] Level Requirements  
+- Default practice 1
+- Default practice 2
+
+### [SUGGESTION] Level Requirements
+- Suggested practice 1
+- Suggested practice 2
+
+## Implementation Guidelines
+Detailed implementation instructions with examples.
+
+## Compliance and Validation
+How to verify compliance with standards.
+
+## MYOB-Specific Considerations
+Any MYOB-specific interpretations or extensions.
+
+---
+
+**Previous:** [← Previous Standard](previous.md) | **Next:** [Next Standard →](next.md)
+```
+
+#### Examples:
+- [pages/standards/security.md](mdc:pages/standards/security.md)
+- [pages/standards/engineering-standards.md](mdc:pages/standards/engineering-standards.md)
+
+### 4. Comprehensive Framework Pages
+**Purpose**: Provide complete frameworks for complex topics
+
+#### Required Structure:
+```markdown
+# Framework Title
+
+Comprehensive introduction to the framework.
+
+## Table of Contents
+- [Core Concepts](#core-concepts)
+- [Implementation](#implementation)
+- [Best Practices](#best-practices)  
+- [Examples](#examples)
+- [Troubleshooting](#troubleshooting)
+
+## Core Concepts
+### Concept 1
+Detailed explanation with examples.
+
+### Concept 2  
+More detailed explanation.
+
+## Implementation
+### Phase 1: Planning
+Step-by-step implementation guidance.
+
+### Phase 2: Development
+Development phase instructions.
+
+### Phase 3: Deployment
+Deployment considerations.
+
+## Best Practices
+- Practice 1 with rationale
+- Practice 2 with examples
+- Practice 3 with code samples
+
+## Examples
+### Example 1: Basic Implementation
+Code example with explanation.
+
+### Example 2: Advanced Implementation
+More complex example.
+
+## MYOB Integration
+How this framework applies to MYOB development.
+
+## Troubleshooting
+Common issues and solutions.
+
+---
+
+**Previous:** [← Previous Framework](previous.md) | **Next:** [Next Framework →](next.md)
+```
+
+#### Examples:
+- [pages/feature-development/ai-powered-features.md](mdc:pages/feature-development/ai-powered-features.md)
+- [pages/feature-development/continuous-improvement.md](mdc:pages/feature-development/continuous-improvement.md)
+
+## Content Consistency Requirements
+
+### MYOB Branding and Context
+All pages must include MYOB-specific context where relevant:
+
+#### Financial Software Context
+```markdown
+## MYOB Financial Domain Considerations
+- Decimal precision requirements for financial calculations
+- Audit trail requirements for compliance
+- Integration with MYOB business workflows
+- Customer data privacy and security standards
+```
+
+#### Security Integration
+```markdown
+## Integration with MYOB Security Standards
+- Reference [Low Bar Security Requirements](../standards/security.md)
+- Apply [Information Classification](../responsible-practices/data-privacy-security.md)
+- Follow [Logging Standards](../operations/logging.md)
+```
+
+#### Tool References
+```markdown
+## MYOB-Approved Tools
+For implementation, use tools from [MYOB Approved Tools](../appendix/MYOB-approved-tools.md):
+- **GitHub Copilot**: For code assistance
+- **Cursor AI**: For development environment
+- **ChatGPT Teams**: For analysis and documentation
+```
+
+### Code Example Standards
+
+#### TypeScript Examples (Primary)
+```typescript
+// Always include file context and purpose
+// file: src/services/ExpenseProcessor.ts
+
+interface ExpenseProcessingConfig {
+  confidenceThreshold: number; // Minimum confidence for auto-processing
+  requireHumanReview: boolean; // Force human review for all expenses
+  auditLogging: boolean; // Enable comprehensive audit logging
+}
+
+class ExpenseProcessor {
+  constructor(private config: ExpenseProcessingConfig) {}
+  
+  async processExpense(expense: Expense): Promise<ProcessingResult> {
+    // Implementation with error handling and logging
+    try {
+      const result = await this.analyzeExpense(expense);
+      await this.auditLogger.logDecision(result);
+      return result;
+    } catch (error) {
+      await this.errorHandler.handleProcessingError(error, expense);
+      throw error;
+    }
+  }
+}
+```
+
+#### Configuration Examples
+```yaml
+# Always explain the purpose and context
+# file: .github/workflows/ci.yml
+name: MYOB AI Codex CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate markdown links
+        run: |
+          # Check for broken internal links
+          find pages/ -name "*.md" -exec markdown-link-check {} \;
+```
+
+### Cross-Reference Patterns
+
+#### Security Cross-References
+```markdown
+For security implementation details, see:
+- [Security Standards](../standards/security.md) - Core security requirements
+- [Data Privacy & Security](../responsible-practices/data-privacy-security.md) - Privacy guidelines
+- [API Security](../apis/api-security/README.md) - API-specific security measures
+```
+
+#### Operations Cross-References  
+```markdown
+For operational considerations, refer to:
+- [Logging Standards](../operations/logging.md) - Structured logging requirements
+- [Monitoring Practices](../operations/monitoring.md) - Performance and health monitoring
+```
+
+#### Tool and Resource Cross-References
+```markdown
+For additional resources:
+- [MYOB Approved Tools](../appendix/MYOB-approved-tools.md) - Recommended development tools
+- [Glossary](../appendix/glossary.md) - Term definitions and explanations
+```
+
+## Quality Assurance Checklist
+
+### Content Review Checklist
+- [ ] Page follows appropriate template structure
+- [ ] MYOB context is included where relevant
+- [ ] Security considerations are addressed
+- [ ] Code examples follow TypeScript standards
+- [ ] Cross-references are appropriate and working
+- [ ] Navigation footer is correct
+- [ ] Content is actionable and complete
+
+### Technical Review Checklist  
+- [ ] All code examples are syntactically correct
+- [ ] Configuration examples are valid
+- [ ] Links are tested and working
+- [ ] Examples follow MYOB coding standards
+- [ ] Security examples follow current best practices
+
+### Editorial Review Checklist
+- [ ] Writing is clear and concise
+- [ ] Technical terms are explained or linked to glossary
+- [ ] Examples are relevant to MYOB use cases
+- [ ] Content flows logically from section to section
+- [ ] Prerequisites are clearly stated

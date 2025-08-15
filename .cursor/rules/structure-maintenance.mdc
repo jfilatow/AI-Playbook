@@ -1,0 +1,270 @@
+---
+alwaysApply: true
+description: "Automatic repository structure tracking and maintenance"
+---
+
+# Repository Structure Maintenance
+
+## Automatic Structure Updates
+This rule ensures that any changes to the repository structure are automatically reflected in documentation and cross-references.
+
+## Files That Must Be Updated When Structure Changes
+
+### 1. Repository Structure Map
+[REPO_STRUCTURE.md](mdc:REPO_STRUCTURE.md) - **MUST** be updated whenever:
+- New directories are added
+- Files are moved or renamed
+- Directory organization changes
+- New file types are introduced
+
+### 2. Main README Table of Contents  
+[README.md](mdc:README.md) - **MUST** be updated whenever:
+- New pages are added to any section
+- Page titles change
+- Section organization changes
+- Page descriptions need updating
+
+### 3. Repository Structure Rule
+[.cursor/rules/repository-structure-map.mdc](mdc:.cursor/rules/repository-structure-map.mdc) - **MUST** be updated whenever:
+- Directory structure changes
+- New relationship patterns emerge
+- Link dependency patterns change
+- Navigation chains are modified
+
+## Structure Change Detection Commands
+
+### Generate Current Structure
+```bash
+# Generate complete repository structure
+find . -type f -name "*.md" -o -name "*.mdc" -o -name "*.yml" -o -name "*.scss" -o -name "*.png" -o -name "*.jpg" -o -name "*.svg" | 
+  grep -E -v "/(\.git|node_modules|\.cursor)/" |
+  sort > current_structure.txt
+```
+
+### Compare Structures
+```bash  
+# Compare with previous structure
+diff previous_structure.txt current_structure.txt > structure_changes.diff
+```
+
+### Find Broken Links
+```bash
+# Find potential broken internal links after structure changes
+grep -r "\]\(\.\./" pages/ | grep -v ":.*#" | while read -r line; do
+  file=$(echo "$line" | cut -d: -f1)
+  link=$(echo "$line" | grep -o "\]\([^)]*\.md\)" | sed 's/\]\(//' | sed 's/)//')
+  target="$(dirname "$file")/$link"
+  if [ ! -f "$target" ]; then
+    echo "BROKEN LINK in $file: $link (target: $target)"
+  fi
+done
+```
+
+## Structure Update Checklist
+
+### When Adding New Files
+- [ ] Add entry to [REPO_STRUCTURE.md](mdc:REPO_STRUCTURE.md)
+- [ ] Update [README.md](mdc:README.md) table of contents if public-facing
+- [ ] Update navigation chains for adjacent pages
+- [ ] Add cross-references from related pages
+- [ ] Update [repository-structure-map.mdc](mdc:.cursor/rules/repository-structure-map.mdc) if new patterns emerge
+
+### When Moving/Renaming Files
+- [ ] Update all references to old path in markdown files
+- [ ] Update [REPO_STRUCTURE.md](mdc:REPO_STRUCTURE.md) 
+- [ ] Update [README.md](mdc:README.md) table of contents
+- [ ] Fix navigation chains
+- [ ] Update [repository-structure-map.mdc](mdc:.cursor/rules/repository-structure-map.mdc) relationships
+- [ ] Test all internal links
+
+### When Removing Files
+- [ ] Remove from [REPO_STRUCTURE.md](mdc:REPO_STRUCTURE.md)
+- [ ] Remove from [README.md](mdc:README.md) table of contents  
+- [ ] Update navigation chains to skip removed page
+- [ ] Remove cross-references from other pages
+- [ ] Clean up any orphaned assets
+
+### When Changing Directory Structure
+- [ ] Update all affected file references
+- [ ] Regenerate [REPO_STRUCTURE.md](mdc:REPO_STRUCTURE.md)
+- [ ] Update relative path patterns in [link-maintenance.mdc](mdc:.cursor/rules/link-maintenance.mdc)
+- [ ] Update [repository-structure-map.mdc](mdc:.cursor/rules/repository-structure-map.mdc)
+- [ ] Test entire site builds correctly
+
+## Link Relationship Tracking
+
+### Current Link Patterns
+Track these patterns and update when they change:
+
+#### Standards Cross-References
+```markdown
+# Files that commonly reference standards:
+- pages/responsible-practices/*.md → ../standards/security.md
+- pages/feature-development/*.md → ../standards/engineering-standards.md
+- pages/operations/*.md → ../standards/security.md
+```
+
+#### API Documentation Links
+```markdown
+# Files that reference API documentation:
+- pages/feature-development/*.md → ../apis/README.md
+- pages/responsible-practices/*.md → ../apis/api-security/README.md
+```
+
+#### Tool References
+```markdown
+# Files that reference approved tools:
+- pages/getting-started/*.md → ../appendix/MYOB-approved-tools.md
+- pages/feature-development/*.md → ../appendix/MYOB-approved-tools.md
+```
+
+#### Operations Links
+```markdown
+# Files that reference operations:
+- pages/standards/*.md → ../operations/logging.md
+- pages/responsible-practices/*.md → ../operations/monitoring.md
+```
+
+## Automated Maintenance Scripts
+
+### Update Repository Structure
+```bash
+#!/bin/bash
+# update-repo-structure.sh
+
+echo "# Repository Structure" > REPO_STRUCTURE.md
+echo "" >> REPO_STRUCTURE.md
+echo "Generated on: $(date)" >> REPO_STRUCTURE.md
+echo "" >> REPO_STRUCTURE.md
+echo "\`\`\`" >> REPO_STRUCTURE.md
+find . -type f \( -name "*.md" -o -name "*.mdc" -o -name "*.yml" -o -name "*.scss" \) \
+  | grep -v -E "(\.git|node_modules)" \
+  | sort >> REPO_STRUCTURE.md
+echo "\`\`\`" >> REPO_STRUCTURE.md
+```
+
+### Validate Link Integrity  
+```bash
+#!/bin/bash
+# validate-links.sh
+
+errors=0
+
+# Check all markdown files for internal links
+find pages/ -name "*.md" | while read -r file; do
+  # Extract internal markdown links
+  grep -o '\]\([^)]*\.md[^)]*\)' "$file" | sed 's/\]\(//' | sed 's/)//' | while read -r link; do
+    # Handle relative paths
+    if [[ $link == ../* ]]; then
+      target="$(dirname "$file")/$link"
+    else
+      target="$link"
+    fi
+    
+    # Check if target file exists
+    if [ ! -f "$target" ]; then
+      echo "ERROR: Broken link in $file -> $link (resolved to $target)"
+      errors=$((errors + 1))
+    fi
+  done
+done
+
+if [ $errors -gt 0 ]; then
+  echo "Found $errors broken links"
+  exit 1
+else
+  echo "All links valid"
+fi
+```
+
+### Update Navigation Chains
+```bash
+#!/bin/bash
+# update-navigation.sh
+
+# This script would need to be customized for each section
+# Example for getting-started section:
+
+declare -a pages=(
+  "pages/getting-started/README.md"
+  "pages/getting-started/project-setup.md"
+  "pages/getting-started/mcp-servers-setup.md"
+  "pages/getting-started/ai-training-programs.md"
+)
+
+# Update navigation footers for each page in the chain
+for i in "${!pages[@]}"; do
+  page="${pages[$i]}"
+  
+  # Determine previous and next pages
+  if [ $i -eq 0 ]; then
+    prev="← [Standards](../standards/README.md)"
+  else
+    prev_idx=$((i - 1))
+    prev_title=$(head -1 "${pages[$prev_idx]}" | sed 's/# //')
+    prev_file=$(basename "${pages[$prev_idx]}")
+    prev="← [$prev_title]($prev_file)"
+  fi
+  
+  if [ $i -eq $((${#pages[@]} - 1)) ]; then
+    next="[Responsible Practices](../responsible-practices/README.md) →"
+  else
+    next_idx=$((i + 1))
+    next_title=$(head -1 "${pages[$next_idx]}" | sed 's/# //')
+    next_file=$(basename "${pages[$next_idx]}")
+    next="[$next_title]($next_file) →"
+  fi
+  
+  # Update the navigation footer (this would need more sophisticated text replacement)
+  echo "Would update navigation in $page: $prev | $next"
+done
+```
+
+## Integration with Git Hooks
+
+### Pre-commit Hook
+```bash
+#!/bin/bash
+# .git/hooks/pre-commit
+
+# Validate repository structure before committing
+if ! bash scripts/validate-links.sh; then
+  echo "ERROR: Repository has broken links. Please fix before committing."
+  exit 1
+fi
+
+# Update repository structure if any .md files changed
+if git diff --cached --name-only | grep -q "\.md$"; then
+  bash scripts/update-repo-structure.sh
+  git add REPO_STRUCTURE.md
+fi
+```
+
+### Post-merge Hook
+```bash
+#!/bin/bash
+# .git/hooks/post-merge
+
+# After merging, check if structure maintenance is needed
+if git diff HEAD@{1} --name-only | grep -q -E "(pages/|\.cursor/rules/)"; then
+  echo "Repository structure may have changed. Consider running:"
+  echo "  bash scripts/validate-links.sh"
+  echo "  bash scripts/update-repo-structure.sh"
+fi
+```
+
+## Manual Maintenance Procedures
+
+### Monthly Structure Review
+1. Run structure validation scripts
+2. Review [REPO_STRUCTURE.md](mdc:REPO_STRUCTURE.md) for accuracy
+3. Check that navigation chains are complete
+4. Verify cross-references are still relevant
+5. Update [repository-structure-map.mdc](mdc:.cursor/rules/repository-structure-map.mdc) with any new patterns
+
+### After Major Reorganization
+1. Regenerate all structure documentation
+2. Test all internal links manually
+3. Update all Cursor rules that reference file paths
+4. Verify GitHub Pages builds correctly
+5. Update any external documentation that references the repository structure

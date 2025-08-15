@@ -1,0 +1,243 @@
+---
+description: "Asset management rules for images, CSS, and static resources"
+globs: assets/**/*,_sass/**/*,*.md
+---
+
+# Asset Management Standards
+
+## Asset Directory Structure
+```
+assets/
+├── css/
+│   └── style.scss          # GitHub Pages Jekyll styling entry point
+├── images/
+│   ├── myob-banner.png    # Main MYOB banner for README
+│   └── diagrams/          # Technical diagrams and flowcharts
+_sass/
+└── myob-styles.scss       # MYOB-specific SCSS variables and styles
+```
+
+## Image Asset Management
+
+### Image Naming Conventions
+```markdown
+# Good naming patterns
+myob-banner.png             # Main branding banner
+architecture-diagram.png   # Technical diagrams
+workflow-flowchart.svg     # Process flows (prefer SVG)
+screenshot-feature-x.png   # Feature screenshots
+```
+
+### Image Reference Standards
+```markdown
+# Correct image references from markdown files
+![MYOB Banner](assets/images/myob-banner.png)
+
+# For pages in subdirectories, use relative paths
+![Architecture Diagram](../../assets/images/diagrams/architecture-diagram.png)
+```
+
+### Image Requirements
+- **Format**: PNG for screenshots, SVG for diagrams when possible
+- **Size**: Optimize for web (< 500KB for most images)
+- **Alt Text**: Always include descriptive alt text
+- **MYOB Branding**: Use official MYOB colors and styling
+
+### Current Image Assets
+- [assets/images/myob-banner.png](mdc:assets/images/myob-banner.png) - Main banner used in [README.md](mdc:README.md)
+
+## CSS and Styling Management
+
+### SCSS Structure
+```scss
+// _sass/myob-styles.scss - MYOB brand variables and overrides
+:root {
+  --myob-primary: #0066cc;      // MYOB primary blue
+  --myob-secondary: #003d7a;    // MYOB secondary blue  
+  --myob-accent: #ff6600;       // MYOB accent orange
+  --myob-dark: #333333;         // Dark text
+  --myob-light: #f5f5f5;        // Light background
+}
+
+.myob-header {
+  background: var(--myob-primary);
+  color: white;
+}
+
+.myob-accent {
+  color: var(--myob-accent);
+}
+```
+
+### Style Integration
+```scss
+// assets/css/style.scss - Jekyll entry point
+---
+---
+
+@import "minima";
+@import "myob-styles";  // Import MYOB customizations
+```
+
+### Styling Guidelines
+- Use CSS custom properties (variables) for MYOB brand colors
+- Maintain consistency with MYOB visual identity
+- Ensure accessibility with sufficient color contrast
+- Support both light and dark mode where possible
+
+## Asset Reference Validation
+
+### Markdown Image References
+When adding images to markdown files:
+
+```markdown
+# From root level files (README.md)
+![Description](assets/images/filename.png)
+
+# From pages/ subdirectory
+![Description](../assets/images/filename.png)
+
+# From nested pages (e.g., pages/feature-development/)
+![Description](../../assets/images/filename.png)
+```
+
+### CSS Asset References
+```scss
+// From _sass/myob-styles.scss referencing images
+.logo {
+  background-image: url('../assets/images/myob-banner.png');
+}
+```
+
+### Validation Checklist
+- [ ] Image files exist at referenced paths
+- [ ] Relative paths are correct from referencing file
+- [ ] Alt text is descriptive and meaningful
+- [ ] Images are optimized for web delivery
+- [ ] SCSS imports work correctly
+
+## Asset Optimization
+
+### Image Optimization
+```bash
+# Compress PNG images
+optipng -o2 assets/images/*.png
+
+# Convert to WebP for better compression (if supported)
+cwebp -q 80 assets/images/screenshot.png -o assets/images/screenshot.webp
+```
+
+### CSS Optimization
+- Use CSS variables for repeated values
+- Group related styles logically
+- Comment complex CSS rules
+- Ensure styles are mobile-responsive
+
+## GitHub Pages Integration
+
+### Jekyll Configuration
+The repository uses GitHub Pages with Jekyll. Assets must follow Jekyll conventions:
+
+#### Directory Recognition
+- `assets/` - Processed by Jekyll, can use Liquid templating
+- `_sass/` - SCSS partials, imported into main stylesheets
+- Static files are copied to `_site/` during build
+
+#### Jekyll Front Matter
+```yaml
+# assets/css/style.scss
+---
+---
+# This front matter tells Jekyll to process this SCSS file
+@import "minima";
+@import "myob-styles";
+```
+
+### Asset URLs in Production
+```markdown
+# GitHub Pages will serve assets from:
+https://myob-technology.github.io/MYOB-AI-Codex/assets/images/myob-banner.png
+
+# But always use relative paths in markdown:
+![Banner](assets/images/myob-banner.png)
+```
+
+## Asset Maintenance
+
+### When Adding New Images
+1. **Optimize** the image file size and format
+2. **Name** according to conventions (descriptive, kebab-case)
+3. **Place** in appropriate `assets/images/` subdirectory
+4. **Reference** using correct relative paths
+5. **Test** that images display correctly on GitHub Pages
+6. **Update** this rule if new patterns emerge
+
+### When Moving/Renaming Assets
+1. **Find all references** to the old asset path
+2. **Update markdown files** that reference the asset
+3. **Update CSS files** that reference the asset
+4. **Test** that all references still work
+5. **Commit** both asset changes and reference updates together
+
+### When Removing Assets
+1. **Confirm** asset is not referenced anywhere
+2. **Search** for any hardcoded references
+3. **Remove** the asset file
+4. **Clean up** any related CSS or documentation
+
+## MYOB Brand Compliance
+
+### Color Palette
+```scss
+// Official MYOB colors - always use these variables
+:root {
+  --myob-primary-blue: #0066cc;
+  --myob-secondary-blue: #003d7a;
+  --myob-accent-orange: #ff6600;
+  --myob-success-green: #00cc66;
+  --myob-warning-yellow: #ffcc00;
+  --myob-error-red: #cc3300;
+  --myob-neutral-dark: #333333;
+  --myob-neutral-medium: #666666;
+  --myob-neutral-light: #cccccc;
+  --myob-background-light: #f5f5f5;
+  --myob-background-white: #ffffff;
+}
+```
+
+### Logo and Branding Usage
+- Use official MYOB logos and imagery
+- Maintain proper spacing and sizing
+- Don't modify brand colors or logos
+- Include appropriate attribution where required
+
+### Accessibility Requirements
+- Maintain WCAG 2.1 AA color contrast ratios
+- Provide meaningful alt text for all images
+- Ensure images are not essential for understanding (provide text alternatives)
+- Test with screen readers when possible
+
+## File Size and Performance
+
+### Size Limits
+- **Images**: < 500KB for regular images, < 1MB for detailed diagrams
+- **CSS**: Keep compiled CSS < 100KB
+- **Total Assets**: Monitor total asset size impact on page load
+
+### Performance Optimization
+```markdown
+# Use appropriate image formats
+- PNG: Screenshots, images with text
+- JPEG: Photographs, complex images
+- SVG: Icons, simple diagrams, logos
+- WebP: Modern browsers, when file size is critical
+```
+
+### Loading Optimization
+```html
+<!-- Use lazy loading for images below the fold -->
+<img src="assets/images/diagram.png" alt="Diagram" loading="lazy">
+
+<!-- Preload critical images -->
+<link rel="preload" as="image" href="assets/images/myob-banner.png">
+```
