@@ -48,6 +48,8 @@ The MYOB AI SDLC Playbook provides comprehensive guidance for integrating artifi
 - **[Documentation](pages/feature-development/documentation.md)** - Automated documentation generation and maintenance with AI tools
 - **[Continuous Improvement](pages/feature-development/continuous-improvement.md)** - Iterative enhancement processes and feedback loops
 - **[AI-powered Features](pages/feature-development/ai-powered-features.md)** - Developing features that incorporate AI capabilities and services
+- **[AI Agent Orchestration](pages/feature-development/ai-agent-orchestration.md)** - Multi-agent coordination, workflow management, and enterprise orchestration frameworks
+- **[AI Development Frameworks](pages/feature-development/ai-development-frameworks.md)** - Core frameworks for building AI-powered applications including TensorFlow, PyTorch, and LangChain
 
 ### 6. [APIs & Integration](pages/apis/README.md)
 **Building and consuming APIs with AI assistance** - Comprehensive guidance for API development, testing, security, and integration.
