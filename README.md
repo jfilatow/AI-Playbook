@@ -92,7 +92,5 @@ The MYOB AI SDLC Playbook provides comprehensive guidance for integrating artifi
 Ready to begin? Start with the [Responsible Practices](pages/responsible-practices/README.md) to understand the ethical and security foundations, then move on to [Getting Started](pages/getting-started/README.md) for practical implementation.
 
 ---
-
----
-
 **Next:** [Responsible Practices →](pages/responsible-practices/README.md)
+---
