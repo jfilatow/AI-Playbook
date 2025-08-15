@@ -25,11 +25,11 @@ Modern AI-powered development leverages sophisticated frameworks for orchestrati
 - [AI Agent Orchestration](ai-agent-orchestration.md) - Multi-agent coordination and workflow management
 - [AI Development Frameworks](ai-development-frameworks.md) - Core frameworks for building AI-powered applications
 
-**Specialized Frameworks:**
-- **BMAD (Business Model Agent Development)** - Enterprise-focused agent orchestration for business process automation
-- **Agent-OS** - Operating system-like framework for managing AI agent lifecycles and interactions
-- **LangChain** - Framework for building applications with large language models
-- **CrewAI** - Multi-agent collaboration framework for complex task execution
+**Specialized Orchestration Frameworks:**
+- **BMAD (Breakthrough Method for Agentic Development)** - Open-source agentic agile framework with two-phase development workflow
+- **Agent-OS** - Operating system-like framework for autonomous AI agent systems and workflow orchestration
+- **LangChain** - Framework for building applications with large language models and agent capabilities
+- **CrewAI** - Multi-agent collaboration framework for team-based AI workflows
 
 ### Integration with Development Workflow
 

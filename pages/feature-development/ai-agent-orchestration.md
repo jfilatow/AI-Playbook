@@ -33,60 +33,106 @@ AI agent orchestration is the process of coordinating multiple autonomous AI age
 
 ## Enterprise Orchestration Frameworks
 
-### BMAD (Business Model Agent Development)
+### BMAD (Breakthrough Method for Agentic Development)
 
-BMAD is an enterprise-focused framework designed for business process automation and decision-making workflows.
+BMAD is an open-source agentic agile framework for AI-powered development that emphasizes intelligent planning and context-aware execution.
 
 **Key Features:**
-- **Business Process Integration**: Seamless integration with existing enterprise workflows
-- **Compliance Management**: Built-in governance and audit capabilities
-- **Decision Trees**: Complex decision-making workflows with human-in-the-loop capabilities
-- **Enterprise Security**: Advanced security features for handling sensitive business data
-- **Scalable Architecture**: Designed for enterprise-scale deployments
+- **Two-Phase Workflow**: Agentic planning followed by context-engineered development
+- **Intelligent Agent Roles**: Project Manager, Analyst, Architect, and Developer agents
+- **Context Preservation**: Maintains detailed reasoning from planning through deployment
+- **Multi-Model Support**: Compatible with GPT-4, Claude, Gemini, and other LLMs
+- **Modular Architecture**: Open-source and extensible framework design
 
-**Use Cases:**
-- Automated business process workflows
-- Complex approval and decision-making systems
-- Customer service automation with escalation paths
-- Financial analysis and reporting automation
-- Supply chain optimization and management
+**Development Phases:**
 
-**Integration Example:**
+**Phase 1: Agentic Planning**
+- **Product Requirements**: AI agents collaborate to create comprehensive PRDs
+- **Technical Architecture**: System design with detailed architecture diagrams
+- **UX Planning**: User experience briefs and interface specifications
+- **Resource Planning**: Development timeline and resource allocation
+
+**Phase 2: Context-Engineered Development**
+- **Code Implementation**: Context-aware development with full project understanding
+- **Quality Assurance**: Automated testing and code review processes
+- **Documentation**: Comprehensive documentation generation
+- **Deployment**: Intelligent deployment and monitoring setup
+
+**Agent Collaboration Example:**
 ```python
-from bmad import BusinessAgent, Workflow, DecisionNode
+# BMAD agent workflow
+from bmad import ProjectManager, Analyst, Architect, Developer
 
-# Define business workflow
-workflow = Workflow("customer_onboarding")
-workflow.add_agent(BusinessAgent("compliance_check"))
-workflow.add_agent(BusinessAgent("risk_assessment"))
-workflow.add_decision_node(DecisionNode("approval_required"))
-workflow.execute(customer_data)
+# Initialize agent team
+pm = ProjectManager()
+analyst = Analyst()
+architect = Architect()
+developer = Developer()
+
+# Phase 1: Planning
+requirements = analyst.gather_requirements(project_brief)
+architecture = architect.design_system(requirements)
+plan = pm.create_project_plan(requirements, architecture)
+
+# Phase 2: Development
+code = developer.implement(architecture, plan)
+tests = developer.create_tests(code, requirements)
+docs = developer.generate_docs(code, architecture)
 ```
+
+**Integration with Popular Tools:**
+- **LangChain**: Tool routing and agent logic implementation
+- **CrewAI**: Team-based agent workflow orchestration
+- **Various LLMs**: GPT-4, Claude, Gemini integration
+- **IDE Integration**: VS Code, Cursor, and other development environments
 
 ### Agent-OS
 
-Agent-OS provides an operating system-like environment for managing AI agent lifecycles, resource allocation, and inter-agent communication.
+Agent-OS is an operating system-like framework designed for building and managing autonomous AI agent systems with focus on multi-agent coordination and workflow orchestration.
 
 **Key Features:**
-- **Agent Lifecycle Management**: Complete agent creation, execution, and termination management
-- **Resource Orchestration**: Dynamic allocation of computational resources
-- **Communication Protocols**: Standardized messaging and data exchange between agents
-- **Monitoring and Observability**: Comprehensive monitoring of agent performance and health
-- **Security and Isolation**: Secure execution environments for agents
+- **Agent Runtime Environment**: Provides execution environment for autonomous agents
+- **Multi-Agent Coordination**: Enables communication and collaboration between agents
+- **Workflow Orchestration**: Manages complex multi-step agent workflows
+- **Resource Management**: Handles computational resources and agent scheduling
+- **Integration Layer**: Connects agents with external systems and APIs
 
-**Architecture Components:**
-- **Agent Registry**: Central registry for agent discovery and metadata
-- **Task Scheduler**: Intelligent scheduling of agent tasks and resources
-- **Message Bus**: Reliable messaging system for inter-agent communication
-- **Resource Manager**: Dynamic allocation and optimization of computational resources
-- **Monitoring Dashboard**: Real-time visibility into agent operations
+**Core Components:**
+- **Agent Runtime**: Execution environment for individual agents
+- **Communication Layer**: Message passing and coordination between agents
+- **Workflow Engine**: Orchestrates complex multi-agent processes
+- **Resource Scheduler**: Manages computational resources and agent lifecycle
+- **Integration Hub**: Connects to external systems, databases, and APIs
+
+**Agent Architecture:**
+```python
+# Agent-OS agent definition
+from agent_os import Agent, Workflow, Communication
+
+class DataAnalysisAgent(Agent):
+    def __init__(self):
+        super().__init__("data_analyst")
+        self.capabilities = ["data_processing", "analysis", "reporting"]
+    
+    async def process_data(self, data_source):
+        # Agent processing logic
+        results = await self.analyze(data_source)
+        await self.communicate_results(results)
+        return results
+
+# Workflow orchestration
+workflow = Workflow("financial_analysis")
+workflow.add_agent(DataAnalysisAgent())
+workflow.add_agent(ReportingAgent())
+workflow.define_dependencies(["data_analysis", "reporting"])
+```
 
 **Use Cases:**
-- Large-scale multi-agent simulations
-- Distributed AI workload management
-- Complex data processing pipelines
-- Real-time decision-making systems
-- Autonomous system management
+- **Autonomous Business Processes**: Self-managing business workflow automation
+- **Distributed Computing**: Multi-agent distributed processing systems
+- **Real-time Decision Systems**: Coordinated decision-making across multiple agents
+- **Complex Data Pipelines**: Multi-stage data processing with agent coordination
+- **Intelligent Automation**: Adaptive automation systems that can learn and evolve
 
 ## Popular Open-Source Frameworks
 
@@ -243,38 +289,62 @@ event_bus.subscribe("deployment_complete", monitoring_agent)
 
 **Customer Onboarding Automation:**
 ```python
-# Multi-agent customer onboarding workflow
-onboarding_workflow = Workflow([
-    ComplianceAgent("verify_identity"),
-    RiskAssessmentAgent("evaluate_risk"),
-    ProductRecommendationAgent("suggest_products"),
-    DocumentationAgent("generate_contracts"),
-    NotificationAgent("send_welcome_materials")
-])
+# BMAD workflow for MYOB feature development
+from bmad import ProjectManager, Analyst, Architect, Developer
+
+# Customer onboarding feature development
+pm = ProjectManager("customer_onboarding_v2")
+analyst = Analyst()
+architect = Architect()
+developer = Developer()
+
+# Phase 1: Agentic Planning
+requirements = analyst.create_prd({
+    "feature": "automated_customer_onboarding",
+    "stakeholders": ["compliance", "sales", "support"],
+    "business_goals": ["reduce_onboarding_time", "improve_compliance"]
+})
+
+architecture = architect.design_system(requirements, {
+    "existing_systems": ["customer_db", "compliance_api", "notification_service"],
+    "constraints": ["gdpr_compliance", "audit_requirements"]
+})
+
+# Phase 2: Context-Engineered Development
+implementation_plan = developer.create_implementation_plan(architecture)
 ```
 
-**Financial Data Processing:**
+**Agent-OS Financial Processing:**
 ```python
-# Orchestrated financial data analysis
-financial_pipeline = Pipeline([
-    DataIngestionAgent("collect_transactions"),
-    ValidationAgent("verify_data_integrity"),
-    CategorizationAgent("classify_transactions"),
-    AnalysisAgent("generate_insights"),
-    ReportingAgent("create_reports")
-])
+# Agent-OS workflow for financial data processing
+from agent_os import Agent, Workflow, Communication
+
+class TransactionProcessor(Agent):
+    async def process_batch(self, transactions):
+        validated = await self.validate_transactions(transactions)
+        categorized = await self.categorize_transactions(validated)
+        return await self.generate_insights(categorized)
+
+# Orchestrated financial pipeline
+workflow = Workflow("monthly_financial_processing")
+workflow.add_agent(TransactionProcessor())
+workflow.add_agent(ComplianceChecker())
+workflow.add_agent(ReportGenerator())
+workflow.execute_pipeline()
 ```
 
-**Compliance Monitoring:**
+**Multi-Framework Integration:**
 ```python
-# Multi-agent compliance monitoring system
-compliance_system = MonitoringSystem([
-    DataMonitorAgent("track_data_usage"),
-    PolicyEnforcementAgent("enforce_rules"),
-    AuditAgent("generate_audit_trails"),
-    ReportingAgent("compliance_reports"),
-    AlertingAgent("notify_violations")
-])
+# Combining BMAD planning with Agent-OS execution
+# BMAD for planning phase
+bmad_planner = ProjectManager()
+system_design = bmad_planner.create_architecture_plan(business_requirements)
+
+# Agent-OS for execution phase
+from agent_os import Workflow
+execution_workflow = Workflow.from_bmad_plan(system_design)
+execution_workflow.deploy_agents()
+execution_workflow.monitor_execution()
 ```
 
 ## Best Practices
