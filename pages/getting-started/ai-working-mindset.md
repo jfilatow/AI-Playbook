@@ -80,7 +80,3 @@ This playbook captures current best practices, acknowledging they will evolve ra
 ---
 
 **Previous:** [← The Four Pillars](the-four-pillars.md) | **Next:** [Project Setup →](project-setup.md)
-
----
-
-**Previous:** [← The Four Pillars](the-four-pillars.md) | **Next:** [Project Setup →](project-setup.md)

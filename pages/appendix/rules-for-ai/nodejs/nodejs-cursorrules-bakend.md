@@ -521,10 +521,6 @@ globs: tests/*.js
 **restful-api-patterns.mdc**
 ````
 ---
-description: Restful API Patterns
-globs: *.js,*.tsx
----
- ---
 description: RESTful API Implementation Patterns
 globs: src/api/**/*.js
 ---

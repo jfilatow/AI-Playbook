@@ -37,7 +37,3 @@ The diagram below shows the main steps in this playbook. We've deliberately simp
 ---
 
 **Previous:** [← Getting Started](README.md) | **Next:** [The Four Pillars →](the-four-pillars.md)
-
----
-
-**Previous:** [← Getting Started](README.md) | **Next:** [The Four Pillars →](the-four-pillars.md)
