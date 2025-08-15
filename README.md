@@ -1,53 +1,89 @@
 # MYOB AI SDLC Playbook
 
-This playbook is the single source of truth for MYOB developers. It combines SDLC guidance and technical standards in one place, with consistent structure and links.
+This playbook is the definitive guide for MYOB developers implementing AI-assisted software development. It combines proven SDLC practices with AI-specific guidance, security requirements, and technical standards to enable safe, efficient, and high-quality AI-powered development.
+
+## Overview
+
+The MYOB AI SDLC Playbook provides comprehensive guidance for integrating artificial intelligence tools into your software development lifecycle while maintaining MYOB's high standards for security, quality, and governance. Whether you're new to AI development or looking to standardize your team's practices, this playbook offers practical, actionable guidance for every stage of the development process.
 
 ## Table of Contents
-1. [Welcome](README.md)
-2. [Responsible Practices](pages/responsible-practices/README.md)
-    1. [Ethics](pages/responsible-practices/ethics.md)
-    2. [Sustainability](pages/responsible-practices/sustainability.md)
-    3. [Security](pages/responsible-practices/security.md)
-    4. [Data Privacy & Security](pages/responsible-practices/data-privacy-security.md)
-3. [Getting Started](pages/getting-started/README.md)
-    1. [Workflow](pages/getting-started/workflow.md)
-    2. [The Four Pillars](pages/getting-started/the-four-pillars.md)
-    3. [Mindset](pages/getting-started/ai-working-mindset.md)
-    4. [Project Setup](pages/getting-started/project-setup.md)
-    5. [AI Training Programs](pages/getting-started/ai-training-programs.md)
-    6. [Stakeholder Engagement](pages/getting-started/stakeholder-engagement.md)
-    7. [AI-first Mindset](pages/getting-started/ai-first-mindset.md)
-    8. [Self-Service Capabilities](pages/getting-started/self-service-capabilities.md)
-4. [Generating Requirements](pages/generating-requirements/README.md)
-    1. [Product Requirements](pages/generating-requirements/product-requirements.md)
-    2. [Technical Requirements](pages/generating-requirements/technical-requirements.md)
-5. [Feature Development](pages/feature-development/README.md)
-    1. [Development](pages/feature-development/development.md)
-    2. [Test Driven Development](pages/feature-development/test-driven-development.md)
-    3. [Testing](pages/feature-development/testing.md)
-    4. [Refactoring](pages/feature-development/refactoring.md)
-    5. [Documentation](pages/feature-development/documentation.md)
-    6. [Continuous Improvement](pages/feature-development/continuous-improvement.md)
-    7. [AI-powered Features](pages/feature-development/ai-powered-features.md)
-6. [APIs & Integration](pages/apis/README.md)
-    1. [API Design](pages/apis/api-design/README.md)
-    2. [API Observability](pages/apis/api-observability/README.md)
-    3. [API Security](pages/apis/api-security/README.md)
-    4. [API Discoverability](pages/apis/api-discoverability/README.md)
-    5. [API Testing](pages/apis/api-testing.md)
-    6. [API Documentation](pages/apis/documentation.md)
-7. [Delivery](pages/delivery/README.md)
-8. [Operations](pages/operations/README.md)
-9. [Governance](pages/governance/README.md)
-10. [Data](pages/data/README.md)
-11. [Cloud](pages/cloud/README.md)
-12. [Engineering Standards](pages/standards/README.md)
-13. [Appendix](pages/appendix/README.md)
-    1. [Prompt Library](pages/appendix/prompt-library/README.md)
-    2. [Rules for AI](pages/appendix/rules-for-ai/README.md)
-    3. [MYOB‑approved AI tools](pages/appendix/MYOB-approved-tools.md)
-    4. [Case Studies](pages/appendix/case-studies.md)
-    5. [Contributing](pages/appendix/CONTRIBUTING.md)
+
+### 1. [Welcome](README.md)
+**Your starting point** - Introduction to AI-assisted development at MYOB and how to navigate this playbook effectively.
+
+### 2. [Responsible Practices](pages/responsible-practices/README.md)
+**Foundation for ethical AI use** - Essential principles and practices for using AI tools responsibly, securely, and sustainably.
+
+- **[Ethics](pages/responsible-practices/ethics.md)** - Core ethical principles for AI tool usage, accountability frameworks, and bias prevention strategies
+- **[Sustainability](pages/responsible-practices/sustainability.md)** - Environmental considerations and best practices for sustainable AI development
+- **[Security](pages/responsible-practices/security.md)** - Security guidelines for AI tools, vulnerability assessment, and secure coding practices
+- **[Data Privacy & Security](pages/responsible-practices/data-privacy-security.md)** - Comprehensive data protection guidelines, privacy controls, and compliance requirements
+
+### 3. [Getting Started](pages/getting-started/README.md)
+**Your AI development journey begins here** - Core concepts, tools, and mindset needed for effective AI-assisted development.
+
+- **[Workflow](pages/getting-started/workflow.md)** - Step-by-step AI development workflow from requirements to deployment
+- **[The Four Pillars](pages/getting-started/the-four-pillars.md)** - Essential elements for consistent, high-quality AI code generation
+- **[Mindset](pages/getting-started/ai-working-mindset.md)** - Mental frameworks and approaches for effective human-AI collaboration
+- **[Project Setup](pages/getting-started/project-setup.md)** - Technical setup, tool configuration, and project initialization best practices
+- **[AI Training Programs](pages/getting-started/ai-training-programs.md)** - Available training resources and skill development pathways
+- **[Stakeholder Engagement](pages/getting-started/stakeholder-engagement.md)** - Strategies for involving stakeholders in AI development initiatives
+- **[AI-first Mindset](pages/getting-started/ai-first-mindset.md)** - Developing an AI-native approach to problem-solving and development
+- **[Self-Service Capabilities](pages/getting-started/self-service-capabilities.md)** - Building autonomous AI-powered development capabilities
+
+### 4. [Generating Requirements](pages/generating-requirements/README.md)
+**From ideas to detailed specifications** - Techniques for creating comprehensive requirements using AI assistance.
+
+- **[Product Requirements](pages/generating-requirements/product-requirements.md)** - User stories, acceptance criteria, and functional specifications with AI assistance
+- **[Technical Requirements](pages/generating-requirements/technical-requirements.md)** - Architecture diagrams, data models, and technical specifications using AI tools
+
+### 5. [Feature Development](pages/feature-development/README.md)
+**Building features with AI assistance** - End-to-end feature development processes using AI tools for coding, testing, and documentation.
+
+- **[Development](pages/feature-development/development.md)** - AI-assisted coding practices, code generation techniques, and quality assurance
+- **[Test Driven Development](pages/feature-development/test-driven-development.md)** - TDD methodologies enhanced with AI test generation and validation
+- **[Testing](pages/feature-development/testing.md)** - Comprehensive testing strategies using AI for test creation and execution
+- **[Refactoring](pages/feature-development/refactoring.md)** - AI-assisted code refactoring techniques and best practices
+- **[Documentation](pages/feature-development/documentation.md)** - Automated documentation generation and maintenance with AI tools
+- **[Continuous Improvement](pages/feature-development/continuous-improvement.md)** - Iterative enhancement processes and feedback loops
+- **[AI-powered Features](pages/feature-development/ai-powered-features.md)** - Developing features that incorporate AI capabilities and services
+
+### 6. [APIs & Integration](pages/apis/README.md)
+**Building and consuming APIs with AI assistance** - Comprehensive guidance for API development, testing, security, and integration.
+
+- **[API Design](pages/apis/api-design/README.md)** - RESTful API design principles, patterns, and AI-assisted design processes
+- **[API Observability](pages/apis/api-observability/README.md)** - Monitoring, logging, and performance tracking for API services
+- **[API Security](pages/apis/api-security/README.md)** - Authentication, authorization, and security best practices for APIs
+- **[API Discoverability](pages/apis/api-discoverability/README.md)** - Documentation, cataloging, and discovery mechanisms for APIs
+- **[API Testing](pages/apis/api-testing.md)** - Automated testing strategies and tools for API validation
+- **[API Documentation](pages/apis/documentation.md)** - Creating and maintaining comprehensive API documentation
+
+### 7. [Delivery](pages/delivery/README.md)
+**Shipping software efficiently and safely** - Deployment processes, CI/CD practices, and delivery methodologies enhanced with AI tools.
+
+### 8. [Operations](pages/operations/README.md)
+**Running and maintaining AI-powered systems** - Operational practices, monitoring, incident management, and system reliability.
+
+### 9. [Governance](pages/governance/README.md)
+**Decision-making frameworks and processes** - Architecture governance, technical decisions, and process management for AI development.
+
+### 10. [Data](pages/data/README.md)
+**Data management and data products** - Strategies for data handling, data product development, and data governance in AI contexts.
+
+### 11. [Cloud](pages/cloud/README.md)
+**Cloud-native development and operations** - Cloud platform utilization, infrastructure management, and cloud-specific AI services.
+
+### 12. [Engineering Standards](pages/standards/README.md)
+**Technical standards and requirements** - Coding standards, security requirements, and quality benchmarks for AI-assisted development.
+
+### 13. [Appendix](pages/appendix/README.md)
+**Supporting resources and references** - Tools, templates, examples, and additional resources to support your AI development journey.
+
+- **[Prompt Library](pages/appendix/prompt-library/README.md)** - Curated collection of effective prompts for various development tasks
+- **[Rules for AI](pages/appendix/rules-for-ai/README.md)** - Configuration files and rules for AI development tools
+- **[MYOB‑approved AI tools](pages/appendix/MYOB-approved-tools.md)** - Official list of approved AI tools, configurations, and usage guidelines
+- **[Case Studies](pages/appendix/case-studies.md)** - Real-world examples and success stories from AI development projects
+- **[Contributing](pages/appendix/CONTRIBUTING.md)** - Guidelines for contributing to and improving this playbook
 
 ---
 
