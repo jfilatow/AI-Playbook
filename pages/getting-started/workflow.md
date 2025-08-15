@@ -18,4 +18,22 @@ The diagram below shows the main steps in this playbook. We've deliberately simp
 - **Create PR for developer code review** - Generate a Pull Request (PR) in git following traditional development practices. Review each line of code for quality and brevity, making sure that the code to be deployed is production-ready
 - **Merge and deploy** - Once you merge the PR into the main branch, use automated pipeline processes to deploy the code, as per your normal deployment processes
 
-## [Next -> The Four Pillars](the-four-pillars.md)
+## Benefits of This Workflow
+
+- **Consistency** - Standardized approach across all MYOB development teams
+- **Quality** - Built-in testing and review processes ensure high-quality outputs
+- **Efficiency** - AI assistance accelerates development while maintaining standards
+- **Traceability** - Clear documentation and version control for all changes
+- **Collaboration** - Traditional PR process enables team collaboration and knowledge sharing
+
+## Best Practices
+
+- **Start Small** - Begin with simple features to understand the workflow
+- **Review Everything** - Never deploy AI-generated code without human review
+- **Document Decisions** - Keep clear records of requirements and design decisions
+- **Test Thoroughly** - Use both AI-generated and manual tests for comprehensive coverage
+- **Iterate Quickly** - Use short feedback loops to refine and improve
+
+---
+
+**Previous:** [← Getting Started](README.md) | **Next:** [The Four Pillars →](the-four-pillars.md)

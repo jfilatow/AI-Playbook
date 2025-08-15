@@ -34,12 +34,30 @@ To generate consistent code, four elements must come together as shown in this d
 
 ### 4. Capable Code Generation Model
 
-**Purpose:** Use the most capable LLM model for the task you are running to get good quality results. Not all tasks need advanced thinking models, so select the most cost-effective model that can achieve the outcome you want. Consider thingking models for planning tasks and general models for lower level tasks. 
+**Purpose:** Use the most capable LLM model for the task you are running to get good quality results. Not all tasks need advanced thinking models, so select the most cost-effective model that can achieve the outcome you want. Consider thinking models for planning tasks and general models for lower level tasks. 
 
 **Where to create:** The AI IDE tools typically let you select which model to use when prompting the LLM.
 
-## Next steps
+## How the Pillars Work Together
 
-Read and understand the detailed [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md) before you start.
+When all four pillars are properly aligned:
 
-## [Next -> Mindset](ai-working-mindset.md)
+- **Clear Requirements** provide the "what" - defining exactly what needs to be built
+- **Good Prompts** provide the "how" - instructing the AI on the specific implementation approach
+- **Rules for AI** provide the "standards" - ensuring consistent code quality and patterns
+- **Capable Models** provide the "execution" - generating high-quality code that meets requirements
+
+## Implementation Tips
+
+- **Start with Requirements** - Never begin coding without clear, detailed requirements
+- **Iterate on Prompts** - Refine your prompts based on the quality of generated code
+- **Maintain Rules** - Keep your AI rules updated as your codebase evolves
+- **Choose Models Wisely** - Use advanced models for complex tasks, efficient models for simple ones
+
+## Next Steps
+
+Read and understand the detailed [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md) before you start implementing.
+
+---
+
+**Previous:** [← Workflow](workflow.md) | **Next:** [Mindset →](ai-working-mindset.md)
