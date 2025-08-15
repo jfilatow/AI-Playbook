@@ -26,6 +26,7 @@ The MYOB AI SDLC Playbook provides comprehensive guidance for integrating artifi
 - **[The Four Pillars](pages/getting-started/the-four-pillars.md)** - Essential elements for consistent, high-quality AI code generation
 - **[Mindset](pages/getting-started/ai-working-mindset.md)** - Mental frameworks and approaches for effective human-AI collaboration
 - **[Project Setup](pages/getting-started/project-setup.md)** - Technical setup, tool configuration, and project initialization best practices
+- **[MCP Servers Setup](pages/getting-started/mcp-servers-setup.md)** - Installation and configuration of Model Context Protocol servers for enterprise integration
 - **[AI Training Programs](pages/getting-started/ai-training-programs.md)** - Available training resources and skill development pathways
 - **[Stakeholder Engagement](pages/getting-started/stakeholder-engagement.md)** - Strategies for involving stakeholders in AI development initiatives
 - **[AI-first Mindset](pages/getting-started/ai-first-mindset.md)** - Developing an AI-native approach to problem-solving and development

@@ -16,7 +16,17 @@ For information on approved AI tools and their privacy settings, see the [MYOB-a
 
 ### 3. Add AI rules files
 
-Add [Rules for AI](../../pages/appendix/rules-for-ai) to your repository and commit them to version control.
+Add [Rules for AI](../appendix/rules-for-ai/README.md) to your repository and commit them to version control.
+
+### 4. Set up MCP Servers (Recommended)
+
+Model Context Protocol (MCP) servers enable seamless integration between AI tools and MYOB's enterprise knowledge platforms. For enhanced AI capabilities with access to company knowledge:
+
+- **Glean MCP Integration**: Connect to MYOB's enterprise knowledge platform for company search, people directory, and AI assistant capabilities
+- **GitHub MCP**: Access repository information and code context
+- **MYOB-approved MCP Servers**: Use only approved MCP servers that meet security and compliance requirements
+
+See the detailed [MCP Servers Setup Guide](mcp-servers-setup.md) for installation instructions and approved server configurations.
 
 ## Set up repository documentation
 
@@ -24,12 +34,10 @@ You need access to artifacts like user stories, technical designs, diagrams and 
 
 ### Use GitHub (optional)
 
-Use GitHub (opens in new tab) to manage all your project artifacts centrally. You can add an your project documents into to your code repo or create a separate repo and link to it using [github submodules (opens in new tab)](https://github.blog/open-source/git/working-with-submodules/){:target="_blank"}
+Use GitHub to manage all your project artifacts centrally. You can add your project documents into your code repo or create a separate repo and link to it using [GitHub submodules](https://github.blog/open-source/git/working-with-submodules/)
 
-You don't want to use GitHub access, you can use another approach that suits your team.
-
-## [Next -> Generating Requirements](../generating-requirements/)
+If you don't want to use GitHub access, you can use another approach that suits your team.
 
 ---
 
-**Previous:** [← Ai Working Mindset](ai-working-mindset.md) | **Next:** [Ai Training Programs →](ai-training-programs.md)
+**Previous:** [← AI Working Mindset](ai-working-mindset.md) | **Next:** [MCP Servers Setup →](mcp-servers-setup.md)

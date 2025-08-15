@@ -10,4 +10,4 @@ Measure outcomes: adoption, quality, speed, security. See ../feature-development
 
 ---
 
-**Previous:** [← Project Setup](project-setup.md) | **Next:** [Stakeholder Engagement →](stakeholder-engagement.md)
+**Previous:** [← MCP Servers Setup](mcp-servers-setup.md) | **Next:** [Stakeholder Engagement →](stakeholder-engagement.md)
