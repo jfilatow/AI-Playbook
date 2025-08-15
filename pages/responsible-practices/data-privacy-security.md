@@ -84,9 +84,5 @@ For detailed implementation guidance, refer to:
 For additional guidance or security concerns, contact the Security team via [#svc-security](https://myob.slack.com/messages/CANT8SKFY) on Slack.
 
 ---
-
 **Previous:** [← Security](security.md) | **Next:** [Getting Started →](../getting-started/README.md)
-
 ---
-
-**Previous:** [← Security](security.md) | **Next:** [Getting Started →](../getting-started/README.md)
