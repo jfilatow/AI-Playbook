@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Purpose: Versioned pre-commit hook to enforce repo maintenance tasks
+# - Regenerate REPO_STRUCTURE.md on each commit
+# - Append staged changes to CHANGELOG.md under Unreleased
+# Notes: Git is configured to use .githooks/ as hooksPath so this file is tracked
+
+set -euo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
+
+# Regenerate repository structure map (non-fatal)
+if [ -x "scripts/update-repo-structure.sh" ]; then
+  scripts/update-repo-structure.sh || true
+  git add REPO_STRUCTURE.md || true
+fi
+
+# Append staged changes to changelog (non-fatal)
+if [ -x "scripts/append-staged-changes-to-changelog.sh" ]; then
+  scripts/append-staged-changes-to-changelog.sh || true
+  git add CHANGELOG.md || true
+fi
+
+exit 0

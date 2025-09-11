@@ -16,11 +16,14 @@ AI-generated code can contain security vulnerabilities or accidentally embed sec
 - Validate input handling and output encoding in AI-generated code
 - Test for injection vulnerabilities (SQL, NoSQL, OS command, LDAP injection)
 - Verify proper error handling that doesn't expose sensitive information
+- Use custom instructions or rules to ensure the code is secure and follows security best practices
 
 **Don't:**
 - Assume AI-generated code is free of vulnerabilities or follows security best practices
 - Trust that AI-generated code implements security-critical functionality correctly without thorough review
 - Deploy AI-generated authentication or encryption code without expert validation
+- Deploy AI-generated code without understanding the security implications
+- Rely on Custom rules and instructions alone to ensure the code is secure and follows security best practices
 
 ### Current OWASP Top 10 Security Risks (2021)
 
@@ -39,12 +42,12 @@ Understanding the most critical web application security risks helps focus your 
 
 ### How to Secure Dependencies in AI-Generated Code
 
-AI-generated code can import packages that have known vulnerabilities or are potentially malicious packages planted by attackers (supply chain attacks).
+AI-generated code can import packages that have known vulnerabilities or are potentially malicious packages planted by attackers (supply chain attacks). Most recenly this was experienced with the S1ngularty attack on the npm registry.
 
 **Do:**
 - Scan all dependencies with a Software Composition Analysis (SCA) tool to identify vulnerabilities
 - Use constraints such as "Use secure and up-to-date dependencies" in your prompts
-- Check unfamiliar packages for trustworthiness using services like [deps.dev](https://deps.dev) or [Snyk Advisor](https://snyk.io/advisor/)
+- Check unfamiliar packages for trustworthiness using services like Wiz [https://app.wiz.io/](https://app.wiz.io/)
 - Verify package authenticity and maintainer reputation before including new dependencies
 - Implement dependency pinning to avoid automatic updates to potentially compromised versions
 - Regularly update dependencies to patch known vulnerabilities
@@ -57,7 +60,7 @@ AI-generated code can import packages that have known vulnerabilities or are pot
 
 ### How to Protect Your Development Environment
 
-Local AI tools like Cursor and GitHub Copilot can expose you to security risks if not properly configured.
+Using local AI tools like Cursor and GitHub Copilot can expose you to security risks if not properly configured.
 
 **Do:**
 - Prevent local user credentials and auth tokens from being exposed to AI tools (use `.cursorignore`, `.gitignore` files)

@@ -1,10 +1,13 @@
+
+![](assets/myob-banner.png)
+
 # MYOB AI SDLC Playbook
 
-This playbook is the definitive guide for MYOB developers implementing AI-assisted software development. It combines proven SDLC practices with AI-specific guidance, security requirements, and technical standards to enable safe, efficient, and high-quality AI-powered development.
+This playbook is a practical guide for MYOB developers implementing AI-assisted software development into their workflows. It combines proven SDLC practices with AI-specific guidance, responsible practices, security requirements, and technical best practices to enable safe, efficient, and high-quality AI-powered development.
 
 ## Overview
 
-The MYOB AI SDLC Playbook provides comprehensive guidance for integrating artificial intelligence tools into your software development lifecycle while maintaining MYOB's high standards for security, quality, and governance. Whether you're new to AI development or looking to standardize your team's practices, this playbook offers practical, actionable guidance for every stage of the development process.
+The MYOB AI SDLC Playbook provides comprehensive guidance for the use of artificial intelligence tooling in your software development lifecycle while maintaining MYOB's high standards for security, quality, and governance. Whether you're new to AI development or looking to standardise your team's practices, this playbook offers practical, actionable guidance for every stage of the development process.
 
 ## Table of Contents
 
@@ -14,7 +17,7 @@ The MYOB AI SDLC Playbook provides comprehensive guidance for integrating artifi
 ### 2. [Responsible Practices](pages/responsible-practices/README.md)
 **Foundation for ethical AI use** - Essential principles and practices for using AI tools responsibly, securely, and sustainably.
 
-- **[Ethics](pages/responsible-practices/ethics.md)** - Core ethical principles for AI tool usage, accountability frameworks, and bias prevention strategies
+- **[Ethics for AI Tooling](pages/responsible-practices/ethics.md)** - Core ethical principles for AI tool usage, accountability frameworks, and bias prevention strategies
 - **[Sustainability](pages/responsible-practices/sustainability.md)** - Environmental considerations and best practices for sustainable AI development
 - **[Security](pages/responsible-practices/security.md)** - Security guidelines for AI tools, vulnerability assessment, and secure coding practices
 - **[Data Privacy & Security](pages/responsible-practices/data-privacy-security.md)** - Comprehensive data protection guidelines, privacy controls, and compliance requirements

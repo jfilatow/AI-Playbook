@@ -16,6 +16,7 @@ This rule ensures that any changes to the repository structure are automatically
 - Files are moved or renamed
 - Directory organization changes
 - New file types are introduced
+- Dates files are updated at the top of the file
 
 ### 2. Main README Table of Contents  
 [README.md](mdc:README.md) - **MUST** be updated whenever:

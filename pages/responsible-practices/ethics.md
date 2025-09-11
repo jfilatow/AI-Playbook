@@ -1,16 +1,20 @@
-# Ethics
+# Ethics for AI Tooling
+---
+- Section owner:  [Julian Vido] (julian.vido@myob.com) AI Safety Lead 
+- Updated:  11/09/2025 
+---
 
-This guidance helps you use AI tools responsibly while serving the public interest.
+This guidance helps you use AI tools responsibly when implementing AI in the software development lifecycle.
 
 ## Core principles for AI tool use
 
 ### Stay accountable
-You remain responsible for all outputs, even when AI tools help create them.
+You remain responsible for all outputs, even when AI tools help create them. This is important to ensure that you are aware of the limitations of AI tools and that you are not relying on them to make decisions for you. It also helps you to understand the risks of using AI tools and to be able to explain your decisions to stakeholders. It is important to note that AI tools are not perfect and you need to understand the limitations of the tools you are using. It is also important to note that AI tools are not a replacement for human judgement and you need to be able to explain your decisions to stakeholders.
 
 **Do:**
-- Review all AI-generated outputs before you use it
-- Document AI tool usage in critical systems
-- Explain AI-assisted decisions to stakeholders
+- Review all AI-generated outputs before you commit them to code or production
+- Document AI tool usage in critical systems and add comments to the code to explain how the AI tool was used
+- Explain AI-assisted decisions to stakeholders 
 
 **Don't:**
 - Accept AI outputs without checking them
@@ -40,20 +44,20 @@ AI tools may process information in ways that create privacy risks.
 For information on approved AI tools and their privacy settings, see the [MYOB-approved AI tools](../appendix/MYOB-approved-tools.md)
 
 **Don't:**
-- Put sensitive or classified data into public AI tools
-- Use AI tools without understanding how they handle data
+- Put sensitive or restricted data into insecure AI tools
+- Use AI tools without understanding how they handle data in the context of the software development
 
 ## Decision framework
 
 Before you use AI tools, ask:
 
-1. Does this serve a clear user need?
-2. Can you explain how you're using AI?
-3. Do you accept responsibility for outputs?
-4. Have you considered potential bias?
-5. Does this protect user data properly?
+1. Do you understand the limitations of the AI tool you are using?
+2. Do you understand the data that the AI tool is using and how it is being handled?
+3. Do you accept responsibility for the outputs of the AI tool?
+4. Have you read the terms and conditions of the AI tool and understand the privacy settings?
+5. Does this protect user data properly in the context of the software development?
 
-If you cannot answer "yes" to all questions, change your approach.
+If you cannot answer "yes" to all questions, consider using a different AI tool or approach.
 
 ## Things to consider
 
@@ -68,10 +72,18 @@ AI tools use computing resources. Consider environmental costs and use AI tools 
 
 ### Skills and development
 - Use AI tools to enhance rather than replace human expertise.
+- Use AI tools to help you learn and understand the code you are writing and the data you are using.
 - Use AI to enhance your skills and critical thinking rather than replace them
+- Keep up to date with the latest AI tools and techniques to ensure you are using the best tools for the job
 
 ### Public trust
 Be transparent about AI assistance in public-facing services. Consider how AI use affects customer confidence in MYOB products and services.
+- Ensure you are transparent about the use of AI tools in your software development
+- Ensure you are transparent about the limitations of the AI tools you are using
+- Ensure you are transparent about the data that the AI tools are using
+- Ensure you are transparent about the outputs of the AI tools
+- Ensure you are transparent about the risks of using AI tools
+- Ensure you are transparent about the benefits of using AI tools
 
 ## Resources
 
@@ -81,3 +93,5 @@ Be transparent about AI assistance in public-facing services. Consider how AI us
 ---
 
 **Previous:** [← Responsible Practices](README.md) | **Next:** [Sustainability →](sustainability.md)
+
+---
