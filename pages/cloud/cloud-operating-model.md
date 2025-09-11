@@ -3,10 +3,14 @@ title: Cloud Operating Model
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9426534456 -->
 
 # Cloud Operating Model
+
+---
 
 ## What is a Cloud Operating Model?
 

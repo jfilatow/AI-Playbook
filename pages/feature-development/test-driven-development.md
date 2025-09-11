@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Test Driven Development
+
+---
 
 This section outlines the process for doing test driven development. 
 
@@ -47,3 +51,5 @@ This section outlines the process for doing test driven development.
 ---
 
 **Previous:** [← Development](development.md) | **Next:** [Testing →](testing.md)
+
+---

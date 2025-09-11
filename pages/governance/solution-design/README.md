@@ -3,11 +3,15 @@ title: Solution Design
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9294021775 -->
 ![](../../assets/BANNER.png)
 
 # Solution Design
+
+---
 
 ## What is it?
 

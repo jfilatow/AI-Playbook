@@ -3,11 +3,15 @@ title: Documentation
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9294021588 -->
 ![](../assets/BANNER.png)
 
 # Public API Documentation
+
+---
 
 There are many different flavours of public API documentation. This is our guide on how we believe it should be structured and presented to the public.
 
@@ -135,3 +139,5 @@ Please email us at <codex@myob.com> or contact us on slack: [#sig-tech-codex](ht
 ---
 
 **Previous:** [← Api Testing](api-testing.md) | **Next:** [Delivery →](../delivery/README.md)
+
+---

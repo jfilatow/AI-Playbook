@@ -1,6 +1,11 @@
 ![MYOB Banner](../../../../assets/images/myob-banner.png)
+---
+
 
 # API Requirements
+
+---
+
 ````
 ## Instructions
 Generate comprehensive REST API requirements following strict RESTful conventions. Use plural resource names and include practical examples.

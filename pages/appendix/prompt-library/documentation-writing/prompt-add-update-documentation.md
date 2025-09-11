@@ -1,6 +1,10 @@
 ![MYOB Banner](../../../../assets/images/myob-banner.png)
+---
+
 
 # Add / Update Documentation
+
+---
 
 ```
 Please review the codebase and create or update the following documentation files while maintaining their existing structure and format.

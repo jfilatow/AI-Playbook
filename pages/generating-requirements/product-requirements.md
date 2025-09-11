@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Product Requirements
+
+---
 
 This section shows how to use AI to create functional artefacts for your project. Product requirements are necessary for AI Coding Assistants (AICA) to deliver high quality code.
 
@@ -63,3 +67,5 @@ When your situation requires formal documentation, for example a new epic, use A
 ---
 
 **Previous:** [← Generating Requirements](README.md) | **Next:** [Technical Requirements →](technical-requirements.md)
+
+---

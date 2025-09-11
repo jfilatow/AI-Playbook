@@ -3,11 +3,15 @@ title: API Rate Limiting
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9582772337 -->
 ![](../../assets/BANNER.png)
 
 # API Rate Limiting
+
+---
 
 Rate limiting controls the number of requests a client can make to an API within a specified time window, protecting the API from abuse and ensuring fair usage.
 

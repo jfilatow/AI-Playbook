@@ -3,11 +3,15 @@ title: API Discoverability
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9310831465 -->
 ![image](../../assets/BANNER.png)
 
 # API Discoverability
+
+---
 
 # Discoverability Overview
 
@@ -144,3 +148,5 @@ Please email us at <codex@myob.com> or contact us on slack: [#sig-tech-codex](ht
 ---
 
 **Previous:** [← Api Security](../api-security/README.md) | **Next:** [Api Testing →](../api-testing.md)
+
+---

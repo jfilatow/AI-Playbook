@@ -3,11 +3,15 @@ title: Using Open Source Code
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9294021787 -->
 ![](../assets/BANNER.png)
 
 # Using Open Source Code
+
+---
 
 ## Introduction
 

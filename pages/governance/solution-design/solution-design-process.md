@@ -3,12 +3,16 @@ title: Solution Design Process
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9346258106 -->
 
 ![](../../assets/BANNER.png)
 
 # Solution Design Process
+
+---
 
  At a high level, solution design goes through several phases. The way you execute those phases depends on the scale of the problem and impact. Clear guidelines on identifying scale of scope are called out in the [Decision Framework](../decision-framework.md). Identifying the right scale of scope will highlight the stakeholders that need to be involved, the effort that goes into the steps, and how it is documented.
 

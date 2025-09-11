@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Project Setup
+
+---
 
 Set up your development environment to use AI tools safely and effectively.
 
@@ -43,3 +47,5 @@ If you don't want to use GitHub access, you can use another approach that suits 
 ---
 
 **Previous:** [← AI Working Mindset](ai-working-mindset.md) | **Next:** [MCP Servers Setup →](mcp-servers-setup.md)
+
+---

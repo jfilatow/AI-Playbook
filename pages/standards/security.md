@@ -3,10 +3,16 @@ title: Security
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293923525 -->
 [![](../assets/BANNER.png)
+
 # Security
+
+---
+
 [<- Back to Engineering Standards](./README.md)
 ## SE-2022-SCC
 ### All systems must implement guidance and principles outlined in the Security Chapter of Codex

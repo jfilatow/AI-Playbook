@@ -3,10 +3,15 @@ title: Observability Traces
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9559278520 -->
 ![](../../assets/BANNER.png)
+
 # Observability Traces
+
+---
 
 ## Tracing
 Distributed tracing is a method used to monitor and profile applications, especially those that are distributed across multiple servers, services, or components. It provides a way to track the flow of a single user request as it travels through various parts of a complex system. Distributed tracing is essential in modern software systems for several reasons:-

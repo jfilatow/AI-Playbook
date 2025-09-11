@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Continuous Improvement for AI-Enabled Development
+
+---
 
 Continuous improvement is fundamental to successful AI-assisted software development. By establishing systematic feedback loops, measurement frameworks, and improvement practices, teams can maximize the value of AI tools while maintaining high quality and security standards.
 
@@ -312,3 +316,5 @@ Remember that continuous improvement is itself a continuous process—regularly 
 ---
 
 **Previous:** [← Documentation](documentation.md) | **Next:** [Ai Powered Features →](ai-powered-features.md)
+
+---

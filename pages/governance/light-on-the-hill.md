@@ -3,11 +3,15 @@ title: Light on the Hill
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293956020 -->
 ![](../assets/BANNER.png)
 
 # Light on the Hill
+
+---
 
 ## What is a Light on the Hill (LOTH)?
 

@@ -3,11 +3,15 @@ title: Identifying Data Products
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293923383 -->
 ![](../assets/BANNER.png)
 
 # Identifying data products
+
+---
 
 The keys to creating valuable and reusable data products are to focus on the user and not  make them more complicated than they need to be. To avoid this anti-pattern, we recommend the following steps to identify data products for a use case:
 

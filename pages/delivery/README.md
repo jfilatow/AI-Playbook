@@ -3,11 +3,15 @@ title: Delivering Software
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293955858 -->
 ![](../assets/BANNER.png)
 
 # Delivery Chapter
+
+---
 
 Every day, our product and engineering teams are delivering experiences and value to our customers. This could be new features and an improved customer experience. While building our products and systems, we value a set of engineering principles and practices to build quality in, and continuously deliver better outcomes for our customers.
 
@@ -63,3 +67,5 @@ Please email us at <codex@myob.com> or contact us on slack: [#sig-tech-codex](ht
 ---
 
 **Previous:** [← Documentation](../apis/documentation.md) | **Next:** [Operations →](../operations/README.md)
+
+---

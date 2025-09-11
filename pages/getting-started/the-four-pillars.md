@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # The Four Pillars
+
+---
 
 To generate consistent code, four elements must come together as shown in this diagram:
 
@@ -63,3 +67,5 @@ Read and understand the detailed [Prompting Guidance](../appendix/prompt-library
 ---
 
 **Previous:** [← Workflow](workflow.md) | **Next:** [Mindset →](ai-working-mindset.md)
+
+---

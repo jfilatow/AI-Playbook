@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # AI Training Programs
+
+---
 
 Comprehensive AI training resources to build capability across MYOB teams, from foundational knowledge to advanced implementation skills.
 
@@ -189,3 +193,5 @@ Stay updated with the latest AI developments and continuously adapt your learnin
 ---
 
 **Previous:** [← MCP Servers Setup](mcp-servers-setup.md) | **Next:** [Stakeholder Engagement →](stakeholder-engagement.md)
+
+---

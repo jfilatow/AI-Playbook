@@ -1,6 +1,10 @@
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 # Prompting Guidance
+
+---
 
 Effective prompting is essential for harnessing the full potential of large language models (LLMs). By crafting thoughtful, specific, and context-aware prompts, you can achieve superior outputs and streamline workflows. This guide outlines practical strategies to enhance your prompting skills as part of this government playbook.
 

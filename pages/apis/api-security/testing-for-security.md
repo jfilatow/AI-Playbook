@@ -3,11 +3,15 @@ title: Testing APIs for Security
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9581628012 -->
 ![](../../assets/BANNER.png)
 
 # Testing APIs for Security
+
+---
 
 When testing APIs for security flaws and vulnerabilities the main areas to look at are; Penetration testing, Vulnerability scanning, and Threat Assessment. These areas identify and remediate the majority of security weaknesses in the API. It is also recommended to conduct security testing at different stages of the development lifecycle to catch issues early, and at all stages of the workflow.
 

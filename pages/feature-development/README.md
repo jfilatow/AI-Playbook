@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Feature Development
+
+---
 
 This section outlines a streamlined workflow for integrating AI into the software development lifecycle. The workflow focuses on discipline and good practices to deliver quality software for MYOB.
 
@@ -50,3 +54,5 @@ These frameworks integrate into the development workflow at multiple stages:
 ---
 
 **Previous:** [← Technical Requirements](../generating-requirements/technical-requirements.md) | **Next:** [Development →](development.md)
+
+---

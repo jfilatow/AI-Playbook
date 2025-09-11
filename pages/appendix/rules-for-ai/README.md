@@ -1,6 +1,10 @@
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 # Rules for AI
+
+---
 
 Most Artificial Intelligence Coding Assistants (AICAs) have the concept of rules for AI. AI Rules define consistent and repeatable standards, patterns and conventions across your codebase. 
 
@@ -18,3 +22,5 @@ Some examples of rules for the programming languages and standards used within M
 ---
 
 **Previous:** [← Prompt Library](../prompt-library/README.md) | **Next:** [Myob Approved Tools →](../MYOB-approved-tools.md)
+
+---

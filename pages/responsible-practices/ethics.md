@@ -1,12 +1,12 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
 
 # Ethics for AI Tooling
----
-- Section owner:  [Julian Vido] (julian.vido@myob.com) AI Safety Lead 
-- Updated:  11/09/2025 
+
 ---
 
-This guidance helps you use AI tools responsibly when implementing AI in the software development lifecycle.
+
+This guidance helps you use AI tools responsibly when implementing and working with AI in the software development lifecycle.
 
 ## Core principles for AI tool use
 

@@ -3,11 +3,15 @@ title: APIs
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293923284 -->
 ![](../assets/BANNER.png)
 
 # What is an API?
+
+---
 
 ## Application programming interface (API)
 

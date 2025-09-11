@@ -3,11 +3,15 @@ title: Secure Third-Party Integrations
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9582805102 -->
 ![](../../assets/BANNER.png)
 
 # Secure Third-Party Integrations
+
+---
 
 Integrating third-party DLLs (Dynamic Link Libraries) into your Web API can provide additional functionality and features, but it also introduces potential security risks. It’s important to understand and mitigate these risks to ensure the security of your Web API.
 

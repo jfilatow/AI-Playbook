@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Getting Started
+
+---
 
 This section explains the core concepts of working with AI tools effectively and safely at MYOB.
 
@@ -41,3 +45,5 @@ Follow this sequence to build your AI development skills:
 ---
 
 **Previous:** [← Data Privacy Security](../responsible-practices/data-privacy-security.md) | **Next:** [Workflow →](workflow.md)
+
+---

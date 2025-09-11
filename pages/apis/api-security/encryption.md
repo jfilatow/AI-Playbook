@@ -3,11 +3,15 @@ title: API Payload Encryption
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9546958764 -->
 ![](../../assets/BANNER.png)
 
 # API Payload Encryption
+
+---
 
 Encrypt sensitive data transmitted over the network using HTTPS (TLS/SSL) to prevent eavesdropping and data tampering. This ensures that communication between clients and the API server remains secure. The minimum version of TLS that can be used is 1.2 as many environments and platforms do not support anything lower. It is preferable where possible to use TLS 1.3 to stay ahead of any changes.
 

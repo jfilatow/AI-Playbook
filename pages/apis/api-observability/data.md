@@ -3,11 +3,15 @@ title: Observability Data Use
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9312501770 -->
 ![](../../assets/BANNER.png)
 
 # Observability Data Use
+
+---
 
 ## What Data to observe
 

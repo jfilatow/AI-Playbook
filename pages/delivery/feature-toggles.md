@@ -3,10 +3,16 @@ title: Feature Toggles
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293661745 -->
 ![](../assets/BANNER.png)
+
 # Feature Toggles
+
+---
+
 #### Level of guidance: Default
 
 ## Decisions to make

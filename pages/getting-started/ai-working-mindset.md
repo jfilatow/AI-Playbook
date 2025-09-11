@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Mindset
+
+---
 
 ## AI Problem Solving Mentality
 
@@ -82,3 +86,5 @@ This playbook captures current best practices, acknowledging they will evolve ra
 ---
 
 **Previous:** [← The Four Pillars](the-four-pillars.md) | **Next:** [Project Setup →](project-setup.md)
+
+---

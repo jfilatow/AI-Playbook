@@ -3,10 +3,16 @@ title: Quality Strategy
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293923467 -->
 ![](../assets/BANNER.png)
+
 # Quality Strategy
+
+---
+
 #### Level of guidance: Default
 
 ## What is it?

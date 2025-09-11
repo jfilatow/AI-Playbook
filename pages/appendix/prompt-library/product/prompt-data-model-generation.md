@@ -1,6 +1,10 @@
 ![MYOB Banner](../../../../assets/images/myob-banner.png)
+---
+
 
 # Data Model Generation
+
+---
 
 ```
 I'd like to create a data model based on the following project business and technical requirements. 

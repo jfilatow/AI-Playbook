@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Workflow
+
+---
 
 The diagram below shows the main steps in this playbook. We've deliberately simplified it. This development workflow follows recognised best practices already used throughout MYOB, with help from AI tools and techniques.
 
@@ -39,3 +43,5 @@ The diagram below shows the main steps in this playbook. We've deliberately simp
 ---
 
 **Previous:** [← Getting Started](README.md) | **Next:** [The Four Pillars →](the-four-pillars.md)
+
+---

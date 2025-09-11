@@ -3,11 +3,15 @@ title: Types of APIs
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9422700933 -->
 ![](../../assets/BANNER.png)
 
 # Types of APIs
+
+---
 
 Different types of APIs have different requirements depending on their Domain and scope. These requirements vary slightly depending on how widespread the impact of an API change or outage can be.
 

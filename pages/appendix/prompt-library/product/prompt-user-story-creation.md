@@ -1,6 +1,10 @@
 ![MYOB Banner](../../../../assets/images/myob-banner.png)
+---
+
 
 # User Story Creation
+
+---
 
 This prompt can be used to create a single story from user-defined requirements.
 

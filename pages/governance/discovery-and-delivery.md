@@ -3,11 +3,15 @@ title: Discovery and Delivery
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293923552 -->
 ![](../assets/BANNER.png)
 
 # Discovery and Delivery
+
+---
 
 ## What is it?
 

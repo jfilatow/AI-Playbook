@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Context Engineering and Spec Driven Development
+
+---
 
 Context engineering and specification-driven development represent fundamental approaches to AI-assisted software development, emphasizing the critical importance of providing the right information at the right time to maximize AI tool effectiveness and development outcomes.
 
@@ -1068,3 +1072,5 @@ As AI systems become more sophisticated and prevalent in software development, t
 ---
 
 **Previous:** [← AI Development Frameworks](ai-development-frameworks.md) | **Next:** [Development →](development.md)
+
+---

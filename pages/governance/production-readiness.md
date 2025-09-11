@@ -3,11 +3,15 @@ title: Production Readiness
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9294021763 -->
 ![](../assets/BANNER.png)
 
 # Production Readiness
+
+---
 
 A list of items that should be reviewed by teams as part of an assessment of readiness for production.
 This list is for any change, large or small and is accumulated from guidance and advice in our:

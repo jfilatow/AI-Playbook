@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # MCP Servers Setup Guide
+
+---
 
 Model Context Protocol (MCP) servers provide standardized interfaces for AI models to interact with enterprise knowledge platforms and development tools. This guide covers the installation and configuration of MYOB-approved MCP servers.
 
@@ -196,3 +200,5 @@ For questions or support, contact the Architecture team or post in the #sig-tech
 ---
 
 **Previous:** [← Project Setup](project-setup.md) | **Next:** [AI Training Programs →](ai-training-programs.md)
+
+---

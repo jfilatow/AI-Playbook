@@ -3,11 +3,15 @@ title: API Authorisation
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9547286169 -->
 ![](../../assets/BANNER.png)
 
 # API Authorisation
+
+---
 
 Proper authorisation is a critical aspect of API security that helps to control access to resources and functionalities. By enforcing proper authorisation mechanisms, you can ensure that only authorisation users or systems can access specific API endpoints or perform certain actions.
 

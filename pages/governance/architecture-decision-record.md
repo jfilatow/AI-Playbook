@@ -3,11 +3,15 @@ title: Architecture Decision Record
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293956008 -->
 ![](../assets/BANNER.png)
 
 # Architecture Decision Record & Register
+
+---
 
 ## Introduction
 

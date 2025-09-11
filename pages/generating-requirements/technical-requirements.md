@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Technical Requirements
+
+---
 
 This section shows how to use AI to create technical artefacts for your project. Technical requirements are necessary for AI Coding Assistants (AICA) to deliver high quality code.
 
@@ -43,3 +47,5 @@ This AI-powered analysis can identifies gaps in documentation and spots alternat
 ---
 
 **Previous:** [← Product Requirements](product-requirements.md) | **Next:** [Feature Development →](../feature-development/README.md)
+
+---

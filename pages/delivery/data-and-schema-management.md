@@ -3,10 +3,16 @@ title: Data and Schema Management
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293955904 -->
 ![](../assets/BANNER.png)
+
 # Data and Schema Management
+
+---
+
 #### Level of guidance: Default
 
 ## Decisions to make

@@ -3,11 +3,15 @@ title: API Logging and Monitoring for Security
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9582379224 -->
 ![](../../assets/BANNER.png)
 
 # API Logging and Monitoring for Security
+
+---
 
 Logging and monitoring of security events in web APIs are essential practices to ensure the security, performance, and reliability of web applications. These practices involve systematically recording events and analysing them to detect and respond to potential security incidents. The important implementation considerations for Logging and Monitoring are outlined below.
 

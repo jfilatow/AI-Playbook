@@ -1,4 +1,6 @@
 ![MYOB Banner](../../../../assets/images/myob-banner.png)
+---
+
 
 The set of Cursor rules files for Node.js frontend applications.
 
@@ -10,7 +12,10 @@ Cursor saves the rules files in the repository in the `.cursor/rules` directory.
 description: API Integration Standards
 globs: src/**/*.js
 ---
+
 # API Integration Standards
+
+---
 
 ## Configuration
 - Use apiServer from config for base URL:

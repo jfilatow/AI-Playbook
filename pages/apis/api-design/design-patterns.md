@@ -3,10 +3,16 @@ title: Design Patterns used in API Architecture
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9422864791 -->
 ![](../../assets/BANNER.png)
+
 # Design Patterns used in API Architecture
+
+---
+
 Design patterns are reusable solutions to common problems encountered during software development. When designing APIs, several design patterns can be employed to ensure scalability, maintainability, and extensibility. Here's an outline of some commonly used design patterns specifically tailored for APIs:
 
 ## RESTful Design Pattern:

@@ -3,11 +3,15 @@ title: Data Product
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293923320 -->
 ![](../assets/BANNER.png)
 
 # What is a Data Product?
+
+---
 
 ## Data product != datasets
 

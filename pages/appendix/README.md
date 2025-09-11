@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Appendix
+
+---
 
 This section contains supporting materials and reference information for the MYOB AI SDLC Playbook.
 
@@ -30,3 +34,5 @@ The **Contributing** guide shows you how to share your own prompts, rules, and i
 ---
 
 **Previous:** [← Standards](../standards/README.md) | **Next:** [Prompt Library →](prompt-library/README.md)
+
+---

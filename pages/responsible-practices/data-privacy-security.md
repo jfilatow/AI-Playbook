@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Data Privacy & Security for AI
+
+---
 
 Ensuring data privacy and security is paramount in the development and deployment of AI systems. Adhering to best practices and understanding regulatory frameworks can mitigate risks and build trust with customers and stakeholders.
 

@@ -3,11 +3,15 @@ title: Release Management
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293923491 -->
 ![](../assets/BANNER.png)
 
 # Release Management
+
+---
 
 #### Level of guidance: Suggestion
 

@@ -3,10 +3,15 @@ title: Data
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293661683 -->
 ![](../assets/BANNER.png)
+
 # Data Chapter
+
+---
 
 We use data to make better decisions, improve operations, and create new opportunities. Data chapter aims to share the principles and practices to build data products at MYOB. The following is an outline of the topics covered in this chapter
 
@@ -24,3 +29,5 @@ We use data to make better decisions, improve operations, and create new opportu
 ---
 
 **Previous:** [← Governance](../governance/README.md) | **Next:** [Cloud →](../cloud/README.md)
+
+---

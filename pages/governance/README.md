@@ -3,10 +3,15 @@ title: Process and Governance 
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293955983 -->
 ![](../assets/BANNER.png)
+
 # Process and Governance
+
+---
 
 Technology Process and governance is how we support good technology decision making at MYOB.  Good decisions will make our systems higher quality, easier to maintain and extend, and more reliable for our customers.
 
@@ -48,3 +53,5 @@ Please email us at codex@myob.com or contact us on slack: [#sig-tech-codex](http
 ---
 
 **Previous:** [← Operations](../operations/README.md) | **Next:** [Data →](../data/README.md)
+
+---

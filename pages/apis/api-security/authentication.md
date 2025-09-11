@@ -3,11 +3,15 @@ title: API Authentication
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9547253382 -->
 ![](../../assets/BANNER.png)
 
 # API Authentication
+
+---
 
 API authentication is a crucial aspect of API security. It ensures that only authorised users or systems can access and interact with the API. By implementing robust API authentication mechanisms security of the APIs is enhanced. Various methods and best practices to implement API authentication effectively are as follows :-
 

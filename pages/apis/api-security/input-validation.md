@@ -3,11 +3,15 @@ title: Input Validation for API Requests
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9547546819 -->
 ![](../../assets/BANNER.png)
 
 # Input Validation for API Requests
+
+---
 
 Data Input validation is important for sanitising all input data received from clients to prevent injection attacks such as SQL injection, XSS (Cross-Site Scripting), and CSRF (Cross-Site Request Forgery).
 

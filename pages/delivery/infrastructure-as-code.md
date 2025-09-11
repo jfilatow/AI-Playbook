@@ -3,11 +3,15 @@ title: Infrastructure As Code
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293923436 -->
 ![](../assets/BANNER.png)
 
 # Infrastructure as Code
+
+---
 
 #### Level of guidance: Default
 

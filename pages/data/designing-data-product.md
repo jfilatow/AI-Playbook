@@ -3,11 +3,15 @@ title: Designing Data Product
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293955838 -->
 ![](../assets/BANNER.png)
 
 # Designing a data product
+
+---
 
 A Data Product Canvas is a visual framework that guides your team through the data product specification. It can be used to establish a structured process of data product design across an organisation. We suggest to fill out this canvas collaboratively. In total, the Data Product Canvas consists of ten building blocks:
 

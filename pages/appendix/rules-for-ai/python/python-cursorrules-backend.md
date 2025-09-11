@@ -1,4 +1,6 @@
 ![MYOB Banner](../../../../assets/images/myob-banner.png)
+---
+
 
 The set of Cursor rules files for python backend applications.
 
@@ -10,7 +12,10 @@ Cursor saves the rules files in the repository in the `.cursor/rules` directory.
 description: Project Overview
 globs: *.*
 ---
+
 # Project Overview
+
+---
 
 ## Stack
 - Python

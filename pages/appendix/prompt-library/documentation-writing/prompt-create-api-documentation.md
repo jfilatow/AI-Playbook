@@ -1,6 +1,10 @@
 ![MYOB Banner](../../../../assets/images/myob-banner.png)
+---
+
 
 # Create API Documentation
+
+---
 
 This is an example of generating documentation for an API. Similar prompts can be used for other types of applications.
 

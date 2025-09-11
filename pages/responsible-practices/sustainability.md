@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Sustainability
+
+---
 
 Balance environmental impact with customer value when choosing AI tools for building products and services.
 
@@ -48,3 +52,5 @@ Principle 5: "Take a greener approach to AI and software tools" requires you to:
 ---
 
 **Previous:** [← Ethics](ethics.md) | **Next:** [Security →](security.md)
+
+---

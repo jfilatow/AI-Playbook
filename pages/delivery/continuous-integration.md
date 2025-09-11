@@ -3,11 +3,15 @@ title: Continuous Integration
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293955892 -->
 ![](../assets/BANNER.png)
 
 # Continuous Integration
+
+---
 
 #### Level of guidance: Standard
 

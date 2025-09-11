@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # AI-Assisted Code Refactoring
+
+---
 
 Refactoring is the systematic process of restructuring existing code without altering its external behavior, aimed at improving readability, maintainability, and performance. In AI-assisted development, refactoring becomes even more critical as it helps maintain code quality while leveraging AI's ability to identify patterns and suggest improvements.
 
@@ -556,3 +560,5 @@ Example refactoring prompt:
 ---
 
 **Previous:** [← Testing](testing.md) | **Next:** [Documentation →](documentation.md)
+
+---

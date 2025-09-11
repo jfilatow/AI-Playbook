@@ -3,9 +3,14 @@ title: Testing Strategy
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9341740083 -->
+
 # Testing Strategy
+
+---
 
 #### Level of guidance: Default
 

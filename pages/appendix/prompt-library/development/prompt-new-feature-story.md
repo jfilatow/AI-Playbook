@@ -1,6 +1,11 @@
 ![MYOB Banner](../../../../assets/images/myob-banner.png)
+---
+
 
 # Implement New Feature / Story
+
+---
+
 An example for starting a new feature on a new branch.
 ```
 I have provided you with a Product Requirements document(PRD). Please analyze the features and User Stories and implement as follows:

@@ -9,3 +9,5 @@ title: Cloud
 ---
 
 **Previous:** [← Data](../data/README.md) | **Next:** [Standards →](../standards/README.md)
+
+---

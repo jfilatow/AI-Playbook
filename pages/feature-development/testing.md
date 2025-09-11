@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Testing
+
+---
 
 This section outlines how to write automated tests.
 
@@ -58,3 +62,5 @@ In MYOB, the term journey tests is used for testing the entire application and i
 ---
 
 **Previous:** [← Test Driven Development](test-driven-development.md) | **Next:** [Refactoring →](refactoring.md)
+
+---

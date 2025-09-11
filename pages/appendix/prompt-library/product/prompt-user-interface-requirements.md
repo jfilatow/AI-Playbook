@@ -1,6 +1,10 @@
 ![MYOB Banner](../../../../assets/images/myob-banner.png)
+---
+
 
 # User Interface Requirements
+
+---
 
 ```
 I have provided you with  mock-ups of the interfaces as attachments. I have also defined that data model and backend API endpoints below. 

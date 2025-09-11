@@ -3,9 +3,14 @@ title: Principles
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293661764 -->
+
 # Principles
+
+---
 
 These are the principles that guide how we deliver software MYOB.
 

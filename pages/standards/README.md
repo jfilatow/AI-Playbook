@@ -3,10 +3,15 @@ title: Engineering Standards
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9293955944 -->
 ![](../assets/BANNER.png)
+
 # Engineering Standards
+
+---
 
 ## Design and Development
 
@@ -39,3 +44,5 @@ title: Engineering Standards
 ---
 
 **Previous:** [← Cloud](../cloud/README.md) | **Next:** [Appendix →](../appendix/README.md)
+
+---

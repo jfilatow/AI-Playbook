@@ -3,9 +3,14 @@ title: System Lifecycle
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9391737046 -->
+
 # System Lifecycle
+
+---
 
 At MYOB we have a defined software lifecycle, from creation to decommissioning. Each system in our [System Catalogue](https://system-catalogue.myob.com/) must be tagged with a lifecycle stage. This lifecycle stage can be referenced whenever decisions need to be made - for example integrating to existing systems, or prioritising maintenance and change.
 

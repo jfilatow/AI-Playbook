@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Documentation
+
+---
 
 AI helps you create and maintain high-quality, readable documentation. It can read documenation as part of its context.
 
@@ -34,3 +38,5 @@ Good up-to-date documentation helps AI to understand context and implementation 
 ---
 
 **Previous:** [← Refactoring](refactoring.md) | **Next:** [Continuous Improvement →](continuous-improvement.md)
+
+---

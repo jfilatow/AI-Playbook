@@ -3,11 +3,15 @@ title: API Testing
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9494462861 -->
 ![](../assets/BANNER.png)
 
 # API Testing
+
+---
 
 ## What is API testing?
 
@@ -126,3 +130,5 @@ Please email us at <codex@myob.com> or contact us on Slack: [#sig-tech-codex](ht
 ---
 
 **Previous:** [← Api Discoverability](api-discoverability/README.md) | **Next:** [Documentation →](documentation.md)
+
+---

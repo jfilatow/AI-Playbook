@@ -3,11 +3,15 @@ title: API Design
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9292186723 -->
 ![](../../assets/BANNER.png)
 
 # API Design
+
+---
 
 ## What is it?
 
@@ -59,3 +63,5 @@ Please email us at <codex@myob.com> or contact us on slack: [#sig-tech-codex](ht
 ---
 
 **Previous:** [← Apis](../README.md) | **Next:** [Api Observability →](../api-observability/README.md)
+
+---

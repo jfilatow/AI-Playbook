@@ -3,9 +3,14 @@ title: System Health
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9392194628 -->
+
 # System Health
+
+---
 
 ### Level of guidance
 

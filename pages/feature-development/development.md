@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Development
+
+---
 
 This section outlines how to develop new features. For test-first development, see [Test Driven Development](test-driven-development.md).
 
@@ -64,3 +68,5 @@ Create a new git branch for your feature.
 ---
 
 **Previous:** [← Feature Development](README.md) | **Next:** [Test Driven Development →](test-driven-development.md)
+
+---

@@ -3,12 +3,16 @@ title: Technical System Ownership
 ---
 
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9547907605 -->
 
 ![](../assets/BANNER.png)
 
 # Technical System Owner (TSO)
+
+---
 
 > This is adapted from [Evan Bottcher's Blog](https://myobconfluence.atlassian.net/wiki/spaces/~944510255/blog/2022/02/03/8681915326/What+does+Technical+System+Ownership+TSO+mean)
 

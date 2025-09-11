@@ -3,10 +3,15 @@ title: Observability Metrics
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9312796678 -->
 ![](../../assets/BANNER.png)
+
 # Observability Metrics
+
+---
 
 ## Metric Types
 Observability aims to provide insights into the health, performance, and behaviour of the system. To achieve this, various metrics can be tracked that can help identify and diagnose issues. Some key metrics that are commonly tracked are as follows :-

@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # Security
+
+---
 
 This guidance helps you use AI tools securely in software development while maintaining robust security practices throughout the development lifecycle.
 

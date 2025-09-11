@@ -1,6 +1,10 @@
 ![MYOB Banner](../../assets/images/myob-banner.png)
+---
+
 
 # MYOB-Approved AI Tools
+
+---
 
 ## Table of Contents
 - [Overview](#overview)
@@ -149,3 +153,5 @@ Your request will undergo review and approval from:
 ---
 
 **Previous:** [← Rules For Ai](rules-for-ai/README.md) | **Next:** [Case Studies →](case-studies.md)
+
+---

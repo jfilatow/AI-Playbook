@@ -3,11 +3,15 @@ title: API Observability
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9312600069 -->
 ![](../../assets/BANNER.png)
 
 # API Observability
+
+---
 
 ## Intro
 
@@ -271,3 +275,5 @@ Please email us at <codex@myob.com> or contact us on slack: [#sig-tech-codex](ht
 ---
 
 **Previous:** [← Api Design](../api-design/README.md) | **Next:** [Api Security →](../api-security/README.md)
+
+---

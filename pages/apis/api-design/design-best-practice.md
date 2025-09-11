@@ -3,11 +3,15 @@ title: Best practices for Designing APIs
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9424142584 -->
 ![](../../assets/BANNER.png)
 
 # Best practices for Designing APIs
+
+---
 
 Designing APIs with references involves creating endpoints that allow users to access related resources efficiently. Here's an outline of best practices for designing such APIs:
 

@@ -3,11 +3,15 @@ title: Types of API Architecture
 ---
 
 ![MYOB Banner](../../../assets/images/myob-banner.png)
+---
+
 
 <!-- confluence-page-id: 9422340466 -->
 ![](../../assets/BANNER.png)
 
 # Types of API Architecture
+
+---
 
 Whilst there are different types of APIs whose requirements are defined by scope and Domain ([Types of APIs Page](./types.md)). These APIs can have different types of architecture depending upon their use and
 environmental requirements. API architectures are based on different factors such as; the nature of the application, scalability requirements, security considerations, and integration needs.
