@@ -1,3 +1,5 @@
+![MYOB Banner](../../../../assets/images/myob-banner.png)
+
 The set of Cursor rules files for Node.js frontend applications.
 
 Cursor saves the rules files in the repository in the `.cursor/rules` directory.  Each file below is a separate `.md` file in this directory.

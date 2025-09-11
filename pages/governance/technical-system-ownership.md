@@ -1,6 +1,9 @@
 ---
 title: Technical System Ownership
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9547907605 -->
 
 ![](../assets/BANNER.png)

@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Getting Started
 
 This section explains the core concepts of working with AI tools effectively and safely at MYOB.

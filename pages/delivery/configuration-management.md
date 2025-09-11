@@ -1,6 +1,9 @@
 ---
 title: Configuration Management
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9293923409 -->
 ![](../assets/BANNER.png)
 # Configuration Management

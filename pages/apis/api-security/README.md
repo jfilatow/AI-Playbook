@@ -1,6 +1,9 @@
 ---
 title: API Security
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9547514023 -->
 ![](../../assets/BANNER.png)
 

@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Workflow
 
 The diagram below shows the main steps in this playbook. We've deliberately simplified it. This development workflow follows recognised best practices already used throughout MYOB, with help from AI tools and techniques.

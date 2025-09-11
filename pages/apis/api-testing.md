@@ -1,6 +1,9 @@
 ---
 title: API Testing
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9494462861 -->
 ![](../assets/BANNER.png)
 

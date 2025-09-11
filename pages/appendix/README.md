@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Appendix
 
 This section contains supporting materials and reference information for the MYOB AI SDLC Playbook.

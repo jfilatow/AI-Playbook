@@ -1,3 +1,5 @@
+![MYOB Banner](../../../../assets/images/myob-banner.png)
+
 # Add Unit Test
 
 These are examples of unit test prompts

@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # MYOB AI Case Studies (Template)
 
 - Problem & context

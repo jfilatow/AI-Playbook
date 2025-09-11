@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Designing AI-Powered Features
 
 Integrating Artificial Intelligence into product design can significantly enhance user experiences by offering personalized, efficient, and intelligent solutions. However, designing AI-powered features requires careful consideration to ensure they are user-centric, ethical, and effective. This comprehensive guide outlines key principles and best practices for designing AI-driven features at MYOB.

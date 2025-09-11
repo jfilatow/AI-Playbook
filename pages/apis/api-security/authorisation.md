@@ -1,6 +1,9 @@
 ---
 title: API Authorisation
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9547286169 -->
 ![](../../assets/BANNER.png)
 

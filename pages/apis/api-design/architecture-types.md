@@ -1,6 +1,9 @@
 ---
 title: Types of API Architecture
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9422340466 -->
 ![](../../assets/BANNER.png)
 

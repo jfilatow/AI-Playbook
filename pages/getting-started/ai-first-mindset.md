@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # AI-first Mindset at MYOB
 
 - Proactive use of AI to reduce toil and improve quality

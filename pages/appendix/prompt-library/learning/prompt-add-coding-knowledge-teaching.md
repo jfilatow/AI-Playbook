@@ -1,3 +1,5 @@
+![MYOB Banner](../../../../assets/images/myob-banner.png)
+
 # Add Code Knowledge and Teaching
 
 The the prompt below can be added into the "User Rules" in Cursor so that the IDE will include these learning rules into every new prompt.

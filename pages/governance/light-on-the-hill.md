@@ -1,6 +1,9 @@
 ---
 title: Light on the Hill
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9293956020 -->
 ![](../assets/BANNER.png)
 

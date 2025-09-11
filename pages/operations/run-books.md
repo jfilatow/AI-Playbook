@@ -1,6 +1,9 @@
 ---
 title: Run Books
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9487581185 -->
 # Run Books
 

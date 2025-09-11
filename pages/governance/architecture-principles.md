@@ -1,6 +1,9 @@
 ---
 title: Architecture Principles
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9293661864 -->
 ![](../assets/BANNER.png)
 # Architecture Principles

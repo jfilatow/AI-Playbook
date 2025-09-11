@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # MYOB-Approved AI Tools
 
 ## Table of Contents

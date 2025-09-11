@@ -1,6 +1,9 @@
 ---
 title: System Lifecycle
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9391737046 -->
 # System Lifecycle
 

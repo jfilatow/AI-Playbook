@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Testing
 
 This section outlines how to write automated tests.

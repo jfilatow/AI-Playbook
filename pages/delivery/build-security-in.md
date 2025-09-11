@@ -1,6 +1,9 @@
 ---
 title: Build Security In
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9294021666 -->
 ![](../assets/BANNER.png)
 

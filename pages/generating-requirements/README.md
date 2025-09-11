@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Generating Requirements
 
 As per [the four pillars](../getting-started/the-four-pillars.md), AI Coding Assistants (AICA) deliver high quality results when you provide clear requirements.

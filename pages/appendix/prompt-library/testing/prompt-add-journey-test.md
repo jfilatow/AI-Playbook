@@ -1,3 +1,5 @@
+![MYOB Banner](../../../../assets/images/myob-banner.png)
+
 # Add Journey Test
 
 This is an example prompt, for illustration. You will need to update the "Test Setup" and "Test Interaction Data" sections to suit your specific requirements.

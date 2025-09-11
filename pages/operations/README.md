@@ -1,6 +1,9 @@
 ---
 title: Production Operations
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9392488963 -->
 
 # Production Operations

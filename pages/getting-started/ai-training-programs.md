@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # AI Training Programs
 
 Comprehensive AI training resources to build capability across MYOB teams, from foundational knowledge to advanced implementation skills.

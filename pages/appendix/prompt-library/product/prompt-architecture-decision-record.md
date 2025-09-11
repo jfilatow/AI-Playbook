@@ -1,3 +1,5 @@
+![MYOB Banner](../../../../assets/images/myob-banner.png)
+
 # Architectural Decision Record (ADR)
 ````
 # Role & Objective

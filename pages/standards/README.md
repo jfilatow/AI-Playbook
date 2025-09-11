@@ -1,6 +1,9 @@
 ---
 title: Engineering Standards
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9293955944 -->
 ![](../assets/BANNER.png)
 # Engineering Standards

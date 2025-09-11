@@ -1,6 +1,9 @@
 ---
 title: Input Validation for API Requests
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9547546819 -->
 ![](../../assets/BANNER.png)
 

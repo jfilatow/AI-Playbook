@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Responsible Practices
 
 Use AI tools ethically, securely, and sustainably when implementing AI in the software development lifecycle. This section establishes the foundational principles for responsible AI adoption at MYOB.

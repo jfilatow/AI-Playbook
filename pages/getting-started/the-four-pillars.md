@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # The Four Pillars
 
 To generate consistent code, four elements must come together as shown in this diagram:

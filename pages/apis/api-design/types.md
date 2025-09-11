@@ -1,6 +1,9 @@
 ---
 title: Types of APIs
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9422700933 -->
 ![](../../assets/BANNER.png)
 

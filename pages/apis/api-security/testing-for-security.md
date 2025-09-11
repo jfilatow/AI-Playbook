@@ -1,6 +1,9 @@
 ---
 title: Testing APIs for Security
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9581628012 -->
 ![](../../assets/BANNER.png)
 

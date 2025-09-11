@@ -1,3 +1,5 @@
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 # Rules for AI
 
 Most Artificial Intelligence Coding Assistants (AICAs) have the concept of rules for AI. AI Rules define consistent and repeatable standards, patterns and conventions across your codebase. 

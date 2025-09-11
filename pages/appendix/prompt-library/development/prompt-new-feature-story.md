@@ -1,3 +1,5 @@
+![MYOB Banner](../../../../assets/images/myob-banner.png)
+
 # Implement New Feature / Story
 An example for starting a new feature on a new branch.
 ```

@@ -1,6 +1,9 @@
 ---
 title: YBIYRI
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9447538954 -->
 # You Build It You Run It
 

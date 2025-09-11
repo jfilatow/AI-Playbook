@@ -1,6 +1,9 @@
 ---
 title: Best practices for Designing APIs
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9424142584 -->
 ![](../../assets/BANNER.png)
 

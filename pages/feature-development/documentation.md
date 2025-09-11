@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Documentation
 
 AI helps you create and maintain high-quality, readable documentation. It can read documenation as part of its context.

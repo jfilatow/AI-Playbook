@@ -1,6 +1,9 @@
 ---
 title: Change Management
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9293923396 -->
 ![](../assets/BANNER.png)
 

@@ -1,6 +1,9 @@
 ---
 title: API Logging and Monitoring for Security
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9582379224 -->
 ![](../../assets/BANNER.png)
 

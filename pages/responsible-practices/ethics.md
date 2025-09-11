@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Ethics for AI Tooling
 ---
 - Section owner:  [Julian Vido] (julian.vido@myob.com) AI Safety Lead 

@@ -1,6 +1,9 @@
 ---
 title: Account Responsibilities
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9439641708 -->
 
 !!! If you own a cloud account, these are the top 3 things you should be concerned with as an owner.

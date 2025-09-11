@@ -1,6 +1,9 @@
 ---
 title: Defect Triage
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9658335301 -->
 # Defect Triage
 

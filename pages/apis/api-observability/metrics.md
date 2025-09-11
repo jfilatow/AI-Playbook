@@ -1,6 +1,9 @@
 ---
 title: Observability Metrics
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9312796678 -->
 ![](../../assets/BANNER.png)
 # Observability Metrics

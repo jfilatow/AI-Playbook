@@ -1,3 +1,5 @@
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 # Prompt Library
 
 This library provides a selection of prompts used by authors. These examples serve as guides that you can adapt to your specific project needs, rather than using them verbatim.

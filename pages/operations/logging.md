@@ -1,6 +1,9 @@
 ---
 title: Logging Practice
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9600303396 -->
 # Logging
 

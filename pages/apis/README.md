@@ -1,6 +1,9 @@
 ---
 title: APIs and Integration
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9292284900 -->
 
 This section introduces how we think about exposing and consuming capabilities across systems at MYOB. It provides a shared framework for designing integrations regardless of whether they use Restful APIs, events, batch files, or other patterns.

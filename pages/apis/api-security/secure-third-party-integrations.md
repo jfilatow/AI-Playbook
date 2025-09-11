@@ -1,6 +1,9 @@
 ---
 title: Secure Third-Party Integrations
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9582805102 -->
 ![](../../assets/BANNER.png)
 

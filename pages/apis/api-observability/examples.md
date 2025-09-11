@@ -1,6 +1,9 @@
 ---
 title: API Observability Examples
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9312829451 -->
 ![](../../assets/BANNER.png)
 # API Observability Examples

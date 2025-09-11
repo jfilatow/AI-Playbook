@@ -1,6 +1,9 @@
 ---
 title: Identifying Data Products
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9293923383 -->
 ![](../assets/BANNER.png)
 

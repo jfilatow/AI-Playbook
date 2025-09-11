@@ -1,6 +1,9 @@
 ---
 title: API Discoverability
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9310831465 -->
 ![image](../../assets/BANNER.png)
 

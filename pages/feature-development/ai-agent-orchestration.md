@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # AI Agent Orchestration
 
 AI agent orchestration involves coordinating multiple AI agents to work together on complex tasks, managing their interactions, and ensuring efficient resource utilization. This approach enables the development of sophisticated applications that can handle multi-faceted problems requiring different types of AI capabilities.

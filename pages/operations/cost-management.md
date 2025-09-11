@@ -1,6 +1,9 @@
 ---
 title: Cost Management
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9555935578 -->
 ![](../assets/BANNER.png)
 

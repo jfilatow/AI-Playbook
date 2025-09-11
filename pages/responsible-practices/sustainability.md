@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Sustainability
 
 Balance environmental impact with customer value when choosing AI tools for building products and services.

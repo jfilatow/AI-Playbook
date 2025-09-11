@@ -1,6 +1,9 @@
 ---
 title: Security
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9293923525 -->
 [![](../assets/BANNER.png)
 # Security

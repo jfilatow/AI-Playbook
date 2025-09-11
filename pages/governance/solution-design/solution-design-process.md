@@ -1,6 +1,9 @@
 ---
 title: Solution Design Process
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9346258106 -->
 
 ![](../../assets/BANNER.png)

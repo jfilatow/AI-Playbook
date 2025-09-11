@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Test Driven Development
 
 This section outlines the process for doing test driven development. 

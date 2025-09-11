@@ -1,6 +1,9 @@
 ---
 title: API Discoverability Examples
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9293661652 -->
 ![](../../assets/BANNER.png)
 # API Discoverability Examples

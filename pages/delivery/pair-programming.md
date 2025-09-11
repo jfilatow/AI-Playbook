@@ -1,6 +1,9 @@
 ---
 title: Pair Programming
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9293923448 -->
 ![](../assets/BANNER.png)
 

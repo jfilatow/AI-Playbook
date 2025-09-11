@@ -1,6 +1,9 @@
 ---
 title: Data Product Certification
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 10299870309 -->
 ![](../assets/BANNER.png)
 

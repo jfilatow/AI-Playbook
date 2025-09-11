@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Stakeholder Engagement & Transparency
 
 - Communicate goals, risks, and controls to staff, customers, and partners

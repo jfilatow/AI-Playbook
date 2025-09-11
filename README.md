@@ -1,5 +1,5 @@
 
-![](assets/myob-banner.png)
+![](assets/images/myob-banner.png)
 
 # MYOB AI SDLC Playbook
 

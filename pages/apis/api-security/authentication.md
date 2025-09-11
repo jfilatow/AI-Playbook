@@ -1,6 +1,9 @@
 ---
 title: API Authentication
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9547253382 -->
 ![](../../assets/BANNER.png)
 

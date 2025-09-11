@@ -1,6 +1,9 @@
 ---
 title: Process and Governance 
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9293955983 -->
 ![](../assets/BANNER.png)
 # Process and Governance

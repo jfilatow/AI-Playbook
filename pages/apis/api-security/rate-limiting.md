@@ -1,6 +1,9 @@
 ---
 title: API Rate Limiting
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9582772337 -->
 ![](../../assets/BANNER.png)
 

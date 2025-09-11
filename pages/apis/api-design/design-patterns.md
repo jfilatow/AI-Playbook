@@ -1,6 +1,9 @@
 ---
 title: Design Patterns used in API Architecture
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9422864791 -->
 ![](../../assets/BANNER.png)
 # Design Patterns used in API Architecture

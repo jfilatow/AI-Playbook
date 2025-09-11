@@ -1,6 +1,9 @@
 ---
 title: API Payload Encryption
 ---
+
+![MYOB Banner](../../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9546958764 -->
 ![](../../assets/BANNER.png)
 

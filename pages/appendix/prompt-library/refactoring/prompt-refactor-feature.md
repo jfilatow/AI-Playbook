@@ -1,3 +1,5 @@
+![MYOB Banner](../../../../assets/images/myob-banner.png)
+
 # Refactor Feature
 
 As per the [refactoring workflow](../../../feature-development/refactoring.md), it is important that you direct the Model to implement specific refactors that you want, and do not just ask it to simply refactor.

@@ -1,3 +1,5 @@
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 # Project Setup
 
 Set up your development environment to use AI tools safely and effectively.

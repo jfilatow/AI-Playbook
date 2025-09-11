@@ -1,6 +1,9 @@
 ---
 title: Designing Data Product
 ---
+
+![MYOB Banner](../../assets/images/myob-banner.png)
+
 <!-- confluence-page-id: 9293955838 -->
 ![](../assets/BANNER.png)
 
