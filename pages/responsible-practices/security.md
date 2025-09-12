@@ -128,5 +128,7 @@ This guidance complements MYOB's comprehensive security framework:
 For security concerns or questions, contact the Security team via [#svc-security](https://myob.slack.com/messages/CANT8SKFY) on Slack.
 
 ---
+
 **Previous:** [← Sustainability](sustainability.md) | **Next:** [Data Privacy Security →](data-privacy-security.md)
+
 ---
