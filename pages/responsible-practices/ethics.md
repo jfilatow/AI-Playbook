@@ -78,14 +78,12 @@ AI tools use computing resources. Consider environmental costs and use AI tools 
 - Use AI to enhance your skills and critical thinking rather than replace them
 - Keep up to date with the latest AI tools and techniques to ensure you are using the best tools for the job
 
-### Public trust
-Be transparent about AI assistance in public-facing services. Consider how AI use affects customer confidence in MYOB products and services.
-- Ensure you are transparent about the use of AI tools in your software development
-- Ensure you are transparent about the limitations of the AI tools you are using
-- Ensure you are transparent about the data that the AI tools are using
-- Ensure you are transparent about the outputs of the AI tools
-- Ensure you are transparent about the risks of using AI tools
-- Ensure you are transparent about the benefits of using AI tools
+### Customer trust
+Be transparent about AI assistance in Customer-facing services. Consider how AI use affects customer confidence in MYOB products and services.
+- Ensure to disclose that AI is being used to assist with the service
+- Ensure to disclose the risk of halucinations and errors in the AI-assisted service
+- Ensure to include disclaimer and risk statements in the service
+- Ensure to include a way for the customer to opt out of the AI-assisted service
 
 ## Resources
 
