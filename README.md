@@ -1,7 +1,7 @@
 
 ![](assets/images/myob-banner.png)
 
-# MYOB AI SDLC Playbook
+# MYOB AI SDLC Playbook (DRAFT - for internal review)
 
 This playbook is a practical guide for MYOB developers implementing AI-assisted software development into their workflows. It combines proven SDLC practices with AI-specific guidance, responsible practices, security requirements, and technical best practices to enable safe, efficient, and high-quality AI-powered development.
 
