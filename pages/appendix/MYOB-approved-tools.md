@@ -118,10 +118,12 @@ To request approval for an AI tool not currently on the approved list, follow th
 
 Your request will undergo review and approval from:
 
-1. **Digital Enablement Team**: Technical feasibility and integration assessment
+1. **AI and Operational Excellence Team**: Technical feasibility and integration assessment
 2. **Cyber GRC**: Security and compliance review
-3. **Tax Team**: Financial and regulatory implications
+3. **Finance Team**: Financial and regulatory implications
 4. **Legal Team**: Contract terms and liability assessment
+5. **Procurement Team**: Contract Governence and Purchasing
+
 
 ### Outcome and Next Steps
 
