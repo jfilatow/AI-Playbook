@@ -6,9 +6,6 @@ title: Process and Governance 
 ---
 
 
-<!-- confluence-page-id: 9293955983 -->
-![](../assets/BANNER.png)
-
 # Process and Governance
 
 ---
