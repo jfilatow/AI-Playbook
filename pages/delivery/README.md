@@ -6,8 +6,6 @@ title: Delivering Software
 ---
 
 
-<!-- confluence-page-id: 9293955858 -->
-![](../assets/BANNER.png)
 
 # Delivery Chapter
 
