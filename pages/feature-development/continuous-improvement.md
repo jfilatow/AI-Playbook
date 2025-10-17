@@ -206,7 +206,7 @@ Focus on end-to-end process improvement rather than individual components:
 - **GitHub Analytics**: Code contribution and collaboration metrics
 - **JIRA/Linear**: Sprint velocity and story completion tracking
 - **SonarQube**: Code quality and security analysis
-- **New Relic/DataDog**: Application performance monitoring
+- **OpenTelemetry / Sumo Logic**: Application performance monitoring
 
 **AI-Specific Tools:**
 - **Cursor Analytics**: AI code suggestion acceptance rates
