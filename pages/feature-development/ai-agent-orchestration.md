@@ -418,7 +418,7 @@ execution_workflow.monitor_execution()
 ### Monitoring Tools
 
 **Application Performance Monitoring:**
-- New Relic or DataDog for performance monitoring
+- Use our standard platforms (OpenTelemetry into Sumo Logic) for performance monitoring
 - Custom dashboards for agent-specific metrics
 - Real-time alerting for critical issues
 - Historical trend analysis and capacity planning

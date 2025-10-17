@@ -105,7 +105,7 @@ Shift left in API testing involves testing APIs early in the development cycle. 
 
 In API testing, "shift right" involves ongoing testing activities post-deployment to ensure APIs perform as expected and adapt to user needs. Here's how it's done:
 
-- Production Monitoring: Monitor APIs in production to detect anomalies and performance issues using tools like New Relic or Datadog.
+- Production Monitoring: Monitor APIs in production to detect anomalies and performance issues using MYOB's standard platforms.
 - Real User Monitoring (RUM): Gather insights from user interactions to understand usage patterns and identify areas for improvement.
 - A/B Testing: Compare API versions or features live to validate changes before full deployment.
 - Canary Releases: Deploy new versions to a small user group for monitoring before full release.

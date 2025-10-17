@@ -63,9 +63,9 @@ Logging and monitoring of security events in web APIs are essential practices to
 
 ### Tools and Technologies
 
-- **Log Management Systems**: Tools like Elasticsearch, Logstash, Kibana (ELK Stack), Splunk, and Graylog.
-- **Security Information and Event Management (SIEM)**: Systems like Splunk, QRadar, and ArcSight.
-- **Application Performance Management (APM)**: Tools like New Relic and Datadog.
+- **Log Management Systems**: Use MYOB's Log Central to archive your logs and send them to Sumo Logic for analysis
+- **Security Information and Event Management (SIEM)**: Sumo Logic provides MYOB with a platform for SIEM
+- **Application Performance Management (APM)**: MYOB uses OpenTelemetry, again going into Sumo Logic for analysis
 
 Effective logging and monitoring are foundational to securing web APIs. They provide visibility into API usage, help in detecting anomalies, ensure compliance with regulatory requirements, and facilitate a rapid response to security incidents. Employing best practices and leveraging the right tools can significantly enhance the security posture of web APIs.
 
