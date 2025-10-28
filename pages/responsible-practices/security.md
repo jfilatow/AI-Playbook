@@ -156,7 +156,6 @@ AI tools can introduce vulnerable or malicious dependencies into your codebase w
 **Recommended Tools:**
 - **Wiz**: [https://app.wiz.io/](https://app.wiz.io/) - Package trustworthiness verification
 - **Socket Security**: Real-time package risk detection
-- **Snyk**: Vulnerability scanning and monitoring
 
 #### 3. Data Exfiltration Risks
 
