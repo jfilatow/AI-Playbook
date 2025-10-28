@@ -1,9 +1,26 @@
 
 ![](assets/images/myob-banner.png)
 
-# MYOB AI SDLC Playbook (DRAFT - for internal review)
+# AI Software Development Lifecycle Playbook
 
-This playbook is a practical guide for MYOB developers implementing AI-assisted software development into their workflows. It combines proven SDLC practices with AI-specific guidance, responsible practices, security requirements, and technical best practices to enable safe, efficient, and high-quality AI-powered development.
+**Personal fork by Jerzy Filatow** - Based on MYOB AI Codex  
+**Repository:** https://github.com/jfilatow/AI-Playbook
+
+This playbook is a practical guide for implementing AI-assisted software development workflows. It combines proven SDLC practices with AI-specific guidance, responsible practices, security requirements, and technical best practices to enable safe, efficient, and high-quality AI-powered development.
+
+## About This Fork
+
+This is a personal working copy forked from the [MYOB AI Codex](https://github.com/MYOB-Technology/MYOB-AI-Codex), which itself is based on the MYOB Technology Codex. This fork allows for personal experimentation, customization, and contributions while maintaining connection to the upstream sources.
+
+### Upstream Repositories
+- **Origin (This Fork)**: https://github.com/jfilatow/AI-Playbook
+- **MYOB Upstream**: https://github.com/MYOB-Technology/MYOB-AI-Codex
+- **DEFRA Reference**: https://github.com/DEFRA/defra-ai-sdlc
+
+### Comparison with DEFRA
+A detailed comparison between the MYOB AI Codex and DEFRA AI SDLC is available in:
+- **[Full Comparison](MYOB_vs_DEFRA_Comparison.md)** - Comprehensive analysis
+- **[Quick Summary](COMPARISON_SUMMARY.md)** - At-a-glance comparison
 
 ## Overview
 
