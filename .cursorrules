@@ -1,568 +1,279 @@
-# MYOB Technology Codex - Cursor Rules
+# MYOB AI Playbook - Cursor Rules for AI-Assisted Development
 
-## Overview
-These rules are derived from the MYOB Technology Codex and should guide all development decisions.
-The Codex outlines how engineering and architecture is done across MYOB, describing widely used practices, processes, principles and philosophies.
+## Purpose
 
-## Important Note for AI Agents
-This file contains specific, actionable rules for development. Where rules are vague or require human decisions, 
-comments have been added requesting clarification from the architecture team.
+These rules guide AI tools (Cursor, GitHub Copilot) when generating code for MYOB projects. This focuses on AI-specific guidance. For general technical standards, see the **MYOB Architecture Codex**.
 
-## Levels of Guidance
-- **Standard**: Must always be followed. Mandated for all teams with rare exceptions requiring MYOB SLT approval.
-- **Default**: Must be doing unless you have a good reason not to. Well-researched and tested practices.
-- **Suggestion**: Recommended practices that can be adapted to your context.
+## AI-Assisted Development Guidelines
 
-## Core Principles
+### Code Generation Standards
 
-### Delivery Principles
-1. **Work in small batches**: 
-   - Keep PRs under 400 lines of code changes
-   - Deploy at least once per week
-   - <!-- TODO: Architecture team to define specific batch size limits -->
-2. **Everyone is responsible**: No issue is "someone else's problem" - everyone owns quality
-3. **Relentlessly pursue continuous improvement**: 
-   - Add TODO comments for identified improvements
-   - Create issues for technical debt
-4. **"Done" means in production**: Value is realized when delivered to customers
-5. **Repeatable Reliable Process**: 
-   - Pipeline success rate must be > 95%
-   - Fix flaky tests within 2 days
-   - <!-- TODO: Architecture team to define specific reliability metrics -->
+**TypeScript (Primary Language):**
+- Generate TypeScript, not JavaScript
+- Use strict mode (`"strict": true` in tsconfig.json)
+- Explicit types, avoid `any` unless absolutely necessary
+- Use interfaces for data structures, types for unions/primitives
 
-## Engineering Standards [STANDARD]
+**Financial Calculations (Critical for MYOB):**
+- NEVER use JavaScript `number` type for money
+- ALWAYS use `Decimal` library for financial calculations
+- Round to 2 decimal places for money (use `decimalPlaces(2)`)
+- Use half-up rounding for currency (standard accounting method)
 
-### Design and Development
-- **DE-2022-KBA**: All systems must have documentation
-  - Create and maintain `README.md` with setup instructions
-  - Create `docs/architecture.md` for system design
-  - Create `docs/operations.md` for operational procedures
-  - Include API documentation in `docs/api/`
-- **DE-2022-DRP**: All systems must have a Disaster Recovery plan
-  - Create and maintain `docs/disaster-recovery.md`
-  - Include RTO/RPO targets, backup procedures, and recovery steps
-  - <!-- TODO: Architecture team to provide DR plan template -->
-- **DE-2022-DND**: New systems or significant changes must have solution design
-  - Create `docs/solution-design.md` before implementation
-  - Include architecture diagrams, data flows, and integration points
-  - <!-- TODO: Architecture team to provide solution design template -->
+**Error Handling:**
+- Use try/catch for async operations
+- Create custom error types for domain errors
+- Never expose sensitive data in error messages
+- Log errors with correlation IDs
 
-### Operations
-- **OP-2022-OBS**: All systems must have observability
-  - **Logging**: 
-    - Log all API requests/responses (excluding sensitive data)
-    - Log all errors with stack traces
-    - Use structured logging (JSON format)
-    - Include correlation IDs in all logs
-  - **Metrics**:
-    - Response time (p50, p95, p99)
-    - Error rate (4xx, 5xx responses)
-    - Request rate (requests per second)
-    - Resource utilization (CPU, memory, disk)
-    - <!-- TODO: Architecture team to define specific metric thresholds -->
-  - **Tracing**: 
-    - Implement distributed tracing for all API calls
-    - Trace database queries > 100ms
-  - **Alerting**:
-    - Error rate > 5% for 5 minutes
-    - Response time p95 > 1 second for 5 minutes
-    - Create runbooks in `docs/runbooks/` for each alert
-    - <!-- TODO: Architecture team to define specific alert thresholds -->
+**Async Patterns:**
+- Use async/await, not .then() chains
+- Handle promise rejections explicitly
+- Set reasonable timeouts for external calls
 
-### Governance
-<!-- COMMENTED OUT: These governance requirements are organizational/administrative 
-     and not relevant to the build and engineering process that AI agents perform
-- **SG-2022-OWN**: All systems must have an owner who is wholly responsible for decisions
-- **SG-2022-CAT**: All systems must be registered in the MYOB System Catalogue
--->
+### Security for AI-Generated Code
 
-### Security [STANDARD]
-- **SE-2022-SCC**: Implement all guidance from the Security Chapter
-- **SE-2022-LBR**: Implement the Low Bar Security Requirements (see below)
+**Never Generate:**
+- Hardcoded credentials, API keys, or passwords
+- Actual customer data or PII in examples
+- Production database connection strings
+- Real API endpoints or internal URLs
 
-## Low Bar Security Requirements [STANDARD]
+**Always Include:**
+- Input validation on all user inputs
+- Output encoding to prevent injection
+- Authentication checks before sensitive operations
+- Audit logging for security-relevant actions
 
-### Governance & Risk
-<!-- COMMENTED OUT: GV001 is organizational/administrative
-- **GV001**: System ownership established and system catalogue updated
--->
-- **GV002**: Solution has system documentation and threat model
-  - Create `docs/threat-model.md` using STRIDE methodology
-  - Document all external interfaces and data flows
-  - Identify and document security controls for each threat
-  - <!-- TODO: Architecture team to provide threat model template -->
-<!-- COMMENTED OUT: GV003 & GV004 require business decisions
-- **GV003**: Application assigned criticality rating
-- **GV004**: Data assigned classification rating
-NOTE: These require input from product/business teams about:
-  - Application criticality (Critical/High/Medium/Low)
-  - Data classification (Restricted/Confidential/Internal/Public)
-  - Once determined, document in `docs/data-classification.md`
--->
+**Secure Examples:**
+```typescript
+// ✅ Good - use environment variables
+const apiKey = process.env.API_KEY;
 
-### Security Implementation
-- **SM001**: Secure secret storage
-  - Use environment variables for configuration
-  - Never commit secrets to git (add to `.gitignore`)
-  - Use AWS Secrets Manager, Azure Key Vault, or similar for production
-  - Hash passwords using bcrypt (minimum 10 rounds) or Argon2
-  - Store API keys in secure vaults only
-- **LM001**: Security event logging
-  - Log authentication attempts (success/failure)
-  - Log authorization failures
-  - Log data access to sensitive resources
-  - Log configuration changes
-  - Include: timestamp, user ID, action, resource, outcome, IP address
-- **DS001**: Network security controls
-  - Deploy behind WAF for public endpoints
-  - Use HTTPS proxy for outbound connections
-  - <!-- TODO: Architecture team to specify approved WAF/proxy services -->
-- **DS002**: Encryption requirements
-  - Use TLS 1.2+ for all API endpoints
-  - Enable HTTPS redirect for all HTTP requests
-  - Encrypt database connections
-  - Use AES-256 for data at rest encryption
-  - Enable disk encryption for all storage
-- **DS003**: Prevent sensitive data in logs
-  - Implement log sanitization middleware
-  - Redact: passwords, tokens, API keys, SSN, credit cards
-  - Replace sensitive data with `[REDACTED]` in logs
-  - Add unit tests to verify log sanitization
-- **SD001**: Static Application Security Testing
-  - Configure SAST tool in CI/CD pipeline
-  - Fail build on high/critical vulnerabilities
-  - <!-- TODO: Architecture team to specify approved SAST tools -->
-- **SD002**: Software Composition Analysis
-  - Run dependency scanning in CI/CD pipeline
-  - Update vulnerable dependencies within 30 days (7 days for critical)
-  - <!-- TODO: Architecture team to specify approved SCA tools -->
-- **SD003**: Code review requirements
-  - All code must be peer reviewed before merge
-  - Use pull requests with at least 1 approver
-  - Security-sensitive code requires 2 reviewers
-- **SD004**: Platform hardening
-  - Disable unnecessary services and ports
-  - Apply security patches within 30 days (7 days for critical)
-  - <!-- TODO: Architecture team to provide hardening checklists -->
-- **AC001**: Access control implementation
-  - Implement OAuth 2.0 / OIDC for authentication
-  - Use role-based access control (RBAC)
-  - Enforce MFA for administrative functions
-  - Session timeout after 30 minutes of inactivity
-  - <!-- TODO: Architecture team to specify approved auth providers -->
-
-## Code Review Practices [STANDARD]
-
-### Requirements
-- Code review is mandatory for quality assurance
-- Can be done via: Pair Programming, Pull Requests, or Mob Programming
-- Focus on: quality, maintainability, simplicity, and knowledge sharing
-
-### Review Guidelines
-- Review small changes frequently
-- Define team guidelines for quality standards
-- Clearly indicate review outcomes: approved, mandatory changes, optional changes
-
-## API Design Best Practices
-
-### Design Principles
-- APIs should be: Easy to learn, Easy to use (even without docs), Hard to misuse
-- Focus on outside-in abstractions - create interfaces consumers want to use
-- Design APIs like products where consumers are customers
-- One reasonably sized team should be able to own and manage the API
-
-### Technical Standards
-- **URL Structure**: 
-  - Format: `/api/v{version}/{resource}/{id}/{sub-resource}`
-  - Use plural nouns: `/users`, `/products`, `/orders`
-  - Use kebab-case for multi-word resources: `/user-profiles`
-  - Max URL depth: 3 levels
-- **HTTP Methods**:
-  - `GET /resources` - List resources
-  - `GET /resources/{id}` - Get single resource
-  - `POST /resources` - Create resource
-  - `PUT /resources/{id}` - Full update
-  - `PATCH /resources/{id}` - Partial update
-  - `DELETE /resources/{id}` - Delete resource
-- **HTTP Status Codes**:
-  - `200 OK` - Successful GET, PUT, PATCH
-  - `201 Created` - Successful POST with Location header
-  - `204 No Content` - Successful DELETE
-  - `400 Bad Request` - Invalid request data
-  - `401 Unauthorized` - Missing/invalid authentication
-  - `403 Forbidden` - Valid auth but no permission
-  - `404 Not Found` - Resource doesn't exist
-  - `409 Conflict` - Request conflicts with current state
-  - `422 Unprocessable Entity` - Validation errors
-  - `500 Internal Server Error` - Server errors
-- **Request/Response Format**:
-  - Use JSON for all requests/responses
-  - Include `Content-Type: application/json` header
-  - Use camelCase for field names
-  - Include timestamps in ISO 8601 format
-  - Wrap collections in object: `{ "data": [...], "pagination": {...} }`
-- **Pagination**:
-  - Use query params: `?page=1&limit=20`
-  - Max page size: 100 items
-  - Include pagination metadata in response
-  - Support cursor-based pagination for large datasets
-- **Filtering & Sorting**:
-  - Filter: `?status=active&type=premium`
-  - Sort: `?sort=created_at&order=desc`
-  - Search: `?q=search+term`
-- **Security**:
-  - Never include sensitive data in URLs
-  - Use request headers for API keys
-  - Implement rate limiting: 1000 requests/hour
-  - Include CORS headers for browser access
-
-### API Documentation
-- Generate OpenAPI/Swagger documentation
-- Include in `/docs/api/openapi.yaml`
-- Document all endpoints with:
-  - Description and purpose
-  - Request/response examples
-  - Error responses
-  - Authentication requirements
-- Host interactive documentation at `/api-docs`
-
-## Development Practices
-
-### Continuous Integration [STANDARD]
-- **Build Pipeline**:
-  - Run on every commit to any branch
-  - Complete within 10 minutes
-  - Stages: lint → test → build → security scan
-- **Automated Tests**:
-  - Unit test coverage > 80%
-  - Integration tests for all API endpoints
-  - Run tests in parallel for speed
-- **Build Artifacts**:
-  - Tag with git commit SHA
-  - Store in artifact repository
-  - Keep artifacts for 90 days
-
-### Continuous Delivery [DEFAULT]
-- **Deployment Pipeline**:
-  - Automated deployment to dev/staging
-  - Manual approval gate for production
-  - Automated rollback on failure
-- **Deployment Checklist**:
-  - All tests pass
-  - Security scans pass
-  - Documentation updated
-  - Database migrations tested
-
-### Continuous Deployment [SUGGESTION]
-- **Automation Requirements**:
-  - Feature flags for all new features
-  - Automated smoke tests post-deployment
-  - Canary deployments (10% → 50% → 100%)
-  - Automated rollback on error rate > 5%
-
-### Configuration Management [DEFAULT]
-- **Environment Variables**:
-  - Use `.env.example` with all required vars
-  - Never commit `.env` files
-  - Document all configuration in README
-- **Configuration Structure**:
-  ```
-  config/
-    default.json    # Default values
-    development.json
-    staging.json
-    production.json
-  ```
-- **Secret Management**:
-  - Use secret management service in production
-  - Rotate secrets every 90 days
-  - <!-- TODO: Architecture team to specify secret rotation procedure -->
-
-### Infrastructure as Code [DEFAULT]
-- **IaC Requirements**:
-  - Use Terraform, CloudFormation, or ARM templates
-  - Store in `infrastructure/` directory
-  - Include README with deployment instructions
-- **Code Structure**:
-  ```
-  infrastructure/
-    modules/        # Reusable modules
-    environments/   # Environment-specific configs
-    README.md       # Deployment guide
-  ```
-
-### Trunk Based Development [DEFAULT]
-- **Branch Strategy**:
-  - Main branch always deployable
-  - Feature branches < 2 days old
-  - Branch naming: `feature/JIRA-123-description`
-- **Merge Requirements**:
-  - All tests pass
-  - Code review approved
-  - No merge conflicts
-  - Squash commits on merge
-
-### Pair Programming [DEFAULT]
-- **When to Pair**:
-  - Complex algorithm implementation
-  - Security-sensitive code
-  - Architecture decisions
-  - Knowledge transfer
-- **Pairing Practices**:
-  - Switch driver/navigator every 30 minutes
-  - Take breaks every hour
-  - Document decisions made during pairing
-
-## Security Practices [STANDARD]
-
-### Access Control
-- Implement principle of least privilege
-- Need-to-know basis for data access
-- Multi-factor authentication where applicable
-
-### Secret Management
-- Never hardcode secrets
-- Use secure vaults with runtime injection
-- Encrypt or hash all authentication material
-
-### Logging Standards
-- **Log Format**:
-  ```json
-  {
-    "timestamp": "2023-01-01T12:00:00.000Z",
-    "level": "INFO|WARN|ERROR",
-    "correlationId": "uuid",
-    "service": "service-name",
-    "environment": "dev|staging|prod",
-    "message": "descriptive message",
-    "context": { /* additional data */ }
-  }
-  ```
-- **What to Log**:
-  - API requests: method, path, response code, duration
-  - Errors: stack trace, user context, request data
-  - Security events: auth attempts, permission checks
-  - Business events: transactions, state changes
-- **What NOT to Log**:
-  - Passwords, tokens, API keys
-  - Credit card numbers, SSN
-  - Personal health information
-  - Request/response bodies with sensitive data
-- **Log Levels**:
-  - ERROR: Application errors requiring investigation
-  - WARN: Unexpected but handled conditions
-  - INFO: Key business events and state changes
-  - DEBUG: Detailed diagnostic information (dev only)
-
-### Application Security Testing
-- Continuous SAST (Static Application Security Testing)
-- Continuous SCA (Software Composition Analysis)
-- Regular vulnerability assessments
-- Threat modeling for all systems
-
-### Information Classification
-- Classify all data according to sensitivity
-- Apply appropriate controls based on classification
-- Document PI data locations
-
-## Observability Requirements [STANDARD]
-
-### Components
-- **Logging**: For identifying problems and security events
-- **Tracing**: For understanding end-to-end interactions
-- **Monitoring**: For visualizing system health via metrics
-- **Alerting**: For immediate response to critical events
-
-### Requirements
-- All systems must implement comprehensive observability
-- Use MYOB's centralized observability platform
-- Alerts must be actionable with runbooks
-- Avoid alert fatigue through proper thresholds
-
-## Quality Strategy [DEFAULT]
+// ❌ Bad - hardcoded secret
+const apiKey = "sk_live_1234567890";
+```
 
 ### Testing Requirements
-- **Unit Tests**:
-  - Coverage > 80% for business logic
-  - Test edge cases and error conditions
-  - Mock external dependencies
-  - Run in < 5 minutes
-- **Integration Tests**:
-  - Test all API endpoints
-  - Test database operations
-  - Test external service integrations
-  - Use test containers for dependencies
-- **End-to-End Tests**:
-  - Cover critical user journeys
-  - Run in staging environment
-  - Maximum 10 E2E tests to maintain speed
-- **Performance Tests**:
-  - Load test APIs at 2x expected traffic
-  - Response time p95 < 500ms
-  - Run weekly in staging environment
-  - Document performance baselines
-- **Security Tests**:
-  - OWASP Top 10 vulnerability scans
-  - Dependency vulnerability scanning
-  - Weekly automated security scans
-  - <!-- TODO: Architecture team to specify security testing tools -->
 
-### Code Quality Standards
-- **Linting**:
-  - ESLint/Prettier for JavaScript/TypeScript
-  - Language-specific linters for other languages
-  - Fix all linting errors before commit
-- **Code Complexity**:
-  - Cyclomatic complexity < 10 per function
-  - File length < 300 lines
-  - Function length < 50 lines
-  - Class length < 500 lines
-- **Refactoring Triggers**:
-  - Code duplication > 3 instances
-  - Test coverage drops below 80%
-  - Performance degradation > 20%
-  - Security vulnerabilities found
+**Unit Tests:**
+- Generate Jest tests for all new functions
+- Cover normal case, edge cases, error cases
+- Aim for >80% code coverage
+- Mock external dependencies
 
-## Data Management
+**Test Structure:**
+```typescript
+describe('functionName', () => {
+  it('should handle normal case', () => {
+    // Arrange
+    // Act
+    // Assert
+  });
+  
+  it('should handle edge case: zero values', () => {
+    // Test implementation
+  });
+  
+  it('should throw error for invalid input', () => {
+    // Error handling test
+  });
+});
+```
 
-### Schema Management [DEFAULT]
-- **Migration Strategy**:
-  - Use migration tools (Flyway, Liquibase, Alembic)
-  - Store migrations in `db/migrations/`
-  - Sequential naming: `V001__initial_schema.sql`
-  - Always provide rollback scripts
-- **Schema Rules**:
-  - All tables must have primary keys
-  - Use UUID for distributed systems
-  - Add indexes for foreign keys
-  - Include audit columns: created_at, updated_at
-- **Backward Compatibility**:
-  - No breaking changes without version bump
-  - Deprecate fields for 2 releases before removal
-  - Use feature flags for schema changes
+### Documentation
 
-### Data Security
-- **Encryption Requirements**:
-  - Use AES-256 for field-level encryption
-  - Encrypt PII fields in database
-  - Use TDE for database encryption
-  - Key rotation every 12 months
-- **Data Retention**:
-  - Define retention in `docs/data-retention-policy.md`
-  - Personal data: max 7 years or regulatory requirement
-  - Logs: 90 days in hot storage, 1 year in cold
-  - Implement automated data purging
-- **Backup & Recovery**:
-  - Daily automated backups
-  - Test restore monthly
-  - RPO: 24 hours, RTO: 4 hours
-  - Store backups in different region
-  - <!-- TODO: Architecture team to specify backup locations -->
+**JSDoc Comments:**
+- Add JSDoc to all exported functions, classes, interfaces
+- Include @param, @returns, @throws tags
+- Provide usage examples for complex functions
 
-## Compliance & Governance
+**Example:**
+```typescript
+/**
+ * Calculates GST (Goods and Services Tax) for Australian businesses.
+ * 
+ * @param amount - The gross amount (GST-inclusive)
+ * @param options - Calculation options
+ * @returns The GST component rounded to 2 decimal places
+ * @throws {ValidationError} If amount is negative
+ * 
+ * @example
+ * const gst = calculateGST(new Decimal('110'));
+ * // Returns: Decimal('10.00')
+ */
+```
 
-### Documentation Requirements
-- **Required Documentation Structure**:
-  ```
-  docs/
-    README.md                 # Project overview & setup
-    architecture.md           # System design & components
-    api/                      # API documentation
-      openapi.yaml           # OpenAPI specification
-    data-flow.md             # Data flow diagrams
-    threat-model.md          # Security threat analysis
-    disaster-recovery.md     # DR procedures
-    operations.md            # Operational procedures
-    runbooks/                # Alert response procedures
-    data-classification.md   # Data sensitivity levels
-    data-retention-policy.md # Retention requirements
-  ```
-- **Architecture Documentation Must Include**:
-  - Component diagrams (C4 model recommended)
-  - Sequence diagrams for key flows
-  - Interface/Integration table
-  - Technology stack and versions
-  - Deployment architecture
-- **Update Triggers**:
-  - Major feature additions
-  - Architecture changes
-  - Security model changes
-  - Integration changes
+## MYOB-Specific Context
 
-### Change Management [SUGGESTION]
-- **Change Process**:
-  - Create change request in JIRA
-  - Document impact analysis
-  - Get approval from tech lead
-  - Schedule during maintenance window
-- **Change Documentation**:
-  - What is changing and why
-  - Rollback procedure
-  - Testing performed
-  - Communication plan
+### Financial Domain
 
-### Release Management [SUGGESTION]
-- **Release Process**:
-  - Version format: MAJOR.MINOR.PATCH (semver)
-  - Tag releases in git
-  - Generate changelog from commits
-  - Create release notes
-- **Release Documentation**:
-  - Features added
-  - Bugs fixed
-  - Breaking changes
-  - Migration instructions
-- **Communication**:
-  - Email stakeholders 48 hours before
-  - Post in #releases Slack channel
-  - Update status page during deployment
+**When generating financial code:**
+- Use precise terminology (GST, PAYG, BAS, superannuation)
+- Consider Australian and New Zealand tax rules
+- Include audit trail requirements (who, what, when)
+- Handle multi-currency if applicable
+- Validate calculations against regulatory requirements
 
-## Communication & Collaboration
+**Example Domain Objects:**
+```typescript
+interface Invoice {
+  id: string;
+  amount: Decimal;  // Not number!
+  gstAmount?: Decimal;
+  currency: 'AUD' | 'NZD' | 'GBP';
+  createdAt: Date;
+  createdBy: string;  // Audit trail
+}
+```
 
-### Channels
-- Technical questions: #sig-tech-codex on Slack
-- Security concerns: #svc-security on Slack
-- General inquiries: codex@myob.com
+### Compliance Requirements
 
-### Knowledge Sharing
-- Document learnings and share with teams
-- Contribute improvements back to the Codex
-- Participate in tech huddles and reviews
+**For compliance-sensitive features:**
+- Add comments explaining regulatory requirements
+- Include links to ATO/IRD documentation
+- Maintain audit trails (7 year retention for financial)
+- Test against official examples/scenarios
 
-## Remember
-- These standards exist to build trust with customers and ensure consistent quality
-- Security equals confidence from customers
-- When in doubt, engage the relevant team (Security, Observability, etc.)
-- Strong relationships build stronger products and systems
+## References to MYOB Standards
 
-## Architecture Team TODOs
-The following items require clarification from the architecture team to make them fully actionable:
+For detailed technical standards, refer to **MYOB Architecture Codex**:
 
-1. **Delivery Principles**:
-   - Define specific batch size limits for PRs and deployments
-   - Define specific reliability metrics for pipelines
+- **API Design**: REST patterns, authentication, versioning → See Architecture Codex
+- **Security Standards**: Low Bar requirements, threat modeling → See Architecture Codex
+- **CI/CD Practices**: Pipeline requirements, deployment → See Architecture Codex  
+- **Observability**: Logging formats, metrics, alerting → See Architecture Codex
+- **Data Architecture**: Schema design, migrations → See Architecture Codex
 
-2. **Documentation Templates**:
-   - Provide DR plan template
-   - Provide solution design template
-   - Provide threat model template
+### Using MCP to Access Standards
 
-3. **Operations**:
-   - Define specific metric thresholds for monitoring
-   - Define specific alert thresholds
+When generating code, use Glean MCP to access MYOB standards:
 
-4. **Security**:
-   - Specify approved WAF/proxy services
-   - Specify approved SAST tools
-   - Specify approved SCA tools
-   - Provide platform hardening checklists
-   - Specify approved auth providers
-   - Specify secret rotation procedure
+```
+Using Glean MCP, search for MYOB [topic] standards, then generate code
+following those standards.
+```
 
-5. **Quality**:
-   - Specify security testing tools
+## MCP Configuration Guidelines
 
-6. **Data Management**:
-   - Specify backup locations and retention policies
+### Recommended MCPs for MYOB Development
 
-These TODO comments are embedded throughout the document where specific guidance is needed.
+- **Glean MCP**: Access MYOB internal documentation and standards
+- **GitHub MCP**: Search MYOB repositories for code examples
+- **Atlassian MCP**: Access Jira tickets and Confluence pages
+- **Filesystem MCP**: Understand local project structure
+
+### Using MCPs Effectively
+
+**In prompts, explicitly request MCP usage:**
+```
+@glean Search for MYOB authentication patterns
+@github Find examples of JWT implementation in our repos
+```
+
+**Let MCPs provide context automatically:**
+- MCPs will inject relevant context based on your query
+- Review context panel to see what MCPs found
+- Adjust prompts if wrong context retrieved
+
+## Prompt Engineering Tips
+
+### Be Specific
+
+❌ **Vague:** "Fix this code"  
+✅ **Specific:** "Refactor to use async/await, add error handling, use Decimal for amounts"
+
+### Provide Context
+
+Include:
+- What you're trying to accomplish
+- Relevant code and types
+- Error messages (if debugging)
+- Requirements or constraints
+
+### Specify Output Format
+
+```
+Generate TypeScript interface for Customer.
+Include: id, name, email, businessType, createdAt
+Add JSDoc comments explaining each field.
+```
+
+### Use Examples
+
+Show the pattern you want:
+```
+Following this pattern:
+
+[paste example of good code]
+
+Generate similar code for: [new requirement]
+```
+
+## Model Selection in Prompts
+
+### For Different Tasks
+
+**Simple code generation → GPT-4o (fast)**
+```
+Generate a function to validate email addresses
+```
+
+**Complex debugging → o1 (reasoning)**
+```
+This payment calculation fails for international transactions. 
+Find the root cause. [include code, error logs, requirements]
+```
+
+**Large refactoring → Claude 200k (long context)**
+```
+Refactor authentication across these 10 microservices
+[include all 10 services]
+```
+
+See [Model Selection Guide](pages/getting-started/choosing-the-right-model.md) for detailed guidance.
+
+## Common Pitfalls to Avoid
+
+### Don't Trust AI Blindly
+
+- ❌ Accept financial calculations without verification
+- ❌ Deploy security code without review
+- ❌ Use AI-suggested dependencies without checking
+- ❌ Skip testing because "AI generated tests"
+
+### Do Validate Outputs
+
+- ✅ Review all AI-generated code
+- ✅ Verify financial calculations manually
+- ✅ Check dependencies for vulnerabilities
+- ✅ Test AI-generated code thoroughly
+- ✅ Ensure compliance with MYOB standards
+
+## Quick Reference
+
+### MYOB AI Development Checklist
+
+When using AI to generate code:
+
+- [ ] Code follows TypeScript strict mode
+- [ ] Financial calculations use Decimal (not number)
+- [ ] No hardcoded secrets or credentials
+- [ ] Error handling implemented
+- [ ] Unit tests generated and passing
+- [ ] JSDoc comments on public APIs
+- [ ] Security reviewed (especially auth/financial code)
+- [ ] Complies with MYOB coding standards
+- [ ] Uses MYOB-approved dependencies
+
+## Resources
+
+- **This Playbook**: Comprehensive AI-assisted development guide
+- **Architecture Codex**: [Technical standards](pages/appendix/architecture-codex-references.md)
+- **Prompt Library**: [Common prompts](pages/appendix/prompt-library/README.md)
+- **MCP Setup**: [MCP usage guide](pages/feature-development/mcp-usage.md)
+- **Model Selection**: [Choosing models](pages/getting-started/choosing-the-right-model.md)
+
+---
+
+**Note:** This file provides AI-specific guidance for code generation. For comprehensive MYOB technical standards, architecture patterns, and platform guidance, refer to the MYOB Architecture Codex.
