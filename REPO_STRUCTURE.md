@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 06:05:43 UTC 2025
+Generated on: Tue Oct 28 06:08:02 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -154,11 +154,13 @@ cursor_rules_specific_updates.md
 pages/appendix/CONTRIBUTING.md
 pages/appendix/MYOB-approved-tools.md
 pages/appendix/README.md
+pages/appendix/architecture-codex-references.md
 pages/appendix/case-studies.md
 pages/appendix/prompt-library/README.md
 pages/appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md
 pages/appendix/prompt-library/documentation-writing/prompt-create-api-documentation.md
 pages/appendix/prompt-library/learning/prompt-add-coding-knowledge-teaching.md
+pages/appendix/prompt-library/prompting-best-practices.md
 pages/appendix/prompt-library/prompting-guidance.md
 pages/appendix/prompt-library/refactoring/prompt-refactor-feature.md
 pages/appendix/prompt-library/requirements/prompt-api-requirements.md
