@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 05:12:30 UTC 2025
+Generated on: Tue Oct 28 05:16:32 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -225,6 +225,7 @@ pages/feature-development/continuous-improvement.md
 pages/feature-development/development.md
 pages/feature-development/documentation.md
 pages/feature-development/mcp-usage.md
+pages/feature-development/model-selection.md
 pages/feature-development/refactoring.md
 pages/feature-development/test-driven-development.md
 pages/feature-development/testing.md
@@ -237,6 +238,7 @@ pages/getting-started/ai-training-programs.md
 pages/getting-started/ai-working-mindset.md
 pages/getting-started/attachments/development-workflow-diagram.png
 pages/getting-started/attachments/venn-diagram-consistent-code.png
+pages/getting-started/choosing-the-right-model.md
 pages/getting-started/mcp-servers-setup.md
 pages/getting-started/project-setup.md
 pages/getting-started/self-service-capabilities.md
