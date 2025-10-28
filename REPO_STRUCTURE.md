@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 05:03:12 UTC 2025
+Generated on: Tue Oct 28 05:09:52 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -210,6 +210,12 @@ pages/assets/gapisumo.png
 pages/assets/process-and-governance/solution-design-process.jpg
 pages/assets/quality-and-testing/Test-Pyramid.png
 pages/assets/quality-and-testing/TestingQuadrants.png
+pages/discovery/README.md
+pages/discovery/ai-for-build-delivery.md
+pages/discovery/ai-for-problem-definition.md
+pages/discovery/ai-for-problem-discovery.md
+pages/discovery/ai-for-solution-discovery.md
+pages/discovery/ai-for-solution-validation.md
 pages/feature-development/README.md
 pages/feature-development/ai-agent-orchestration.md
 pages/feature-development/ai-development-frameworks.md
