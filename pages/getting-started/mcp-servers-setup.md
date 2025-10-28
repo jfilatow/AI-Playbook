@@ -528,14 +528,12 @@ If you need an MCP server not on the approved list:
 
 ## Additional Resources
 
-- **[MYOB MCP Registry (Confluence)](https://myobconfluence.atlassian.net/wiki/spaces/security/pages/10925965594)** - Official approved list
-- **[MCP Usage Guide](../../feature-development/mcp-usage.md)** - Detailed MCP usage and best practices
-- **[MYOB-Approved Tools](../../appendix/MYOB-approved-tools.md)** - All approved AI tools
+- **[MYOB Approved MCPs (Confluence)](https://myobconfluence.atlassian.net/wiki/spaces/security/pages/10925965594)** - Official approved list
+
 - **[Model Context Protocol Specification](https://modelcontextprotocol.io/)** - Official MCP docs
 
 For questions or support:
 - **Security:** #svc-security on Slack
-- **DX Team:** For MCP setup and configuration help
 - **Architecture:** #sig-tech-codex on Slack
 
 ---
