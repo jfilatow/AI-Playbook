@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 02:51:51 UTC 2025
+Generated on: Tue Oct 28 02:55:30 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -15,6 +15,7 @@ BRANCHING_STRATEGY.md
 BRANCH_STRUCTURE.md
 CHANGELOG.md
 COMPARISON_SUMMARY.md
+CONTRIBUTING_TO_MYOB.md
 FORK_INFO.md
 FORK_SUCCESS.md
 MYOB_vs_DEFRA_Comparison.md
