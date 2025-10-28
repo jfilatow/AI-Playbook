@@ -17,6 +17,16 @@ myob-upstream   git@github.com:MYOB-Technology/MYOB-AI-Codex.git
 defra           https://github.com/DEFRA/defra-ai-sdlc.git
 ```
 
+### Branch Structure
+
+This fork uses a **Git Flow** inspired branching strategy:
+
+- **`main`** - Stable production-ready version, synced with MYOB upstream
+- **`develop`** - Active development branch (your working branch)
+- **`feature/*`** - Feature branches for specific work
+
+See **[BRANCHING_STRATEGY.md](BRANCHING_STRATEGY.md)** for complete details.
+
 ### Current Status
 - **Created**: October 28, 2025
 - **Forked From**: MYOB-Technology/MYOB-AI-Codex

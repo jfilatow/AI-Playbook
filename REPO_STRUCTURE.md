@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 02:48:41 UTC 2025
+Generated on: Tue Oct 28 02:50:40 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -11,6 +11,7 @@ Generated on: Tue Oct 28 02:48:41 UTC 2025
 .cursor/rules/myob-development-standards.mdc
 .cursor/rules/repository-structure-map.mdc
 .cursor/rules/structure-maintenance.mdc
+BRANCHING_STRATEGY.md
 CHANGELOG.md
 COMPARISON_SUMMARY.md
 FORK_INFO.md
