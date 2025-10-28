@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 05:52:04 UTC 2025
+Generated on: Tue Oct 28 05:55:10 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -240,6 +240,9 @@ pages/getting-started/ai-working-mindset.md
 pages/getting-started/attachments/development-workflow-diagram.png
 pages/getting-started/attachments/venn-diagram-consistent-code.png
 pages/getting-started/choosing-the-right-model.md
+pages/getting-started/ide-setup/copilot-vs-cursor.md
+pages/getting-started/ide-setup/cursor-setup.md
+pages/getting-started/ide-setup/github-copilot-setup.md
 pages/getting-started/mcp-servers-setup.md
 pages/getting-started/project-setup.md
 pages/getting-started/self-service-capabilities.md
