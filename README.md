@@ -3,7 +3,6 @@
 
 # AI Software Development Lifecycle Playbook
 
-
 ## Overview
 
 The MYOB AI SDLC Playbook provides comprehensive guidance for the use of artificial intelligence tooling in your software development lifecycle while maintaining MYOB's high standards for security, quality, and governance. Whether you're new to AI development or looking to standardise your team's practices, this playbook offers practical, actionable guidance for every stage of the development process.
