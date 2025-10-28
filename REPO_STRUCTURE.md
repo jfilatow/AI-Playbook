@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 05:09:52 UTC 2025
+Generated on: Tue Oct 28 05:12:30 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -224,6 +224,7 @@ pages/feature-development/context-engineering-spec-driven-development.md
 pages/feature-development/continuous-improvement.md
 pages/feature-development/development.md
 pages/feature-development/documentation.md
+pages/feature-development/mcp-usage.md
 pages/feature-development/refactoring.md
 pages/feature-development/test-driven-development.md
 pages/feature-development/testing.md
