@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 02:50:40 UTC 2025
+Generated on: Tue Oct 28 02:51:51 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -12,6 +12,7 @@ Generated on: Tue Oct 28 02:50:40 UTC 2025
 .cursor/rules/repository-structure-map.mdc
 .cursor/rules/structure-maintenance.mdc
 BRANCHING_STRATEGY.md
+BRANCH_STRUCTURE.md
 CHANGELOG.md
 COMPARISON_SUMMARY.md
 FORK_INFO.md
