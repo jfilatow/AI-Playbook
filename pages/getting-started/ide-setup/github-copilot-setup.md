@@ -8,84 +8,82 @@ title: GitHub Copilot Setup Guide
 
 ## Overview
 
-GitHub Copilot is an AI pair programmer that provides code completions and chat assistance directly in your IDE. This guide covers setup for multiple IDEs with MYOB-specific configurations and best practices.
+GitHub Copilot is an AI pair programmer that provides code completions and chat assistance directly in your IDE. This guide covers configuration for multiple IDEs with MYOB-specific settings and best practices.
+
+**Before You Begin:**  
+Request and install GitHub Copilot via MYOB's standard software process:
+1. Request access via **Sailpoint Identity Now**
+2. Install via **Kandji** (macOS) or **Windows Company Portal** (Windows)
+3. Once installed, install the IDE extension and return to this guide for configuration
+
+For licensing and approval details, see [MYOB-Approved Tools](../../appendix/MYOB-approved-tools.md).
 
 ## Table of Contents
 
-- [Installation by IDE](#installation-by-ide)
+- [Extension Setup by IDE](#extension-setup-by-ide)
 - [Configuration](#configuration)
 - [Copilot Chat](#copilot-chat)
 - [MYOB-Specific Settings](#myob-specific-settings)
 - [Best Practices](#best-practices)
 - [Limitations](#limitations)
 
-## Installation by IDE
+## Extension Setup by IDE
+
+After receiving Copilot access, install the extension in your IDE:
 
 ### VS Code (Recommended)
 
-1. **Install Extension**:
-   - Open VS Code
-   - Go to Extensions (Cmd+Shift+X)
+1. **Install Extensions**:
+   - Open VS Code Extensions (Cmd+Shift+X / Ctrl+Shift+X)
    - Search for "GitHub Copilot"
-   - Click Install on both:
-     - GitHub Copilot (main extension)
-     - GitHub Copilot Chat
+   - Install both extensions:
+     - **GitHub Copilot** (code completions)
+     - **GitHub Copilot Chat** (chat interface)
 
 2. **Sign In**:
    - Click "Sign in to GitHub" when prompted
-   - Authorize VS Code in browser
-   - Verify you have Copilot access
+   - Authorize in browser with your MYOB GitHub account
+   - Verify Copilot icon appears in status bar
 
-3. **Verify Installation**:
-   - Status bar should show Copilot icon
-   - Try typing a comment: `// function to calculate GST`
-   - Copilot should suggest code
+3. **Verify**:
+   - Type a comment: `// function to calculate GST`
+   - Copilot should show suggestions in grey text
 
 ### JetBrains IDEs (IntelliJ, WebStorm, PyCharm)
 
 1. **Install Plugin**:
-   - File → Settings → Plugins
+   - File → Settings → Plugins (or Preferences on Mac)
    - Search "GitHub Copilot"
-   - Click Install
-   - Restart IDE
+   - Click Install, then restart IDE
 
-2. **Sign In**:
+2. **Authenticate**:
    - Tools → GitHub Copilot → Login
    - Authorize in browser
-   - Return to IDE
-
-3. **Configure**:
-   - Settings → Tools → GitHub Copilot
-   - Enable suggestions
-   - Configure keybindings
+   - Enable suggestions in Settings → Tools → GitHub Copilot
 
 ### Visual Studio (Windows)
 
 1. **Install Extension**:
    - Extensions → Manage Extensions
    - Search "GitHub Copilot"
-   - Download and install
-   - Restart Visual Studio
+   - Download, install, and restart
 
 2. **Sign In**:
    - Tools → Options → GitHub Copilot
-   - Sign in to GitHub account
-   - Authorize extension
+   - Sign in and authorize with your MYOB GitHub account
 
 ### Neovim/Vim
 
-1. **Install Plugin**:
+1. **Install Plugin** (using vim-plug):
    ```vim
-   " Using vim-plug
    Plug 'github/copilot.vim'
    ```
 
-2. **Setup**:
+2. **Setup and Authenticate**:
    ```vim
    :Copilot setup
    ```
-
-3. **Authenticate**: Follow prompts
+   Follow authentication prompts in your browser
 
 ## Configuration
 

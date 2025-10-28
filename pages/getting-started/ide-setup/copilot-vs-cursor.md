@@ -40,7 +40,6 @@ Many MYOB developers use both - Cursor for AI-heavy work, VS Code+Copilot for qu
 | **Context Window** | ~8k tokens | Up to 200k+ | Cursor |
 | **IDE Options** | Many (VS Code, JetBrains, etc.) | Cursor only | Copilot |
 | **Learning Curve** | Low | Medium | Copilot |
-| **Cost** | $10-19/month | $20/month | Copilot |
 | **Enterprise Features** | Excellent | Good | Copilot |
 
 ## Detailed Comparison
@@ -213,42 +212,25 @@ Afternoon: Cursor
 - Same ESLint/Prettier configs
 - Same Git configuration
 
-## Cost Comparison
+## Latest Features (2025)
 
 ### GitHub Copilot
 
-**Individual:**
-- $10/month (billed monthly)
-- $100/year (billed annually)
-
-**Business:**
-- $19/user/month
-- Enterprise features (policy management, etc.)
+**Recent Additions:**
+- Multi-line suggestions with better context awareness
+- Copilot Workspace for full project understanding
+- PR summaries and automated code reviews
+- Copilot Extensions for third-party integrations
+- Improved test generation capabilities
 
 ### Cursor
 
-**Free:**
-- Limited AI requests (200-500 per month)
-- All features available
-
-**Pro:**
-- $20/month
-- Unlimited requests
-- Priority access
-- Advanced models
-
-**Business:**
-- $40/user/month
-- Team features
-- Admin controls
-- Usage analytics
-
-### Combined Cost
-
-If using both:
-- Copilot Business ($19) + Cursor Pro ($20) = $39/month
-- Worth it if you use each for different purposes
-- Check with MYOB licensing for enterprise deals
+**Recent Additions:**
+- Max Mode for deeper reasoning on complex problems
+- Enhanced Composer for larger multi-file edits
+- Improved MCP integration with more providers
+- Better long-context handling (200k+ tokens)
+- Team features and usage analytics
 
 ## MYOB Tool Approval Status
 
@@ -264,42 +246,42 @@ See [MYOB-Approved Tools](../../appendix/MYOB-approved-tools.md) for:
 - Data handling policies
 - Usage guidelines
 
-### Requesting Licenses
+### Requesting Access
 
-**GitHub Copilot:**
-- Contact IT/Procurement
-- Usually included in GitHub Enterprise
+**Both tools:**
+1. Request via **Sailpoint Identity Now**
+2. Install via **Kandji** (macOS) or **Windows Company Portal** (Windows)
+3. Follow setup guides below for configuration
 
-**Cursor:**
-- Request via standard software approval process
-- Individual or team licenses available
+## Setup and Training Resources
 
-## Migration Guide
+### Setup Guides
 
-### Moving from VS Code to Cursor
+For detailed configuration instructions:
 
-**Cursor is built on VS Code**, so migration is smooth:
+- **[Cursor Setup Guide](cursor-setup.md)** - Configuration, Cursor Rules, MCP integration
+- **[GitHub Copilot Setup Guide](github-copilot-setup.md)** - Extension setup, IDE-specific settings
 
-1. **Install Cursor**: Download from cursor.com
-2. **Import Settings**: Cursor offers to import on first launch
-3. **Install Extensions**: Most VS Code extensions work in Cursor
-4. **Copy Workspace**: Open same projects
-5. **Configure MCPs**: Add Glean, GitHub, Atlassian MCPs
-6. **Try Gradually**: Use for specific tasks, not all at once
+### Training Resources
 
-**Keep VS Code:**
-Many users keep VS Code for certain tasks and use Cursor for AI-heavy work.
+To learn how to use each tool effectively:
 
-### Adding Copilot to Existing Setup
+- **[AI Training Programs](../ai-training-programs.md)** - Structured learning paths
+- **[MCP Usage Guide](../../feature-development/mcp-usage.md)** - Leveraging enterprise context (Cursor)
+- **[Model Selection Guide](../choosing-the-right-model.md)** - Choosing the right AI model
+- **[Prompt Library](../../appendix/prompt-library/README.md)** - Proven prompts for common tasks
 
-If you use Cursor but want Copilot too:
+### Migration Tips
 
-1. Keep Cursor for main development
-2. Install VS Code + Copilot for quick tasks
-3. Use VS Code for:
-   - Quick file edits
-   - Extensions that don't work in Cursor
-   - Pair programming (screen sharing)
+**Moving from VS Code to Cursor:**
+- Cursor is built on VS Code and imports settings automatically
+- Most VS Code extensions work in Cursor
+- Many users keep both: VS Code for quick edits, Cursor for complex work
+
+**Adding Copilot to Your Workflow:**
+- Copilot works in your existing IDE (VS Code, JetBrains, etc.)
+- No need to switch editors
+- Can use alongside Cursor for different purposes
 
 ## Recommendations by Role
 
@@ -339,24 +321,21 @@ If you use Cursor but want Copilot too:
 
 **Secondary:** Cursor for complex automation scripts
 
-## Resources
-
-- **GitHub Copilot**: [Copilot Setup Guide](github-copilot-setup.md)
-- **Cursor**: [Cursor Setup Guide](cursor-setup.md)
-- **Model Selection**: [Choosing the Right Model](../choosing-the-right-model.md)
-
 ## Next Steps
 
-Ready to choose your tool?
-
-1. **Set Up Cursor**: [Cursor Setup Guide](cursor-setup.md)
-2. **Or Set Up Copilot**: [GitHub Copilot Setup](github-copilot-setup.md)
-3. **Configure MCPs**: [MCP Usage Guide](../../feature-development/mcp-usage.md)
-4. **Start Coding**: [Feature Development](../../feature-development/README.md)
+1. **Choose your tool** based on your needs (see recommendations above)
+2. **Request access** via Sailpoint Identity Now
+3. **Follow setup guide**:
+   - [Cursor Setup Guide](cursor-setup.md)
+   - [GitHub Copilot Setup Guide](github-copilot-setup.md)
+4. **Configure for MYOB**:
+   - [MCP Setup](../../feature-development/mcp-usage.md) (Cursor)
+   - [MYOB-Approved Tools](../../appendix/MYOB-approved-tools.md) (policies)
+5. **Start learning**: [AI Training Programs](../ai-training-programs.md)
 
 ---
 
-**Previous:** [← GitHub Copilot Setup](github-copilot-setup.md) | **Next:** [AI Training Programs →](../ai-training-programs.md)
+**Previous:** [← IDE Setup Overview](README.md) | **Next:** [AI Training Programs →](../ai-training-programs.md)
 
 ---
 

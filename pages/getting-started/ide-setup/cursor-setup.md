@@ -8,11 +8,19 @@ title: Cursor IDE Setup Guide
 
 ## Overview
 
-Cursor is an AI-first code editor built on VS Code, optimized for AI-assisted development. This guide walks you through setting up Cursor for MYOB development with best practices, configurations, and MCP integration.
+Cursor is an AI-first code editor built on VS Code, optimized for AI-assisted development. This guide covers configuration and setup for MYOB development with best practices, Cursor Rules, and MCP integration.
+
+**Before You Begin:**  
+Request and install Cursor via MYOB's standard software process:
+1. Request access via **Sailpoint Identity Now**
+2. Install via **Kandji** (macOS) or **Windows Company Portal** (Windows)
+3. Once installed, return to this guide for configuration
+
+For licensing and approval details, see [MYOB-Approved Tools](../../appendix/MYOB-approved-tools.md).
 
 ## Table of Contents
 
-- [Installation](#installation)
+- [First Launch Setup](#first-launch-setup)
 - [Initial Configuration](#initial-configuration)
 - [Cursor Rules Setup](#cursor-rules-setup)
 - [MCP Integration](#mcp-integration)
@@ -21,44 +29,22 @@ Cursor is an AI-first code editor built on VS Code, optimized for AI-assisted de
 - [Best Practices](#best-practices)
 - [Troubleshooting](#troubleshooting)
 
-## Installation
+## First Launch Setup
 
-### System Requirements
+When launching Cursor for the first time:
 
-- **macOS**: 10.15 (Catalina) or later
-- **Windows**: Windows 10 version 1909 or later
-- **Linux**: Ubuntu 18.04, Debian 10, or later
-- **RAM**: 8GB minimum, 16GB+ recommended
-- **Disk**: 1GB for Cursor, additional space for projects
+1. **Sign In**:
+   - Use your GitHub account (recommended) or email
+   - This syncs settings across devices
 
-### Download and Install
+2. **Import VS Code Settings** (if migrating):
+   - Cursor offers to import settings and extensions
+   - Review and select what to import
+   - Most VS Code extensions work in Cursor
 
-1. **Download Cursor**:
-   - Visit [cursor.com](https://cursor.com)
-   - Click "Download for [your OS]"
-   - Current version: Check website for latest
-
-2. **Install**:
-   - **Mac**: Open .dmg file, drag Cursor to Applications
-   - **Windows**: Run installer .exe file
-   - **Linux**: Extract .tar.gz and run ./cursor
-
-3. **First Launch**:
-   - Accept privacy policy
-   - Sign in with GitHub account (recommended) or email
-   - Import VS Code settings (if migrating from VS Code)
-
-### License and Pricing
-
-**MYOB Enterprise License:**
-- Contact IT/Procurement for enterprise license
-- Team billing available
-- See [MYOB-Approved Tools](../../appendix/MYOB-approved-tools.md) for license details
-
-**Individual License Options:**
-- Free tier: Limited AI requests
-- Pro tier: Unlimited requests, advanced features
-- Business tier: Team features, admin controls
+3. **Privacy Settings**:
+   - Review privacy policy
+   - Configure data sharing preferences (see [Initial Configuration](#initial-configuration))
 
 ## Initial Configuration
 
