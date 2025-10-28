@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 02:57:14 UTC 2025
+Generated on: Tue Oct 28 03:05:13 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -21,6 +21,8 @@ FORK_SUCCESS.md
 MYOB_vs_DEFRA_Comparison.md
 README.md
 REPO_STRUCTURE.md
+SCOPE_REVIEW_PLAN.md
+SCOPE_REVIEW_SUMMARY.md
 _sass/myob-styles.scss
 assets/css/style.scss
 assets/images/myob-banner-old.png
