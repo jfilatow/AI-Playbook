@@ -12,7 +12,7 @@ Set up your development environment to use AI tools safely and effectively.
 
 ### 1. Install an AI coding assistant
 
-Install a coding assistant from the [Allowed Tools for MYOB Pilot](../appendix/MYOB-approved-tools.md) list.
+Install a coding assistant from the [Allowed Tools for MYOB](../appendix/MYOB-approved-tools.md) list.
 
 ### 2. Turn on privacy settings
 
