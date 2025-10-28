@@ -318,27 +318,35 @@ Does the data contain customer information, PII, or financial records?
 
 ## Compliance Requirements for AI Usage
 
-### GDPR and Privacy Laws
+### Australian and New Zealand Privacy Laws
 
-When using AI tools with any data related to EU citizens:
+When using AI tools with customer data, comply with Australian and New Zealand privacy regulations:
 
-**Right to Be Forgotten:**
-- AI tool providers must be able to delete personal data on request
+**Australian Privacy Principles (APPs):**
+- AI tool providers must be able to delete personal data on request (APP 11, APP 13)
 - Ensure AI tool contracts include data deletion guarantees
-- Document AI tool usage in privacy policies
-- Maintain records of what data was processed by AI
+- Document AI tool usage in privacy policies (APP 1)
+- Maintain records of what data was processed by AI (APP 11)
+- Personal information must be held securely (APP 11)
+
+**New Zealand Privacy Act 2020:**
+- Similar protections to Australian APPs
+- Right to access and correction of personal information
+- Security safeguards for personal information
+- Transparency about how personal information is used
 
 **Data Processing Agreements:**
-- AI tool vendors are data processors under GDPR
+- AI tool vendors are data processors under Australian Privacy Act
 - Ensure proper Data Processing Agreements (DPAs) are in place
-- Verify vendor compliance with GDPR requirements
-- Check for Standard Contractual Clauses (SCCs) for data transfers
+- Verify vendor compliance with Australian privacy requirements
+- Check data sovereignty requirements (AU/NZ data residency where applicable)
 
 **Consent and Transparency:**
-- Disclose AI usage in privacy policies where applicable
-- Obtain consent before using customer data for AI (even indirectly)
-- Provide transparency about AI decision-making in customer-facing features
+- Disclose AI usage in privacy policies where applicable (required under APPs)
+- Obtain consent before using customer data for AI (APP 3)
+- Provide transparency about AI decision-making in customer-facing features (APP 1)
 - Document AI tool usage in privacy impact assessments
+- Notify Office of the Australian Information Commissioner (OAIC) of eligible data breaches
 
 ### Audit Trail Requirements
 
@@ -386,7 +394,9 @@ MYOB operates in the financial services domain with additional compliance requir
 - Banking regulations may prohibit certain AI tool usage
 - Insurance requirements for data protection
 - Accounting standards for automated calculations
-- Regional regulatory differences (AU, NZ, UK, US)
+- Regional regulatory differences (AU, NZ)
+- APRA regulations for financial institutions (Australia)
+- FMA regulations for financial service providers (New Zealand)
 
 ### Monitoring and Compliance
 - **Continuous Monitoring**: Implement real-time monitoring for anomalous behavior and potential security incidents
@@ -396,15 +406,18 @@ MYOB operates in the financial services domain with additional compliance requir
 
 ## Regulatory Considerations
 
-### International Standards
-- **General Data Protection Regulation (GDPR)**: EU regulation mandating strict guidelines on data processing, emphasizing user consent and data subject rights
-- **Artificial Intelligence Act**: EU's AI Act classifies AI applications by risk and imposes corresponding safety and compliance obligations
-- **ISO/IEC 27001**: International standard for information security management systems
+### Australian and New Zealand Privacy Standards
+- **Australian Privacy Act 1988**: Governs how personal information is collected, used, and disclosed by organizations
+- **Australian Privacy Principles (APPs)**: 13 principles covering collection, use, security, and disclosure of personal information
+- **New Zealand Privacy Act 2020**: Governs privacy and data protection in New Zealand with 13 privacy principles
+- **ISO/IEC 27001**: International standard for information security management systems (MYOB is certified to ISO 27001)
+- **Notifiable Data Breaches (NDB) Scheme**: Mandatory notification to OAIC and affected individuals for eligible data breaches
 
-### Regional Compliance
-- **California Consumer Privacy Act (CCPA/CPRA)**: Grants consumers rights over their personal data and imposes obligations on businesses
-- **Australia Privacy Act**: Governs how personal information is collected, used, and disclosed
-- **PIPEDA (Canada)**: Personal Information Protection and Electronic Documents Act governing private sector data handling
+### Industry-Specific Standards
+- **Payment Card Industry Data Security Standard (PCI DSS)**: For handling payment card data
+- **Australian Accounting Standards**: Data retention and accuracy requirements for financial records
+- **ATO Record Keeping Requirements**: Tax and financial data must be kept for 5-7 years
+- **FMA Act (NZ)**: Financial Markets Authority requirements for financial service providers
 
 ## Challenges and Mitigation
 
@@ -420,15 +433,6 @@ MYOB operates in the financial services domain with additional compliance requir
 - **Secure Development Lifecycle**: Integrate security testing throughout the AI development process
 - **Vendor Due Diligence**: Thoroughly vet third-party AI providers and establish clear contractual obligations
 
-## MYOB-Specific Resources
-
-For detailed implementation guidance and general security standards, refer to:
-
-- **MYOB Architecture Codex** - Complete technical standards, security requirements, and data governance
-- **Security Overview**: [AI Security Practices](security.md) - AI-specific security guidance including prompt injection and tool approval
-- **MYOB-Approved Tools**: [Approved Tools List](../../appendix/MYOB-approved-tools.md) - Vetted AI tools with data protection guarantees
-
-For technical standards not specific to AI, see [Architecture Codex References](../../appendix/architecture-codex-references.md).
 
 ## Implementation Checklist
 
@@ -439,7 +443,7 @@ For technical standards not specific to AI, see [Architecture Codex References](
 - [ ] Privacy impact assessment completed
 - [ ] Incident response plan updated for AI scenarios
 - [ ] Regular security audits scheduled
-- [ ] Staff training on AI privacy and security completed
+- [ ] MYOB Staff training on AI privacy and security completed
 
 For additional guidance or security concerns, contact the Security team via [#svc-security](https://myob.slack.com/messages/CANT8SKFY) on Slack.
 

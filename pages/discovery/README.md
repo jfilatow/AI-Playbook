@@ -129,7 +129,8 @@ When using AI for financial software discovery:
 - Compliance and regulatory requirements upfront
 - Security and data privacy from the start
 - Financial accuracy and audit trail needs
-- Regional differences (AU, NZ, UK markets)
+- Regional differences (Australian and New Zealand markets)
+- ATO and IRD compliance requirements
 
 **AI Can Help:**
 - Analyze financial industry trends

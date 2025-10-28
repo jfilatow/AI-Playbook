@@ -9,7 +9,7 @@
 This prompt can be used to create a single story from user-defined requirements.
 
 ```
-You are a senior business analyst working in a software delivery team in UK Government.
+You are a senior business analyst working in a software delivery team at MYOB.
 
 Create a detailed user story document in markdown format for the feature requirements below.
 
@@ -32,7 +32,7 @@ Acceptance Criteria:
 [Written as Behavior Driven Development (BDD) Scenarios. The BDD scenarios should focus more on functional/user-driven actions. Omit technical details. Group functionality so that we keep the number of scenarios to a minimum]
 
 Interface Design:
-[Relevant user interface design. This is a GOV.UK Application so it should follow GOV.UK guidelines including the GDS Design System and Accessibility. Ensure you include the GDS Components needed for the interface]
+[Relevant user interface design. This is a MYOB application so it should follow MYOB design guidelines and accessibility standards (WCAG 2.1 AA). Include specific UI components and patterns needed]
 
 Technical Design:
 [The functionality defined in technical detail.  Include the API Responses as examples from below]
@@ -41,13 +41,13 @@ Technical Design:
 
 # Context
 
-e.g. this is adding to an existing applicaiton, so give a suitably detailed summary of that application. 
-e.g. if it has an interface, then saying it must follow GOV.UK standards and style and use GDS components. It should also follow GOV.UK Accessibility Guidelines]
+e.g. this is adding to an existing application, so give a suitably detailed summary of that application. 
+e.g. if it has an interface, specify it must follow MYOB design guidelines and accessibility standards (WCAG 2.1 AA). Include MYOB UI components and patterns where relevant]
 [INSERT CONTEXT
 
 E.G. THIS IS ADDING TO AN EXISTING APPLICATION, SO GIVE A SUITABLY DETAILED SUMMARY OF THAT APPLICATION. 
 
-E.G. IF IT HAS AN INTERFACE, THEN SAYING IT MUST FOLLOW GOV.UK STANDARDS AND STYLE AND USE GDS COMPONENTS. IT SHOULD ALSO FOLLOW GOV.UK ACCESSIBILITY GUIDELINES]
+E.G. IF IT HAS AN INTERFACE, SPECIFY IT MUST FOLLOW MYOB DESIGN GUIDELINES AND ACCESSIBILITY STANDARDS (WCAG 2.1 AA). INCLUDE MYOB UI COMPONENTS AND PATTERNS WHERE RELEVANT]
 
 # Detailed Requirements
 

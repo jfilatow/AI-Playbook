@@ -16,7 +16,7 @@ Required Documentation:
 Documentation Standards:
 - Maintain existing document structure (if applicable)
 - Be concise yet informative
-- Use professional British English
+- Use professional Australian English
 - Use proper Markdown formatting
 - Create or update Mermaid diagrams if applicable
 
@@ -32,7 +32,7 @@ Key constraints:
 - This is an incremental update to existing documentation
 - Only update or add documentation as necessary 
 - Keep a consistent tone and style with existing content
-- Use British English
+- Use Australian English
 
-Provide a complete, production-ready update in British English with a professional tone.
+Provide a complete, production-ready update in Australian English with a professional tone.
 ```

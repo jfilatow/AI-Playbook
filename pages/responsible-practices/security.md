@@ -354,18 +354,6 @@ variables for credentials (DB_HOST, DB_USER, DB_PASSWORD)
 - Keep AI tools and extensions updated to latest versions
 - Review AI tool changelogs for security updates
 
-## Integration with MYOB Security Standards
-
-This AI-specific security guidance complements MYOB's comprehensive security framework. For general security standards and technical requirements, refer to the **MYOB Architecture Codex**:
-
-- **MYOB Architecture Codex** - Complete security standards and requirements
-- **Information Classification** - Guidelines for handling different data types securely
-- **Low Bar Security Requirements** - Mandatory security baseline for all systems
-- **Logging and Monitoring** - Security event logging standards
-- **API Security** - Authentication, authorization, and API protection
-
-See [Architecture Codex References](../../appendix/architecture-codex-references.md) for links to technical standards documentation.
-
 ## Security Checklist for AI-Assisted Development
 
 - [ ] AI-generated code reviewed for OWASP Top 10 vulnerabilities

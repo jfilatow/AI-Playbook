@@ -279,7 +279,8 @@ When exploring problems in the financial domain:
 - Compliance and regulatory requirements shape problem space
 - Financial accuracy and audit trails are non-negotiable
 - Industry-specific pain points (tax, payroll, reporting)
-- Regional differences (Australian vs New Zealand vs UK tax systems)
+- Regional differences between Australian and New Zealand tax systems
+- ATO (Australian Taxation Office) vs IRD (Inland Revenue NZ) requirements
 
 **AI-Assisted Discovery:**
 

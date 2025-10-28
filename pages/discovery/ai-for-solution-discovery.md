@@ -315,7 +315,8 @@ When exploring solutions for financial software:
 **Compliance and Regulatory:**
 - Solutions must handle regulatory requirements correctly
 - Audit trails and data accuracy are non-negotiable
-- Regional compliance variations matter (AU vs NZ vs UK)
+- Regional compliance variations matter (AU vs NZ)
+- ATO (Australia) and IRD (New Zealand) requirements differ
 
 **Data Security:**
 - Financial data protection must be built-in, not added later
