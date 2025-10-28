@@ -35,6 +35,359 @@ Ensuring data privacy and security is paramount in the development and deploymen
 - **Output Filtering**: Monitor and filter AI outputs to prevent disclosure of sensitive information
 - **Bias Detection**: Regularly test for and mitigate algorithmic bias that could lead to discriminatory outcomes
 
+## Preventing Data Leakage to AI Models
+
+When using AI tools for development, preventing sensitive data leakage is critical. AI providers may process, store, or use your data for model training unless proper precautions are taken.
+
+### What Data Should NEVER Go to AI Tools
+
+**Absolutely Prohibited Data:**
+
+**Personal Identifiable Information (PII):**
+- Customer names, addresses, phone numbers, email addresses
+- Government-issued identification numbers (SSN, passport numbers, driver's licenses)
+- Financial account numbers, credit card information
+- Biometric data, health information
+- Employee personal information
+
+**Credentials and Secrets:**
+- API keys, access tokens, authentication credentials
+- Database passwords, connection strings
+- Private keys, certificates, encryption keys
+- OAuth tokens, session identifiers
+- Service account credentials
+
+**Proprietary Business Data:**
+- Customer financial records and transaction histories
+- Pricing strategies, business forecasts, financial models
+- Proprietary algorithms and trade secrets
+- Unreleased product features or strategies
+- Internal audit reports, compliance documentation
+
+**Infrastructure Details:**
+- Production database schemas with real table/column names
+- Internal network topology and IP addresses
+- Production server configurations and hostnames
+- Security vulnerabilities and penetration test results
+- Backup and disaster recovery procedures
+
+### Prompt Sanitization Techniques
+
+Before using AI tools, sanitize your prompts and context:
+
+**Technique 1: Replace with Placeholders**
+
+❌ **Unsafe:**
+```javascript
+// Generate code to process payment for customer john.doe@example.com
+// using Stripe API key sk_live_1234567890abcdef
+const payment = await stripe.charges.create({...});
+```
+
+✅ **Safe:**
+```javascript
+// Generate code to process payment for customer using environment variables
+// Stripe API key from process.env.STRIPE_API_KEY
+const payment = await stripe.charges.create({...});
+```
+
+**Technique 2: Use Synthetic/Example Data**
+
+❌ **Unsafe:**
+```sql
+-- Analyze customer table with columns: customer_id, name, ssn, credit_card, income
+SELECT * FROM customers WHERE income > 100000;
+```
+
+✅ **Safe:**
+```sql
+-- Analyze customer table with representative schema
+-- Table: customers (id, name, category, segment)
+SELECT * FROM customers WHERE segment = 'high_value';
+```
+
+**Technique 3: Abstract Business Logic**
+
+❌ **Unsafe:**
+```
+Our profit margin calculation is: 
+(Revenue - COGS - OpEx) * 0.87 for Australian customers
+and * 0.92 for New Zealand customers due to tax differences
+```
+
+✅ **Safe:**
+```
+Generate a function that calculates profit margin based on 
+revenue, costs, and a region-specific tax factor from configuration
+```
+
+### Using Synthetic and Anonymized Data
+
+When AI assistance requires data examples, use synthetic or properly anonymized data:
+
+**Synthetic Data Generation:**
+- Use libraries like Faker, Mockaroo, or Synthesized for realistic test data
+- Generate data that matches production patterns without real values
+- Create representative datasets for AI training and testing
+- Ensure synthetic data doesn't accidentally match real customer data
+
+**Data Anonymization:**
+- Hash or tokenize identifiers (use one-way hashing)
+- Aggregate data to remove individual-level details
+- Add noise or perturbation to numerical values
+- Generalize categories to reduce specificity
+- Remove direct identifiers and quasi-identifiers
+
+**Example: Safe Synthetic Data**
+```javascript
+// Generate sample customer data for testing payment flow
+const testCustomer = {
+  id: "CUST_" + generateUUID(),
+  name: "Test Customer",
+  email: "test@example.com",
+  accountType: "business",
+  // Use realistic but fake values
+  monthlyRevenue: 5000.00
+};
+```
+
+### Local vs Cloud AI Tools: Security Considerations
+
+Choose the appropriate tool based on data sensitivity:
+
+**Use Local AI Tools When:**
+- Working with customer data or PII
+- Developing security-critical features (authentication, encryption)
+- Processing proprietary business logic or algorithms
+- Dealing with compliance-sensitive code (financial regulations)
+- Working on unreleased features with competitive advantage
+
+**Use Cloud AI Tools When:**
+- Working with public documentation or open-source code
+- Developing non-sensitive features with generic business logic
+- Processing anonymized or synthetic data only
+- Code doesn't contain proprietary algorithms or trade secrets
+- Benefits of advanced models outweigh risks for the specific task
+
+**MYOB-Approved Local Tools:**
+- Cursor (with local models option)
+- GitHub Copilot (with appropriate data exclusion settings)
+- Local LLM instances for highly sensitive work
+
+**Cloud Tool Considerations:**
+- Verify data handling policies before use
+- Check if data is used for model training (opt-out if available)
+- Use enterprise tiers with data protection guarantees
+- Configure tools to exclude sensitive repositories
+
+### Detecting and Auditing Data Sent to AI Tools
+
+Implement monitoring to track what data AI tools access:
+
+**Audit Mechanisms:**
+
+**File Access Logging:**
+- Monitor which files AI tools access via MCPs or context
+- Review `.cursor/logs` for file access patterns
+- Identify if sensitive files are being included in context
+- Set up alerts for access to sensitive directories
+
+**Prompt History Review:**
+- Periodically review AI tool conversation history
+- Check for accidental inclusion of sensitive information
+- Use AI tool audit features (Cursor settings → Privacy)
+- Export and analyze prompts quarterly for compliance
+
+**Network Traffic Monitoring:**
+- Monitor network requests from AI tools
+- Verify data leaving your development environment
+- Use network analysis tools to inspect AI tool communications
+- Set up DLP (Data Loss Prevention) rules for AI traffic
+
+**Configuration Audits:**
+- Review `.cursorignore` and similar exclusion files
+- Verify sensitive directories are properly excluded
+- Check AI tool permissions and repository access
+- Audit MCP configurations for appropriate scope
+
+**Example: .cursorignore Configuration**
+```
+# Exclude sensitive files from AI context
+.env
+.env.*
+*.key
+*.pem
+*.p12
+secrets/
+config/production/
+customer-data/
+credentials/
+*.credentials
+node_modules/
+vendor/
+```
+
+## Data Classification for AI Usage
+
+Apply MYOB's data classification framework to determine if data can be used with AI tools.
+
+### MYOB Data Classification Levels
+
+**Restricted** (Highest Sensitivity)
+- **Definition**: Data that if disclosed could cause severe harm to MYOB or customers
+- **Examples**: Customer financial records, PII, payment card data, health information
+- **AI Usage**: ❌ NEVER use with cloud AI tools
+- **Allowed**: Local AI tools only, with explicit approval and strong controls
+
+**Confidential**
+- **Definition**: Internal data that could harm MYOB if disclosed
+- **Examples**: Business strategies, financial forecasts, unreleased product features, employee data
+- **AI Usage**: ⚠️ Use with caution, local tools preferred
+- **Allowed**: Cloud AI tools with enterprise data protection agreements only
+
+**Internal**
+- **Definition**: Internal-use data not intended for public disclosure
+- **Examples**: Internal documentation, development guidelines, non-sensitive code
+- **AI Usage**: ✅ Generally safe with approved cloud AI tools
+- **Allowed**: MYOB-approved AI tools with standard configurations
+
+**Public**
+- **Definition**: Information approved for public release
+- **Examples**: Public documentation, open-source code, marketing materials
+- **AI Usage**: ✅ Safe with any AI tool
+- **Allowed**: Any MYOB-approved AI tool
+
+### Decision Flowchart: Can I Use This Data with AI?
+
+```
+Does the data contain customer information, PII, or financial records?
+├─ Yes → ❌ DO NOT USE with AI tools
+│         Use synthetic data or sanitize first
+│
+└─ No → Does it contain proprietary business logic or unreleased features?
+    ├─ Yes → Is it classified as Restricted or Confidential?
+    │   ├─ Yes → ⚠️ Use local AI tools only (with approval)
+    │   └─ No → ✅ OK with approved cloud AI tools
+    │
+    └─ No → Is it Internal or Public?
+        ├─ Internal → ✅ OK with approved cloud AI tools
+        └─ Public → ✅ OK with any approved AI tool
+```
+
+### Examples: Safe vs Unsafe Data Usage
+
+**✅ Safe for AI Tools:**
+
+- Public API documentation (already published)
+- Open-source library code (publicly available)
+- Sanitized log files (with PII/secrets removed)
+- Synthetic test data (generated, not real customer data)
+- Generic code patterns and examples
+- Public MYOB engineering guidelines
+- Anonymized performance metrics (no customer identifiers)
+
+**❌ Unsafe for AI Tools:**
+
+- Customer account balances or transaction histories
+- Employee salary information or performance reviews
+- Real customer names, emails, or contact information
+- Production database connection strings
+- API keys, passwords, or authentication tokens
+- Real financial forecasts or unpublished pricing
+- Unreleased product features with competitive value
+- Actual code from security-critical modules (without sanitization)
+
+**⚠️ Requires Sanitization:**
+
+- Database schemas → Remove real table/column names, use generic names
+- Log files → Strip PII, IP addresses, user IDs
+- Code examples → Replace real values with placeholders
+- Business logic → Abstract to generic requirements
+- Configuration files → Remove secrets, use environment variable references
+
+### AI Tool Compatibility by Classification
+
+| Data Classification | Local AI Tools | Cloud AI (Enterprise) | Cloud AI (Free/Standard) |
+|---------------------|----------------|----------------------|--------------------------|
+| Restricted | ⚠️ With approval only | ❌ Never | ❌ Never |
+| Confidential | ✅ Yes | ⚠️ With DPA only | ❌ No |
+| Internal | ✅ Yes | ✅ Yes | ⚠️ With caution |
+| Public | ✅ Yes | ✅ Yes | ✅ Yes |
+
+**DPA** = Data Protection Agreement with enterprise-level guarantees
+
+## Compliance Requirements for AI Usage
+
+### GDPR and Privacy Laws
+
+When using AI tools with any data related to EU citizens:
+
+**Right to Be Forgotten:**
+- AI tool providers must be able to delete personal data on request
+- Ensure AI tool contracts include data deletion guarantees
+- Document AI tool usage in privacy policies
+- Maintain records of what data was processed by AI
+
+**Data Processing Agreements:**
+- AI tool vendors are data processors under GDPR
+- Ensure proper Data Processing Agreements (DPAs) are in place
+- Verify vendor compliance with GDPR requirements
+- Check for Standard Contractual Clauses (SCCs) for data transfers
+
+**Consent and Transparency:**
+- Disclose AI usage in privacy policies where applicable
+- Obtain consent before using customer data for AI (even indirectly)
+- Provide transparency about AI decision-making in customer-facing features
+- Document AI tool usage in privacy impact assessments
+
+### Audit Trail Requirements
+
+Maintain comprehensive audit trails for AI interactions:
+
+**What to Log:**
+- Which AI tools were used and when
+- What files or data were accessed by AI tools
+- Prompts submitted (sanitized to remove sensitive data)
+- Decisions made based on AI recommendations
+- Who used AI tools and for what purpose
+- Changes made based on AI-generated code
+
+**What NOT to Log:**
+- Actual sensitive data or PII
+- Complete prompts if they contain confidential information
+- Full AI responses if they include sensitive code
+- Credentials or secrets (even in audit logs)
+
+**Retention Policies:**
+- Audit logs: Retain for minimum regulatory period (typically 7 years for financial services)
+- AI interaction logs: 90 days to 1 year, depending on data classification
+- Anonymize or delete logs containing sensitive data after retention period
+- Ensure AI tool providers honor deletion requests
+
+### Regulatory Considerations for Financial Domain AI
+
+MYOB operates in the financial services domain with additional compliance requirements:
+
+**Financial Regulations:**
+- **Anti-Money Laundering (AML)**: AI-generated code for transaction monitoring must comply with AML requirements
+- **Know Your Customer (KYC)**: Customer verification code must meet regulatory standards
+- **Payment Card Industry (PCI DSS)**: AI tools must not access or process payment card data
+- **Tax Compliance**: AI-generated tax calculation code must be thoroughly validated
+
+**Compliance Best Practices:**
+- Never use AI tools directly with customer financial data
+- Validate all AI-generated financial calculations manually
+- Maintain human oversight for compliance-critical features
+- Document AI usage in regulatory audit documentation
+- Ensure AI-generated code includes proper audit trails
+- Test AI-generated compliance features extensively
+
+**Industry-Specific Considerations:**
+- Banking regulations may prohibit certain AI tool usage
+- Insurance requirements for data protection
+- Accounting standards for automated calculations
+- Regional regulatory differences (AU, NZ, UK, US)
+
 ### Monitoring and Compliance
 - **Continuous Monitoring**: Implement real-time monitoring for anomalous behavior and potential security incidents
 - **Audit Logging**: Maintain comprehensive logs of all AI system interactions while ensuring sensitive data is not logged
@@ -69,12 +422,13 @@ Ensuring data privacy and security is paramount in the development and deploymen
 
 ## MYOB-Specific Resources
 
-For detailed implementation guidance, refer to:
+For detailed implementation guidance and general security standards, refer to:
 
-- **Information Classification**: [Security Standards](../standards/security.md) - Guidelines for classifying and handling different types of data
-- **Security Overview**: [Security Practices](../responsible-practices/security.md) - Comprehensive security practices and requirements
-- **Logging Standards**: [Operations Logging](../operations/logging.md) - Standards for secure logging and monitoring practices
-- **API Security**: [API Security Guidelines](../apis/api-security/README.md) - Security practices for AI-enabled APIs
+- **MYOB Architecture Codex** - Complete technical standards, security requirements, and data governance
+- **Security Overview**: [AI Security Practices](security.md) - AI-specific security guidance including prompt injection and tool approval
+- **MYOB-Approved Tools**: [Approved Tools List](../../appendix/MYOB-approved-tools.md) - Vetted AI tools with data protection guarantees
+
+For technical standards not specific to AI, see [Architecture Codex References](../../appendix/architecture-codex-references.md).
 
 ## Implementation Checklist
 
