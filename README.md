@@ -32,7 +32,6 @@ The MYOB AI SDLC Playbook provides comprehensive guidance for the use of artific
 - **[MCP Servers Setup](pages/getting-started/mcp-servers-setup.md)** - Model Context Protocol servers for enterprise integration
 - **[AI Training Programs](pages/getting-started/ai-training-programs.md)** - Training resources and skill development pathways
 - **[Stakeholder Engagement](pages/getting-started/stakeholder-engagement.md)** - Involving stakeholders in AI development initiatives
-- **[AI-first Mindset](pages/getting-started/ai-first-mindset.md)** - Developing an AI-native approach to problem-solving
 - **[Self-Service Capabilities](pages/getting-started/self-service-capabilities.md)** - Building autonomous AI-powered development capabilities
 
 ### 4. [Discovery](pages/discovery/README.md)

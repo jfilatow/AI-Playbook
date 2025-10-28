@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 07:38:50 UTC 2025
+Generated on: Tue Oct 28 07:40:31 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -225,7 +225,6 @@ pages/generating-requirements/README.md
 pages/generating-requirements/product-requirements.md
 pages/generating-requirements/technical-requirements.md
 pages/getting-started/README.md
-pages/getting-started/ai-first-mindset.md
 pages/getting-started/ai-training-programs.md
 pages/getting-started/ai-working-mindset.md
 pages/getting-started/attachments/development-workflow-diagram.png

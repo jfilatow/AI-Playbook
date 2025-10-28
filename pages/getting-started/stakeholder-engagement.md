@@ -453,6 +453,6 @@ For stakeholder engagement questions, contact the Architecture team or post in #
 
 ---
 
-**Previous:** [← AI Training Programs](ai-training-programs.md) | **Next:** [AI-first Mindset →](ai-first-mindset.md)
+**Previous:** [← AI Training Programs](ai-training-programs.md) | **Next:** [Self-Service Capabilities →](self-service-capabilities.md)
 
 ---
