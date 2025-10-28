@@ -44,76 +44,84 @@ The MYOB AI SDLC Playbook provides comprehensive guidance for the use of artific
 
 - **[Workflow](pages/getting-started/workflow.md)** - Step-by-step AI development workflow from requirements to deployment
 - **[The Four Pillars](pages/getting-started/the-four-pillars.md)** - Essential elements for consistent, high-quality AI code generation
+- **[Choosing the Right Model](pages/getting-started/choosing-the-right-model.md)** - Quick reference for model selection and Cursor modes
 - **[Mindset](pages/getting-started/ai-working-mindset.md)** - Mental frameworks and approaches for effective human-AI collaboration
-- **[Project Setup](pages/getting-started/project-setup.md)** - Technical setup, tool configuration, and project initialization best practices
-- **[MCP Servers Setup](pages/getting-started/mcp-servers-setup.md)** - Installation and configuration of Model Context Protocol servers for enterprise integration
-- **[AI Training Programs](pages/getting-started/ai-training-programs.md)** - Available training resources and skill development pathways
-- **[Stakeholder Engagement](pages/getting-started/stakeholder-engagement.md)** - Strategies for involving stakeholders in AI development initiatives
-- **[AI-first Mindset](pages/getting-started/ai-first-mindset.md)** - Developing an AI-native approach to problem-solving and development
+- **[Project Setup](pages/getting-started/project-setup.md)** - Technical setup, tool configuration, and project initialization
+- **[IDE Setup Guides](pages/getting-started/ide-setup/)** - Cursor and GitHub Copilot configuration with MYOB settings
+- **[MCP Servers Setup](pages/getting-started/mcp-servers-setup.md)** - Model Context Protocol servers for enterprise integration
+- **[AI Training Programs](pages/getting-started/ai-training-programs.md)** - Training resources and skill development pathways
+- **[Stakeholder Engagement](pages/getting-started/stakeholder-engagement.md)** - Involving stakeholders in AI development initiatives
+- **[AI-first Mindset](pages/getting-started/ai-first-mindset.md)** - Developing an AI-native approach to problem-solving
 - **[Self-Service Capabilities](pages/getting-started/self-service-capabilities.md)** - Building autonomous AI-powered development capabilities
 
-### 4. [Generating Requirements](pages/generating-requirements/README.md)
+### 4. [Discovery](pages/discovery/README.md)
+**Product discovery with AI** - Using AI tools to accelerate discovery phases for Product Managers, aligned to MYOB's Double Diamond process.
+
+- **[AI for Problem Discovery](pages/discovery/ai-for-problem-discovery.md)** - Market research, user research synthesis, and problem space exploration with AI
+- **[AI for Problem Definition](pages/discovery/ai-for-problem-definition.md)** - Refining problems, opportunity assessment, and prioritization frameworks
+- **[AI for Solution Discovery](pages/discovery/ai-for-solution-discovery.md)** - Solution ideation, prototyping, and technical feasibility with AI
+- **[AI for Solution Validation](pages/discovery/ai-for-solution-validation.md)** - Validation experiments, feedback analysis, and decision making
+
+### 5. [Generating Requirements](pages/generating-requirements/README.md)
 **From ideas to detailed specifications** - Techniques for creating comprehensive requirements using AI assistance.
 
 - **[Product Requirements](pages/generating-requirements/product-requirements.md)** - User stories, acceptance criteria, and functional specifications with AI assistance
 - **[Technical Requirements](pages/generating-requirements/technical-requirements.md)** - Architecture diagrams, data models, and technical specifications using AI tools
 
-### 5. [Feature Development](pages/feature-development/README.md)
+### 6. [Feature Development](pages/feature-development/README.md)
 **Building features with AI assistance** - End-to-end feature development processes using AI tools for coding, testing, and documentation.
 
-- **[Context Engineering and Spec Driven Development](pages/feature-development/context-engineering-spec-driven-development.md)** - Systematic information curation and specification-driven approach inspired by Andrej Karpathy's work
-- **[Development](pages/feature-development/development.md)** - AI-assisted coding practices, code generation techniques, and quality assurance
-- **[Test Driven Development](pages/feature-development/test-driven-development.md)** - TDD methodologies enhanced with AI test generation and validation
-- **[Testing](pages/feature-development/testing.md)** - Comprehensive testing strategies using AI for test creation and execution
-- **[Refactoring](pages/feature-development/refactoring.md)** - AI-assisted code refactoring techniques and best practices
-- **[Documentation](pages/feature-development/documentation.md)** - Automated documentation generation and maintenance with AI tools
-- **[Continuous Improvement](pages/feature-development/continuous-improvement.md)** - Iterative enhancement processes and feedback loops
+- **[Context Engineering and Spec Driven Development](pages/feature-development/context-engineering-spec-driven-development.md)** - Systematic information curation and specification-driven approach
 - **[AI-powered Features](pages/feature-development/ai-powered-features.md)** - Developing features that incorporate AI capabilities and services
-- **[AI Agent Orchestration](pages/feature-development/ai-agent-orchestration.md)** - Multi-agent coordination, workflow management, and enterprise orchestration frameworks
-- **[AI Development Frameworks](pages/feature-development/ai-development-frameworks.md)** - Core frameworks for building AI-powered applications including TensorFlow, PyTorch, and LangChain
+- **[AI Frameworks Practical](pages/feature-development/ai-frameworks-practical.md)** - GitHub SpecKit and other frameworks for AI-enhanced development
+- **[MCP Usage](pages/feature-development/mcp-usage.md)** - Model Context Protocol setup and usage for better AI context
+- **[Model Selection](pages/feature-development/model-selection.md)** - Choosing AI models, Cursor Max Mode, and context window management
+- **[AI Agents](pages/feature-development/ai-agents.md)** - Background agents, automated PR reviews, and agent automation
+- **[Development](pages/feature-development/development.md)** - AI-assisted coding practices, code generation techniques, and quality assurance
+- **[Test Driven Development](pages/feature-development/test-driven-development.md)** - TDD methodologies enhanced with AI test generation
+- **[Testing](pages/feature-development/testing.md)** - Comprehensive testing strategies using AI
+- **[Refactoring](pages/feature-development/refactoring.md)** - AI-assisted code refactoring techniques
+- **[Documentation](pages/feature-development/documentation.md)** - Automated documentation generation with AI tools
+- **[Continuous Improvement](pages/feature-development/continuous-improvement.md)** - Iterative enhancement processes
 
-### 6. [APIs & Integration](pages/apis/README.md)
-**Building and consuming APIs with AI assistance** - Comprehensive guidance for API development, testing, security, and integration.
-
-- **[API Design](pages/apis/api-design/README.md)** - RESTful API design principles, patterns, and AI-assisted design processes
-- **[API Observability](pages/apis/api-observability/README.md)** - Monitoring, logging, and performance tracking for API services
-- **[API Security](pages/apis/api-security/README.md)** - Authentication, authorization, and security best practices for APIs
-- **[API Discoverability](pages/apis/api-discoverability/README.md)** - Documentation, cataloging, and discovery mechanisms for APIs
-- **[API Testing](pages/apis/api-testing.md)** - Automated testing strategies and tools for API validation
-- **[API Documentation](pages/apis/documentation.md)** - Creating and maintaining comprehensive API documentation
-
-### 7. [Delivery](pages/delivery/README.md)
-**Shipping software efficiently and safely** - Deployment processes, CI/CD practices, and delivery methodologies enhanced with AI tools.
-
-### 8. [Operations](pages/operations/README.md)
-**Running and maintaining AI-powered systems** - Operational practices, monitoring, incident management, and system reliability.
-
-### 9. [Governance](pages/governance/README.md)
-**Decision-making frameworks and processes** - Architecture governance, technical decisions, and process management for AI development.
-
-### 10. [Data](pages/data/README.md)
-**Data management and data products** - Strategies for data handling, data product development, and data governance in AI contexts.
-
-### 11. [Cloud](pages/cloud/README.md)
-**Cloud-native development and operations** - Cloud platform utilization, infrastructure management, and cloud-specific AI services.
-
-### 12. [Engineering Standards](pages/standards/README.md)
-**Technical standards and requirements** - Coding standards, security requirements, and quality benchmarks for AI-assisted development.
-
-### 13. [Appendix](pages/appendix/README.md)
+### 7. [Appendix](pages/appendix/README.md)
 **Supporting resources and references** - Tools, templates, examples, and additional resources to support your AI development journey.
 
 - **[Prompt Library](pages/appendix/prompt-library/README.md)** - Curated collection of effective prompts for various development tasks
 - **[Rules for AI](pages/appendix/rules-for-ai/README.md)** - Configuration files and rules for AI development tools
 - **[MYOB‑approved AI tools](pages/appendix/MYOB-approved-tools.md)** - Official list of approved AI tools, configurations, and usage guidelines
+- **[Architecture Codex References](pages/appendix/architecture-codex-references.md)** - Links to MYOB Architecture Codex for technical standards
 - **[Case Studies](pages/appendix/case-studies.md)** - Real-world examples and success stories from AI development projects
 - **[Contributing](pages/appendix/CONTRIBUTING.md)** - Guidelines for contributing to and improving this playbook
 
 ---
 
+## Playbook Focus and Scope
+
+This playbook is focused exclusively on **using AI tools to accelerate software delivery**. It covers:
+
+✅ **AI tools and techniques** (Cursor, Copilot, MCPs, prompting)  
+✅ **AI-assisted workflows** (discovery, requirements, development, testing)  
+✅ **AI-specific security** (prompt injection, data leakage prevention)  
+✅ **Responsible AI usage** (ethics, privacy, sustainability)
+
+For general technical standards and architecture patterns, see:  
+📚 **[MYOB Architecture Codex](pages/appendix/architecture-codex-references.md)** - API design, security standards, CI/CD, operations, data architecture
+
+**What's been archived:** Technical standards content has been moved to [`/archive/`](archive/) and belongs in the Architecture Codex. See [archive/README.md](archive/README.md) for details.
+
+---
+
 ## Getting Started
 
-Ready to begin? Start with the [Responsible Practices](pages/responsible-practices/README.md) to understand the ethical and security foundations, then move on to [Getting Started](pages/getting-started/README.md) for practical implementation.
+**New to AI development?** Start with:
+1. **[Responsible Practices](pages/responsible-practices/README.md)** - Understand AI security and ethics first
+2. **[Getting Started](pages/getting-started/README.md)** - Set up your AI tools (Cursor/Copilot, MCPs)
+3. **[Choosing the Right Model](pages/getting-started/choosing-the-right-model.md)** - Learn model selection basics
+
+**Product Managers:** Start with [Discovery](pages/discovery/README.md) to use AI in product discovery
+
+**Developers:** Jump to [Feature Development](pages/feature-development/README.md) for AI-assisted coding
 
 ---
 
