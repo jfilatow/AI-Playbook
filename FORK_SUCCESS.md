@@ -78,7 +78,7 @@ Your GitHub Fork: github.com/jfilatow/AI-Playbook
                               ↑
                         [git pull]
                               ↑
-MYOB Upstream: github.com/MYOB-Technology/MYOB-AI-Codex
+MYOB Upstream: github.com/MYOB-Technology/MYOB-AI-Playbook
 ```
 
 ---
@@ -219,7 +219,7 @@ Your personal AI Playbook fork is ready to use. You now have:
 ## Quick Links
 
 - **Your Fork**: https://github.com/jfilatow/AI-Playbook
-- **MYOB Upstream**: https://github.com/MYOB-Technology/MYOB-AI-Codex
+- **MYOB Upstream**: https://github.com/MYOB-Technology/MYOB-AI-Playbook
 - **DEFRA Reference**: https://github.com/DEFRA/defra-ai-sdlc
 - **Fork Management Guide**: [FORK_INFO.md](FORK_INFO.md)
 - **Comparison Docs**: [MYOB_vs_DEFRA_Comparison.md](MYOB_vs_DEFRA_Comparison.md)
@@ -227,6 +227,6 @@ Your personal AI Playbook fork is ready to use. You now have:
 ---
 
 *Created: October 28, 2025*  
-*Fork of: MYOB-Technology/MYOB-AI-Codex*  
+*Fork of: MYOB-Technology/MYOB-AI-Playbook*  
 *Owner: Jerzy Filatow (@jfilatow)*
 

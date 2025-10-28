@@ -1,8 +1,8 @@
-# Contributing Back to MYOB-Technology/MYOB-AI-Codex
+# Contributing Back to MYOB-Technology/MYOB-AI-Playbook
 
 ## Overview
 
-This guide shows you how to make edits and raise Pull Requests (PRs) to contribute your improvements back to the **MYOB-Technology/MYOB-AI-Codex** repository.
+This guide shows you how to make edits and raise Pull Requests (PRs) to contribute your improvements back to the **MYOB-Technology/MYOB-AI-Playbook** repository.
 
 ---
 
@@ -22,7 +22,7 @@ Your Fork: jfilatow/AI-Playbook
 ```bash
 # Your remotes
 origin          git@github.com:jfilatow/AI-Playbook.git (your fork)
-myob-upstream   git@github.com:MYOB-Technology/MYOB-AI-Codex.git (PR target)
+myob-upstream   git@github.com:MYOB-Technology/MYOB-AI-Playbook.git (PR target)
 defra           https://github.com/DEFRA/defra-ai-sdlc.git (reference)
 ```
 
@@ -111,7 +111,7 @@ Now create a PR from your fork to MYOB-Technology:
 ```bash
 # Using GitHub CLI (recommended)
 gh pr create \
-  --repo MYOB-Technology/MYOB-AI-Codex \
+  --repo MYOB-Technology/MYOB-AI-Playbook \
   --base main \
   --head jfilatow:pr/myob-contributions \
   --title "Your PR title" \
@@ -120,11 +120,11 @@ gh pr create \
 
 **Or manually on GitHub:**
 
-1. Go to: https://github.com/MYOB-Technology/MYOB-AI-Codex
+1. Go to: https://github.com/MYOB-Technology/MYOB-AI-Playbook
 2. Click "Pull requests" → "New pull request"
 3. Click "compare across forks"
 4. Set:
-   - **Base repository**: `MYOB-Technology/MYOB-AI-Codex`
+   - **Base repository**: `MYOB-Technology/MYOB-AI-Playbook`
    - **Base branch**: `main`
    - **Head repository**: `jfilatow/AI-Playbook`
    - **Compare branch**: `pr/myob-contributions`
@@ -208,7 +208,7 @@ git push origin pr/myob-contributions
 
 # 6. Create PR
 gh pr create \
-  --repo MYOB-Technology/MYOB-AI-Codex \
+  --repo MYOB-Technology/MYOB-AI-Playbook \
   --base main \
   --head jfilatow:pr/myob-contributions \
   --title "docs: enhance Getting Started guide" \
@@ -249,13 +249,13 @@ git push origin pr/fix-broken-links
 
 ```bash
 # List your PRs to MYOB
-gh pr list --repo MYOB-Technology/MYOB-AI-Codex --author @me
+gh pr list --repo MYOB-Technology/MYOB-AI-Playbook --author @me
 
 # Check PR status
-gh pr status --repo MYOB-Technology/MYOB-AI-Codex
+gh pr status --repo MYOB-Technology/MYOB-AI-Playbook
 
 # View specific PR
-gh pr view <PR-number> --repo MYOB-Technology/MYOB-AI-Codex
+gh pr view <PR-number> --repo MYOB-Technology/MYOB-AI-Playbook
 ```
 
 ---
@@ -399,12 +399,12 @@ git commit -m "type: descriptive message"
 git push origin pr/descriptive-name
 
 # Create PR to MYOB
-gh pr create --repo MYOB-Technology/MYOB-AI-Codex \
+gh pr create --repo MYOB-Technology/MYOB-AI-Playbook \
   --base main \
   --head jfilatow:pr/descriptive-name
 
 # Check PR status
-gh pr status --repo MYOB-Technology/MYOB-AI-Codex
+gh pr status --repo MYOB-Technology/MYOB-AI-Playbook
 
 # Update PR after feedback
 git add .
@@ -466,7 +466,7 @@ git rebase --abort
 
 - **Current Branch**: `pr/myob-contributions`
 - **Purpose**: Make edits for PR to MYOB
-- **Target**: MYOB-Technology/MYOB-AI-Codex
+- **Target**: MYOB-Technology/MYOB-AI-Playbook
 - **Your Fork**: jfilatow/AI-Playbook
 
 ### Next Steps
@@ -483,7 +483,7 @@ git rebase --abort
 
 ### ⚠️ MYOB Repository Policy
 
-Earlier attempts showed that MYOB-Technology/MYOB-AI-Codex may have fork policies that prevent direct forking through GitHub's fork button. However, you can still:
+Earlier attempts showed that MYOB-Technology/MYOB-AI-Playbook may have fork policies that prevent direct forking through GitHub's fork button. However, you can still:
 
 ✅ Create PRs from your independent fork  
 ✅ Contribute through Pull Requests  
@@ -503,7 +503,7 @@ For MYOB-specific questions:
 
 ## Resources
 
-- **MYOB Repository**: https://github.com/MYOB-Technology/MYOB-AI-Codex
+- **MYOB Repository**: https://github.com/MYOB-Technology/MYOB-AI-Playbook
 - **Your Fork**: https://github.com/jfilatow/AI-Playbook
 - **GitHub PR Guide**: https://docs.github.com/en/pull-requests
 - **Conventional Commits**: https://www.conventionalcommits.org/
@@ -512,5 +512,5 @@ For MYOB-specific questions:
 
 *Last Updated: October 28, 2025*  
 *Current Branch: pr/myob-contributions*  
-*Ready to contribute to MYOB-Technology/MYOB-AI-Codex*
+*Ready to contribute to MYOB-Technology/MYOB-AI-Playbook*
 

@@ -2,14 +2,14 @@
 
 ## ✅ Successfully Branched from MYOB-Technology!
 
-Your repository is now properly structured with a clear branching strategy that shows your fork's relationship to MYOB-Technology/MYOB-AI-Codex.
+Your repository is now properly structured with a clear branching strategy that shows your fork's relationship to MYOB-Technology/MYOB-AI-Playbook.
 
 ---
 
 ## Current Branch Structure
 
 ```
-MYOB-Technology/MYOB-AI-Codex (Upstream Source)
+MYOB-Technology/MYOB-AI-Playbook (Upstream Source)
 ├── myob-upstream/main ← sync point
 ├── myob-upstream/obs-fixes
 │
@@ -53,7 +53,7 @@ jfilatow/AI-Playbook (Your Fork)
 ### Upstream Branches
 
 #### 📡 `myob-upstream/main`
-- **Source**: MYOB-Technology/MYOB-AI-Codex
+- **Source**: MYOB-Technology/MYOB-AI-Playbook
 - **Purpose**: Official MYOB source
 - **Sync**: Pull updates weekly
 - **Merge Point**: Merge to your `main`, then to `develop`
@@ -121,7 +121,7 @@ git branch -vv
 
 ### 3. Network Graph
 On GitHub, the network graph will show:
-- Your fork branching from MYOB-Technology/MYOB-AI-Codex
+- Your fork branching from MYOB-Technology/MYOB-AI-Playbook
 - Your commits diverging from the MYOB upstream
 - Clear fork relationship
 
@@ -241,7 +241,7 @@ MYOB Updates → myob-upstream/main
 # Show all remotes
 git remote -v
 # origin        git@github.com:jfilatow/AI-Playbook.git
-# myob-upstream git@github.com:MYOB-Technology/MYOB-AI-Codex.git
+# myob-upstream git@github.com:MYOB-Technology/MYOB-AI-Playbook.git
 # defra         https://github.com/DEFRA/defra-ai-sdlc.git
 
 # Show commit ancestry
@@ -369,5 +369,5 @@ git push origin main
 *Last Updated: October 28, 2025*  
 *Current Branch: develop*  
 *Repository: jfilatow/AI-Playbook*  
-*Forked From: MYOB-Technology/MYOB-AI-Codex*
+*Forked From: MYOB-Technology/MYOB-AI-Playbook*
 

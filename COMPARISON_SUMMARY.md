@@ -92,5 +92,5 @@ Common Ancestor: MYOB Technology Codex
 ## Quick Links
 
 - **Full Comparison**: See `MYOB_vs_DEFRA_Comparison.md` for detailed analysis
-- **MYOB Repository**: github.com/MYOB-Technology/MYOB-AI-Codex
+- **MYOB Repository**: github.com/MYOB-Technology/MYOB-AI-Playbook
 - **DEFRA Repository**: github.com/DEFRA/defra-ai-sdlc

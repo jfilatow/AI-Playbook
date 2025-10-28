@@ -2,12 +2,12 @@
 
 ## Repository Structure
 
-This repository is a fork of MYOB-Technology/MYOB-AI-Codex with a clear branching strategy for development and upstream synchronization.
+This repository is a fork of MYOB-Technology/MYOB-AI-Playbook with a clear branching strategy for development and upstream synchronization.
 
 ## Branch Overview
 
 ```
-MYOB-Technology/MYOB-AI-Codex (Upstream)
+MYOB-Technology/MYOB-AI-Playbook (Upstream)
          ↓
     [Forked]
          ↓
@@ -254,7 +254,7 @@ git remote -v
 
 # Output:
 origin          git@github.com:jfilatow/AI-Playbook.git (your fork)
-myob-upstream   git@github.com:MYOB-Technology/MYOB-AI-Codex.git (source)
+myob-upstream   git@github.com:MYOB-Technology/MYOB-AI-Playbook.git (source)
 defra           https://github.com/DEFRA/defra-ai-sdlc.git (reference)
 ```
 
@@ -390,5 +390,5 @@ git checkout main
 
 *Last Updated: October 28, 2025*  
 *Repository: jfilatow/AI-Playbook*  
-*Upstream: MYOB-Technology/MYOB-AI-Codex*
+*Upstream: MYOB-Technology/MYOB-AI-Playbook*
 

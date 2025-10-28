@@ -11,7 +11,7 @@ This repository is a personal fork of the MYOB AI Codex, configured to track mul
 origin          git@github.com:jfilatow/AI-Playbook.git
 
 # MYOB upstream (original source)
-myob-upstream   git@github.com:MYOB-Technology/MYOB-AI-Codex.git
+myob-upstream   git@github.com:MYOB-Technology/MYOB-AI-Playbook.git
 
 # DEFRA reference (alternative implementation)
 defra           https://github.com/DEFRA/defra-ai-sdlc.git
@@ -29,7 +29,7 @@ See **[BRANCHING_STRATEGY.md](BRANCHING_STRATEGY.md)** for complete details.
 
 ### Current Status
 - **Created**: October 28, 2025
-- **Forked From**: MYOB-Technology/MYOB-AI-Codex
+- **Forked From**: MYOB-Technology/MYOB-AI-Playbook
 - **Your GitHub**: jfilatow/AI-Playbook
 
 ## Working with This Fork
