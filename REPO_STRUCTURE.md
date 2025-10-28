@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 07:40:31 UTC 2025
+Generated on: Tue Oct 28 07:43:01 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -236,7 +236,6 @@ pages/getting-started/ide-setup/github-copilot-setup.md
 pages/getting-started/mcp-servers-setup.md
 pages/getting-started/project-setup.md
 pages/getting-started/self-service-capabilities.md
-pages/getting-started/stakeholder-engagement.md
 pages/getting-started/the-four-pillars.md
 pages/getting-started/workflow.md
 pages/responsible-practices/README.md

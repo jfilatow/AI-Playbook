@@ -29,9 +29,10 @@ Follow this sequence to build your AI development skills:
 
 ## Additional Resources
 
+- [MCP Servers Setup](mcp-servers-setup.md) - Model Context Protocol configuration for enterprise integration
+- [IDE Setup Guides](ide-setup/) - Cursor and GitHub Copilot setup and configuration
+- [Choosing the Right Model](choosing-the-right-model.md) - AI model selection and context management
 - [AI Training Programs](ai-training-programs.md) - Available training and certification programs
-- [Stakeholder Engagement](stakeholder-engagement.md) - How to involve stakeholders in AI initiatives
-- [AI-first Mindset](ai-first-mindset.md) - Developing an AI-first approach to development
 - [Self-Service Capabilities](self-service-capabilities.md) - Building self-service AI solutions
 
 ## Quick Start Checklist

@@ -192,6 +192,6 @@ Stay updated with the latest AI developments and continuously adapt your learnin
 
 ---
 
-**Previous:** [← MCP Servers Setup](mcp-servers-setup.md) | **Next:** [Stakeholder Engagement →](stakeholder-engagement.md)
+**Previous:** [← MCP Servers Setup](mcp-servers-setup.md) | **Next:** [Self-Service Capabilities →](self-service-capabilities.md)
 
 ---
