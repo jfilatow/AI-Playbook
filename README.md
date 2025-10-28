@@ -3,24 +3,6 @@
 
 # AI Software Development Lifecycle Playbook
 
-**Personal fork by Jerzy Filatow** - Based on MYOB AI Playbook  
-**Repository:** https://github.com/jfilatow/AI-Playbook
-
-This playbook is a practical guide for implementing AI-assisted software development workflows. It combines proven SDLC practices with AI-specific guidance, responsible practices, security requirements, and technical best practices to enable safe, efficient, and high-quality AI-powered development.
-
-## About This Fork
-
-This is a personal working copy forked from the [MYOB AI Playbook](https://github.com/MYOB-Technology/MYOB-AI-Playbook), which is the official MYOB AI Delivery Playbook. This fork allows for personal experimentation, customization, and contributions while maintaining connection to the upstream sources.
-
-### Upstream Repositories
-- **Origin (This Fork)**: https://github.com/jfilatow/AI-Playbook
-- **MYOB Upstream**: https://github.com/MYOB-Technology/MYOB-AI-Playbook
-- **DEFRA Reference**: https://github.com/DEFRA/defra-ai-sdlc
-
-### Comparison with DEFRA
-A detailed comparison between the MYOB AI Codex and DEFRA AI SDLC is available in:
-- **[Full Comparison](MYOB_vs_DEFRA_Comparison.md)** - Comprehensive analysis
-- **[Quick Summary](COMPARISON_SUMMARY.md)** - At-a-glance comparison
 
 ## Overview
 
@@ -104,11 +86,6 @@ This playbook is focused exclusively on **using AI tools to accelerate software 
 ✅ **AI-assisted workflows** (discovery, requirements, development, testing)  
 ✅ **AI-specific security** (prompt injection, data leakage prevention)  
 ✅ **Responsible AI usage** (ethics, privacy, sustainability)
-
-For general technical standards and architecture patterns, see:  
-📚 **[MYOB Architecture Codex](pages/appendix/architecture-codex-references.md)** - API design, security standards, CI/CD, operations, data architecture
-
-**What's been archived:** Technical standards content has been moved to [`/archive/`](archive/) and belongs in the Architecture Codex. See [archive/README.md](archive/README.md) for details.
 
 ---
 
