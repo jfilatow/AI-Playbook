@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 06:14:01 UTC 2025
+Generated on: Tue Oct 28 06:58:09 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -11,20 +11,9 @@ Generated on: Tue Oct 28 06:14:01 UTC 2025
 .cursor/rules/myob-development-standards.mdc
 .cursor/rules/repository-structure-map.mdc
 .cursor/rules/structure-maintenance.mdc
-BRANCHING_STRATEGY.md
-BRANCH_STRUCTURE.md
 CHANGELOG.md
-COMPARISON_SUMMARY.md
-CONTRIBUTING_TO_MYOB.md
-FORK_INFO.md
-FORK_SUCCESS.md
-MYOB_vs_DEFRA_Comparison.md
 README.md
-REFACTORING_COMPLETE.md
-REFACTOR_PROGRESS.md
 REPO_STRUCTURE.md
-SCOPE_REVIEW_PLAN.md
-SCOPE_REVIEW_SUMMARY.md
 _sass/myob-styles.scss
 archive/README.md
 archive/ai-agent-orchestration.md
@@ -149,9 +138,6 @@ content/assets/gapisumo.png
 content/assets/process-and-governance/solution-design-process.jpg
 content/assets/quality-and-testing/Test-Pyramid.png
 content/assets/quality-and-testing/TestingQuadrants.png
-cursor_rules_architecture_suggestions.md
-cursor_rules_comparison_examples.md
-cursor_rules_specific_updates.md
 pages/appendix/CONTRIBUTING.md
 pages/appendix/MYOB-approved-tools.md
 pages/appendix/README.md
