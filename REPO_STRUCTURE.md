@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 05:16:32 UTC 2025
+Generated on: Tue Oct 28 05:52:04 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -219,6 +219,7 @@ pages/discovery/ai-for-solution-validation.md
 pages/feature-development/README.md
 pages/feature-development/ai-agent-orchestration.md
 pages/feature-development/ai-development-frameworks.md
+pages/feature-development/ai-frameworks-practical.md
 pages/feature-development/ai-powered-features.md
 pages/feature-development/context-engineering-spec-driven-development.md
 pages/feature-development/continuous-improvement.md
