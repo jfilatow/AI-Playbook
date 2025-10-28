@@ -619,7 +619,7 @@ With MCPs configured, you're ready for advanced AI-assisted development:
 
 ---
 
-**Previous:** [← AI Development Frameworks](ai-development-frameworks.md) | **Next:** [Model Selection →](model-selection.md)
+**Previous:** [← AI Frameworks Practical](ai-frameworks-practical.md) | **Next:** [Model Selection →](model-selection.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Tue Oct 28 05:57:10 UTC 2025
+Generated on: Tue Oct 28 06:05:43 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -20,11 +20,14 @@ FORK_INFO.md
 FORK_SUCCESS.md
 MYOB_vs_DEFRA_Comparison.md
 README.md
+REFACTOR_PROGRESS.md
 REPO_STRUCTURE.md
 SCOPE_REVIEW_PLAN.md
 SCOPE_REVIEW_SUMMARY.md
 _sass/myob-styles.scss
 archive/README.md
+archive/ai-agent-orchestration.md
+archive/ai-development-frameworks.md
 archive/apis/APIs.md
 archive/apis/README.md
 archive/apis/api-design/README.md
@@ -153,22 +156,22 @@ pages/appendix/MYOB-approved-tools.md
 pages/appendix/README.md
 pages/appendix/case-studies.md
 pages/appendix/prompt-library/README.md
-pages/appendix/prompt-library/development/prompt-new-feature-story.md
-pages/appendix/prompt-library/development/prompt-test-driven-development.md
 pages/appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md
 pages/appendix/prompt-library/documentation-writing/prompt-create-api-documentation.md
 pages/appendix/prompt-library/learning/prompt-add-coding-knowledge-teaching.md
-pages/appendix/prompt-library/product/prompt-api-requirements.md
-pages/appendix/prompt-library/product/prompt-architecture-decision-record.md
-pages/appendix/prompt-library/product/prompt-combined-requirements-features-stories.md
-pages/appendix/prompt-library/product/prompt-data-model-generation.md
-pages/appendix/prompt-library/product/prompt-high-level-architecture.md
-pages/appendix/prompt-library/product/prompt-product-analysis.md
-pages/appendix/prompt-library/product/prompt-sequence-diagram.md
-pages/appendix/prompt-library/product/prompt-user-interface-requirements.md
-pages/appendix/prompt-library/product/prompt-user-story-creation.md
 pages/appendix/prompt-library/prompting-guidance.md
 pages/appendix/prompt-library/refactoring/prompt-refactor-feature.md
+pages/appendix/prompt-library/requirements/prompt-api-requirements.md
+pages/appendix/prompt-library/requirements/prompt-architecture-decision-record.md
+pages/appendix/prompt-library/requirements/prompt-combined-requirements-features-stories.md
+pages/appendix/prompt-library/requirements/prompt-data-model-generation.md
+pages/appendix/prompt-library/requirements/prompt-high-level-architecture.md
+pages/appendix/prompt-library/requirements/prompt-new-feature-story.md
+pages/appendix/prompt-library/requirements/prompt-product-analysis.md
+pages/appendix/prompt-library/requirements/prompt-sequence-diagram.md
+pages/appendix/prompt-library/requirements/prompt-test-driven-development.md
+pages/appendix/prompt-library/requirements/prompt-user-interface-requirements.md
+pages/appendix/prompt-library/requirements/prompt-user-story-creation.md
 pages/appendix/prompt-library/testing/prompt-add-journey-test.md
 pages/appendix/prompt-library/testing/prompt-add-unit-test.md
 pages/appendix/rules-for-ai/README.md
@@ -217,9 +220,7 @@ pages/discovery/ai-for-problem-discovery.md
 pages/discovery/ai-for-solution-discovery.md
 pages/discovery/ai-for-solution-validation.md
 pages/feature-development/README.md
-pages/feature-development/ai-agent-orchestration.md
 pages/feature-development/ai-agents.md
-pages/feature-development/ai-development-frameworks.md
 pages/feature-development/ai-frameworks-practical.md
 pages/feature-development/ai-powered-features.md
 pages/feature-development/context-engineering-spec-driven-development.md

@@ -789,7 +789,7 @@ With model selection knowledge, enhance your AI workflow:
 
 ---
 
-**Previous:** [← MCP Usage](mcp-usage.md) | **Next:** [AI Development Frameworks →](ai-development-frameworks.md)
+**Previous:** [← MCP Usage](mcp-usage.md) | **Next:** [AI Agents →](ai-agents.md)
 
 ---
 

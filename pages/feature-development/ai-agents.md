@@ -526,6 +526,6 @@ Negative value = Skip agent, do manually
 
 ---
 
-**Previous:** [← AI Development Frameworks](ai-development-frameworks.md) | **Next:** [Continuous Improvement →](continuous-improvement.md)
+**Previous:** [← Model Selection](model-selection.md) | **Next:** [Continuous Improvement →](continuous-improvement.md)
 
 ---

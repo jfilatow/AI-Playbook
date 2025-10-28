@@ -15,6 +15,8 @@ The MYOB AI Playbook is focused specifically on **AI-assisted software developme
 - **Delivery** (20 files) - General SDLC delivery practices → See Architecture Codex
 - **Governance** (12 files) - Architecture governance and decision frameworks → See Architecture Codex
 - **Operations** (8 files) - General operations and observability → See Architecture Codex
+- **AI Development Frameworks** (1 file) - Building AI systems with TensorFlow/PyTorch (not SDLC acceleration) → See AI Engineering Documentation
+- **AI Agent Orchestration** (1 file) - Building multi-agent AI systems (not SDLC workflows) → See AI Engineering Documentation
 
 ## Where to Find This Content Now
 
