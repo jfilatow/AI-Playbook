@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Wed Oct 29 02:36:39 UTC 2025
+Generated on: Wed Oct 29 22:48:50 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -18,6 +18,7 @@ _sass/myob-styles.scss
 archive/README.md
 archive/ai-agent-orchestration.md
 archive/ai-development-frameworks.md
+archive/ai-powered-features.md
 archive/apis/APIs.md
 archive/apis/README.md
 archive/apis/api-design/README.md
