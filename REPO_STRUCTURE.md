@@ -1,6 +1,6 @@
 # Repository Structure
 
-Generated on: Wed Oct 29 01:18:38 UTC 2025
+Generated on: Wed Oct 29 01:34:46 UTC 2025
 
 ```
 .cursor/rules/Writing.mdc
@@ -199,6 +199,7 @@ pages/appendix/prompt-library/requirements/prompt-user-story-creation.md
 pages/appendix/prompt-library/testing/prompt-add-journey-test.md
 pages/appendix/prompt-library/testing/prompt-add-unit-test.md
 pages/appendix/rules-for-ai/README.md
+pages/appendix/rules-for-ai/agents-md-standard.md
 pages/appendix/rules-for-ai/nodejs/nodejs-cursorrules-bakend.md
 pages/appendix/rules-for-ai/nodejs/nodejs-cursorrules-frontend.md
 pages/appendix/rules-for-ai/python/python-cursorrules-backend.md
