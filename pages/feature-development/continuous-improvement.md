@@ -315,6 +315,6 @@ Remember that continuous improvement is itself a continuous process—regularly 
 
 ---
 
-**Previous:** [← Documentation](documentation.md) | **Next:** [Ai Powered Features →](ai-powered-features.md)
+**Previous:** [← Documentation](documentation.md) | **Next:** [Responsible Practices →](../responsible-practices/README.md)
 
 ---

@@ -177,6 +177,6 @@ The framing introduced here helps guide how domains expose and consume capabilit
 
 ---
 
-**Previous:** [← Ai Powered Features](../feature-development/ai-powered-features.md) | **Next:** [Api Design →](api-design/README.md)
+**Previous:** [← Feature Development](../../pages/feature-development/README.md) | **Next:** [Api Design →](api-design/README.md)
 
 ---

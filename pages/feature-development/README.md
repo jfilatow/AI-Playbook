@@ -49,7 +49,6 @@ These frameworks integrate into the development workflow at multiple stages:
 ## Advanced Topics
 
 - [Continuous Improvement](continuous-improvement.md) - Systematic improvement of AI-assisted development
-- [AI-powered Features](ai-powered-features.md) - Building features that incorporate AI capabilities
 
 ---
 

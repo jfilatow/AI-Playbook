@@ -669,7 +669,7 @@ class AIEventProcessor:
 ## Related Resources
 
 - [AI Agent Orchestration](ai-agent-orchestration.md) - Multi-agent coordination and workflow management
-- [AI-powered Features](ai-powered-features.md) - Building features with AI capabilities
+- [Feature Development](../pages/feature-development/README.md) - Building features with AI assistance
 - [AI Training Programs](../getting-started/ai-training-programs.md) - Learning resources for AI development
 - [MYOB-approved AI tools](../appendix/MYOB-approved-tools.md) - Approved tools and configurations
 

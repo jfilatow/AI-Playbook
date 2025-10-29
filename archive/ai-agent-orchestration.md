@@ -474,7 +474,7 @@ When selecting an agent orchestration framework, consider:
 ## Related Resources
 
 - [AI Development Frameworks](ai-development-frameworks.md) - Core frameworks for AI application development
-- [AI-powered Features](ai-powered-features.md) - Building features with AI capabilities
+- [Feature Development](../pages/feature-development/README.md) - Building features with AI assistance
 - [Continuous Improvement](continuous-improvement.md) - Optimizing AI-assisted development processes
 - [MYOB-approved AI tools](../appendix/MYOB-approved-tools.md) - Approved tools and configurations
 

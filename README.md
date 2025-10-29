@@ -51,7 +51,6 @@ The MYOB AI SDLC Playbook provides comprehensive guidance for the use of artific
 **Building features with AI assistance** - End-to-end feature development processes using AI tools for coding, testing, and documentation.
 
 - **[Context Engineering and Spec Driven Development](pages/feature-development/context-engineering-spec-driven-development.md)** - Systematic information curation and specification-driven approach
-- **[AI-powered Features](pages/feature-development/ai-powered-features.md)** - Developing features that incorporate AI capabilities and services
 - **[AI Frameworks Practical](pages/feature-development/ai-frameworks-practical.md)** - GitHub SpecKit and other frameworks for AI-enhanced development
 - **[MCP Usage](pages/feature-development/mcp-usage.md)** - Model Context Protocol setup and usage for better AI context
 - **[Model Selection](pages/feature-development/model-selection.md)** - Choosing AI models, Cursor Max Mode, and context window management

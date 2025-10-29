@@ -212,7 +212,6 @@ pages/discovery/ai-for-solution-validation.md
 pages/feature-development/README.md
 pages/feature-development/ai-agents.md
 pages/feature-development/ai-frameworks-practical.md
-pages/feature-development/ai-powered-features.md
 pages/feature-development/context-engineering-spec-driven-development.md
 pages/feature-development/continuous-improvement.md
 pages/feature-development/development.md

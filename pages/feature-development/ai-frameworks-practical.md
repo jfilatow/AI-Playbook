@@ -702,7 +702,7 @@ Ready to use frameworks in your development?
 
 ---
 
-**Previous:** [← AI-powered Features](ai-powered-features.md) | **Next:** [MCP Usage →](mcp-usage.md)
+**Previous:** [← Context Engineering](context-engineering-spec-driven-development.md) | **Next:** [MCP Usage →](mcp-usage.md)
 
 ---
 
