@@ -99,7 +99,21 @@ AI → Searches your codebase (GitHub MCP)
 
 ## MYOB-Approved MCPs
 
-The following MCPs are approved for use at MYOB. For the complete and current list, see **Confluence** [MYOB MCP Registry](https://MYOB.atlassian.net/wiki/spaces/TECH/pages/MCP-Registry) (link to be updated with actual Confluence page).
+The following MCPs are approved for use at MYOB. For the complete and current list with security review status, always check the **[MYOB MCP Registry on Confluence](https://myobconfluence.atlassian.net/wiki/spaces/security/pages/10925965594)**.
+
+### MCP Approval Status Table
+
+| Server | Vendor/Owner | Hosting | Status | Last Review | Notes |
+|--------|--------------|---------|--------|-------------|-------|
+| **Atlassian MCP** | Atlassian (official) | Remote | ✅ Approved | 17-Sep-2025 | Jira/Confluence |
+| **Glean MCP** | Glean (official) | Remote | ✅ Approved | 17-Sep-2025 | MYOB knowledge base |
+| **GitHub MCP** | GitHub (official) | Remote | ❌ Not Approved* | 27-Oct-2025 | *VS Code only |
+| **Playwright** | Microsoft (official) | Local | ✅ Approved | 16-Oct-2025 | Browser automation |
+| **Context7** | Community | Local | ✅ Approved | 17-Oct-2025 | Code context |
+| **Chrome-devtools** | Community | Local | ✅ Approved | 21-Oct-2025 | Browser debugging |
+| **Wiz MCP** | Wiz (official) | Remote | ✅ Approved | 28-Oct-2025 | Security scanning |
+
+**Important:** GitHub MCP is only approved for VS Code. Do not use with Cursor or other IDEs.
 
 ### Core MCPs for Development
 
@@ -116,10 +130,14 @@ The following MCPs are approved for use at MYOB. For the complete and current li
 
 **Permissions:** Read access to workspace files (respects .cursorignore)
 
-#### 2. **GitHub MCP**
+#### 2. **GitHub MCP** ❌ Not Approved (except VS Code)
 **What it does:** Searches GitHub repositories, issues, PRs, and discussions
 
-**When to use:**
+**Approval Status:** 
+- ✅ **Approved for VS Code only** (as of 27-Oct-2025)
+- ❌ **Not approved for Cursor or other IDEs**
+
+**When to use (VS Code only):**
 - Finding code patterns across MYOB repositories
 - Researching how features are implemented
 - Checking issue history and discussions
@@ -129,7 +147,7 @@ The following MCPs are approved for use at MYOB. For the complete and current li
 
 **Permissions:** Access to repositories your GitHub account can access
 
-**Configuration:**
+**VS Code Configuration:**
 ```json
 {
   "mcpServers": {
@@ -143,6 +161,11 @@ The following MCPs are approved for use at MYOB. For the complete and current li
   }
 }
 ```
+
+**For Cursor Users:**
+- Use Cursor's built-in GitHub integration instead
+- Or use Glean MCP to search MYOB documentation
+- Do not use GitHub MCP with Cursor
 
 #### 3. **Glean MCP** ⭐ MYOB-Specific
 **What it does:** Searches MYOB's internal Glean knowledge base

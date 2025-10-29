@@ -25,15 +25,20 @@ The following MCP servers have been reviewed and approved for use at MYOB. For t
 
 ### Approved MCP Servers
 
-| Server | Hosting Model | Allowed Data | Status | Use With |
-|--------|---------------|--------------|--------|----------|
-| **Atlassian MCP** | Vendor hosted (remote) | Internal only | ✅ Approved | Cursor, compatible IDEs |
-| **Glean MCP** | Vendor hosted (remote) | Internal only | ✅ Approved | Cursor, compatible IDEs |
-| **GitHub MCP** | Vendor hosted (remote) | Internal only | ⚠️ Approved for VS Code only | VS Code only |
-| **Playwright MCP** | Local | Internal only | ✅ Approved | All IDEs |
-| **Context7 MCP** | Local | Internal only | ✅ Approved | All IDEs |
+| Server | Vendor/Owner | Hosting Model | Allowed Data | Status | Last Review | Use With |
+|--------|--------------|---------------|--------------|--------|-------------|----------|
+| **Atlassian MCP** | Atlassian (official) | Vendor hosted (remote) | Internal only | ✅ Approved | 17-Sep-2025 | Cursor, compatible IDEs |
+| **Glean MCP** | Glean (official) | Vendor hosted (remote) | Internal only | ✅ Approved | 17-Sep-2025 | Cursor, compatible IDEs |
+| **GitHub MCP** | GitHub (official) | Vendor hosted (remote) | Internal only | ❌ Not Approved (except VS Code) | 27-Oct-2025 | VS Code only |
+| **Playwright** | Microsoft (official) | Local | Internal only | ✅ Approved | 16-Oct-2025 | All IDEs |
+| **Context7** | Community | Local | Internal only | ✅ Approved | 17-Oct-2025 | All IDEs |
+| **Chrome-devtools** | Community | Local | Internal only | ✅ Approved | 21-Oct-2025 | All IDEs |
+| **Wiz MCP** | Wiz (official) | Vendor hosted (remote) | Internal only | ✅ Approved | 28-Oct-2025 | Cursor, compatible IDEs |
 
-**Note:** Approval status may change. Always check the Confluence registry before using an MCP server.
+**Important Notes:**
+- **GitHub MCP**: Only approved for use with VS Code. Not approved for Cursor or other IDEs.
+- **Security**: All remote MCPs handle Internal data only. Never use with customer data or production secrets.
+- **Updates**: Approval status may change. Always check the [Confluence registry](https://myobconfluence.atlassian.net/wiki/spaces/security/pages/10925965594) before using an MCP server.
 
 ### 1. Atlassian MCP (Jira/Confluence)
 
@@ -111,14 +116,15 @@ The following MCP servers have been reviewed and approved for use at MYOB. For t
 - Get code context
 
 **Hosting:** Vendor hosted (remote) - GitHub official server  
-**Status:** ⚠️ **Approved for VS Code ONLY** (not approved for Cursor at this time)  
-**Allowed Data:** Internal only
+**Status:** ❌ **Not Approved (except for VS Code)**  
+**Allowed Data:** Internal only  
+**Last Review:** 27-Oct-2025
 
 **Prerequisites:**
 - GitHub account with access to MYOB repositories
 - GitHub Personal Access Token (PAT)
 
-**Configuration (VS Code only):**
+**VS Code Configuration (approved):**
 ```json
 {
   "mcpServers": {
@@ -133,7 +139,11 @@ The following MCP servers have been reviewed and approved for use at MYOB. For t
 }
 ```
 
-**Note:** For Cursor users, use alternative methods to access GitHub code context.
+**Important Notes:**
+- ✅ **Approved for VS Code only**
+- ❌ **Not approved for Cursor or other IDEs**
+- For Cursor users, use Cursor's built-in GitHub integration or alternative methods for code context
+- Do not use GitHub MCP with Cursor unless approval status changes
 
 ### 4. Playwright MCP
 
@@ -179,6 +189,67 @@ The following MCP servers have been reviewed and approved for use at MYOB. For t
   }
 }
 ```
+
+### 6. Chrome DevTools MCP
+
+**What it does:**
+- Browser debugging and inspection
+- DOM manipulation and analysis
+- Network traffic monitoring
+- Console interaction
+
+**Hosting:** Local (runs on your machine)  
+**Status:** ✅ Approved  
+**Allowed Data:** Internal only  
+**Last Review:** 21-Oct-2025
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp"]
+    }
+  }
+}
+```
+
+### 7. Wiz MCP
+
+**What it does:**
+- Cloud security scanning and analysis
+- Infrastructure vulnerability detection
+- Security posture assessment
+- Compliance monitoring
+
+**Hosting:** Vendor hosted (remote) - Wiz official server  
+**Status:** ✅ Approved  
+**Allowed Data:** Internal only  
+**Last Review:** 28-Oct-2025  
+**Tech Owner:** SecEng
+
+**Prerequisites:**
+- Wiz account with MYOB access
+- Wiz API token
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wiz": {
+      "command": "npx",
+      "args": ["-y", "@wiz/mcp-server"],
+      "env": {
+        "WIZ_API_TOKEN": "your_wiz_api_token",
+        "WIZ_TENANT_ID": "myob_tenant_id"
+      }
+    }
+  }
+}
+```
+
+**Security Note:** Wiz MCP is managed by MYOB Security Engineering. Contact SecEng team for API token provisioning.
 
 ## Standard Security Checklist for MCP Servers
 
