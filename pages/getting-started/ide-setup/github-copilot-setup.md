@@ -12,7 +12,7 @@ GitHub Copilot is an AI pair programmer that provides code completions and chat 
 
 **Before You Begin:**  
 Request and install GitHub Copilot via MYOB's standard software process:
-1. Request access via **Sailpoint Identity Now**
+1. Request access via **Identity Now**
 2. Install via **Kandji** (macOS) or **Windows Company Portal** (Windows)
 3. Once installed, install the IDE extension and return to this guide for configuration
 

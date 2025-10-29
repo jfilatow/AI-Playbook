@@ -17,6 +17,10 @@ The MYOB AI Playbook is focused specifically on **AI-assisted software developme
 - **Operations** (8 files) - General operations and observability → See Architecture Codex
 - **AI Development Frameworks** (1 file) - Building AI systems with TensorFlow/PyTorch (not SDLC acceleration) → See AI Engineering Documentation
 - **AI Agent Orchestration** (1 file) - Building multi-agent AI systems (not SDLC workflows) → See AI Engineering Documentation
+- **Content Assets** (2 directories) - Codex-originated images and diagrams not used in current playbook pages
+  - `content-assets/` - Original content assets directory (33 files, ~5.5 MB)
+  - `pages-assets/` - Duplicate assets from pages directory (33 files, ~5.5 MB)
+  - Includes: API diagrams, Data Product visualizations, system architecture images, banners, templates
 
 ## Where to Find This Content Now
 
