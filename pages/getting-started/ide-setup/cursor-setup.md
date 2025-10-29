@@ -318,6 +318,76 @@ build/
 **Use Both:**
 Many developers use Cursor for AI-heavy work and VS Code for certain tasks. Both can coexist.
 
+## Learning Resources
+
+### Official Cursor Learning Hub
+
+**🎓 [Cursor Learn](https://cursor.com/learn)** - Comprehensive interactive learning resources:
+
+**Core Features Tutorials:**
+- **Tab for Autocomplete** - Master intelligent code completion
+- **Cmd+K for Inline Edit** - Quick code edits and transformations  
+- **Composer for Multi-file Edits** - Refactor across multiple files
+- **AI Agent** - Let Cursor handle complex tasks autonomously
+
+**Key Learning Topics:**
+- Effective prompting techniques for better code generation
+- Context management strategies (what to include, what to exclude)
+- When to use Tab vs Cmd+K vs Composer vs Agent
+- Model selection for different development tasks
+- Real-world coding examples and workflows
+
+### MYOB-Specific Learning Path
+
+**For New Cursor Users:**
+
+1. **Week 1** - Basic Features:
+   - Complete [Tab tutorial](https://cursor.com/learn) for autocomplete
+   - Learn Cmd+K for inline edits
+   - Practice with simple functions
+
+2. **Week 2** - Intermediate Features:
+   - Master Chat for asking questions
+   - Use Cursor to explain existing MYOB code
+   - Practice generating tests
+
+3. **Week 3** - Advanced Features:
+   - Learn Composer for multi-file edits
+   - Refactor a feature module
+   - Use AI Agent for complex tasks
+
+4. **Week 4** - MYOB Integration:
+   - Configure MCPs ([Glean, Atlassian](../../feature-development/mcp-usage.md))
+   - Set up MYOB Cursor Rules ([Rules for AI](../../appendix/rules-for-ai/README.md))
+   - Apply to real MYOB development work
+
+**Practice Exercises:**
+- Generate a new TypeScript function with proper types
+- Refactor code to use Decimal for financial calculations
+- Create comprehensive tests for an existing feature
+- Document a complex module with JSDoc comments
+- Refactor authentication across multiple files with Composer
+
+### Additional Resources
+
+**MYOB Internal:**
+- [AI Training Programs](../ai-training-programs.md) - Structured learning paths
+- [Choosing the Right Model](../choosing-the-right-model.md) - Model selection guide
+- [MCP Usage Guide](../../feature-development/mcp-usage.md) - Enterprise context
+- [Prompt Library](../../appendix/prompt-library/README.md) - Reusable prompts
+
+**Cursor Official:**
+- [Cursor Documentation](https://docs.cursor.com) - Complete reference
+- [Cursor Forum](https://forum.cursor.com) - Community support
+- [Cursor Changelog](https://changelog.cursor.com) - Latest features
+
+**Best Practices:**
+- Start simple: Master Tab before moving to Composer
+- Review all AI code: Never blindly accept suggestions
+- Use appropriate models: Fast models for simple tasks, reasoning models for complex
+- Leverage MCPs: Glean + Atlassian gives MYOB-specific context
+- Follow MYOB standards: Use Cursor Rules to enforce patterns
+
 ## Troubleshooting
 
 ### AI Not Responding
@@ -364,8 +434,9 @@ See [MCP Troubleshooting](../../feature-development/mcp-usage.md#troubleshooting
 
 ## Resources
 
-- **Cursor Documentation**: [cursor.com/docs](https://cursor.com/docs)
-- **Cursor Community**: [cursor.com/community](https://cursor.com/community)
+- **🎓 Cursor Learn**: [cursor.com/learn](https://cursor.com/learn) - Interactive tutorials
+- **Cursor Documentation**: [docs.cursor.com](https://docs.cursor.com) - Complete reference
+- **Cursor Forum**: [forum.cursor.com](https://forum.cursor.com) - Community support
 - **MYOB AI Tools**: [MYOB-Approved Tools](../../appendix/MYOB-approved-tools.md)
 - **MCP Setup**: [MCP Usage Guide](../../feature-development/mcp-usage.md)
 

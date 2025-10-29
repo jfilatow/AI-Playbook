@@ -32,6 +32,12 @@ AI literacy and practical skills are essential for modern software development. 
 - **[Introduction to Large Language Models](https://www.linkedin.com/learning/introduction-to-large-language-models)** by Jonathan Fernandes (1h 17m) - GPT and BERT architecture
 
 **AI-Driven Development Tools:**
+- **🎓 [Cursor Learn](https://cursor.com/learn)** - FREE interactive Cursor IDE tutorials (RECOMMENDED for MYOB developers)
+  - Tab for Autocomplete mastery
+  - Cmd+K for inline editing
+  - Composer for multi-file refactoring
+  - AI Agent for autonomous coding
+  - Best practices for AI-assisted development
 - **[Introduction to Prompt Engineering for Generative AI](https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai)** by Ronnie Sheer (1h 3m) - Crafting effective prompts for development
 - **[Career Essentials in Generative AI by Microsoft and LinkedIn](https://www.linkedin.com/learning/paths/career-essentials-in-generative-ai-by-microsoft-and-linkedin)** - GitHub Copilot and AI coding assistants
 - **[GPT-4 Foundations: Building AI-Powered Apps](https://www.linkedin.com/learning/gpt-4-foundations-building-ai-powered-apps)** by Denys Linkov - Practical AI application development
