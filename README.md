@@ -3,9 +3,6 @@
 
 # AI Software Development Lifecycle Playbook
 
-**Personal fork by Jerzy Filatow** - Based on MYOB AI Codex  
-**Repository:** https://github.com/jfilatow/AI-Playbook
-
 This playbook is a practical guide for implementing AI-assisted software development workflows. It combines proven SDLC practices with AI-specific guidance, responsible practices, security requirements, and technical best practices to enable safe, efficient, and high-quality AI-powered development.
 
 ## About This Fork
